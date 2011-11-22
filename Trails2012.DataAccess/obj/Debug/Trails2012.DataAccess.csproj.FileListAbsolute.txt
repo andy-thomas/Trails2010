@@ -1,0 +1,5 @@
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess\bin\Debug\Trails2012.DataAccess.dll
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess\bin\Debug\Trails2012.DataAccess.pdb
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess\obj\Debug\Trails2012.DataAccess.dll
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess\obj\Debug\Trails2012.DataAccess.pdb

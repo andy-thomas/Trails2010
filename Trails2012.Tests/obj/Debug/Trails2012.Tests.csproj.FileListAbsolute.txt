@@ -6,3 +6,5 @@ C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Trails2012.pdb
 C:\Projects\Personal\Trails2012\Trails2012.Tests\obj\Debug\ResolveAssemblyReference.cache
 C:\Projects\Personal\Trails2012\Trails2012.Tests\obj\Debug\Trails2012.Tests.dll
 C:\Projects\Personal\Trails2012\Trails2012.Tests\obj\Debug\Trails2012.Tests.pdb
+C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Trails2012.Domain.dll
+C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Trails2012.Domain.pdb

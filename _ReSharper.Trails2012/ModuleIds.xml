@@ -1,4 +1,9 @@
 <Modules>
   <Module PersistentId="9801FD19-CD96-40F9-A40D-21AF9D49BEEF" ModuleId="Trails2012" />
   <Module PersistentId="AF00D12C-9FA4-445E-BEF4-0B92D886913B" ModuleId="Trails2012.Domain" />
+  <Module PersistentId="42E8FC38-B474-4314-8EB4-172149679BC7" ModuleId="Trails2012.Tests" />
+  <Module PersistentId="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27" ModuleId="Trails2012.DataAccess.EF" />
+  <Module PersistentId="3B4F2847-C93C-4707-8A31-1FADA659AEDA" ModuleId="Trails2012.DataAccess.EF.Test" />
+  <Module PersistentId="DEAB62C0-0B23-44F5-8A99-89454C8D6113" ModuleId="Trails2012.DataAccess" />
+  <Module PersistentId="8B1E2305-D9BC-4239-9C68-D3C76F3ABB57" ModuleId="Trails2012.DataAccess_1" />
 </Modules>

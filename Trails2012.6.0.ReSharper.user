@@ -6,8 +6,36 @@
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/f:_ViewStart.cshtml" caret="52" fromTop="2" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Home/f:About.cshtml" caret="0" fromTop="0" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:App.config" caret="283" fromTop="11" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="49" fromTop="2" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="40" fromTop="0" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Person.cs" caret="66" fromTop="4" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="2716" fromTop="18" />
     </RecentFiles>
-    <RecentEdits />
+    <RecentEdits>
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Person.cs" caret="94" fromTop="6" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="3283" fromTop="18" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="1979" fromTop="9" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="1979" fromTop="1" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="1979" fromTop="7" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="1979" fromTop="6" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="795" fromTop="5" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="1518" fromTop="9" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="1561" fromTop="14" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="2251" fromTop="16" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="2251" fromTop="16" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="1123" fromTop="18" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="1073" fromTop="16" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="742" fromTop="9" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:ReferenceListTest.cs" caret="40" fromTop="0" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="3283" fromTop="13" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="3283" fromTop="8" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="3487" fromTop="18" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="2693" fromTop="7" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="3094" fromTop="8" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="2690" fromTop="11" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonDataAccessTest.cs" caret="511" fromTop="9" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -26,4 +54,92 @@
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonDataAccessTest" type="MsTestTestClassElement" TypeName="Trails2012.Tests.PersonDataAccessTest" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.ReferenceListTest" type="MsTestTestClassElement" TypeName="Trails2012.Tests.ReferenceListTest" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonDataAccessTest.ShouldAddNewPerson" ParentId="Trails2012.Tests.PersonDataAccessTest" type="MsTestTestMethodElement" MethodName="ShouldAddNewPerson" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.ReferenceListTest.ShouldGetAllDifficulties" ParentId="Trails2012.Tests.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllDifficulties" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.ReferenceListTest.ShouldGetAllLocations" ParentId="Trails2012.Tests.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllLocations" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonDataAccessTest.ShouldGetAllPersons" ParentId="Trails2012.Tests.PersonDataAccessTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllPersons" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.ReferenceListTest.ShouldGetAllRegions" ParentId="Trails2012.Tests.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllRegions" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.ReferenceListTest.ShouldGetLocationById" ParentId="Trails2012.Tests.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetLocationById" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonDataAccessTest.ShouldGetPersonById" ParentId="Trails2012.Tests.PersonDataAccessTest" type="MsTestTestMethodElement" MethodName="ShouldGetPersonById" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonDataAccessTest.ShouldGetPersonsByLastName" ParentId="Trails2012.Tests.PersonDataAccessTest" type="MsTestTestMethodElement" MethodName="ShouldGetPersonsByLastName" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="prop" priority="95" />
+      <Item value="int" priority="93" />
+      <Item value="EntityBase`0" priority="159" />
+      <Item value="string" priority="30" />
+      <Item value="public" priority="31" />
+      <Item value="double" priority="31" />
+      <Item value="Difficulty`0" priority="31" />
+      <Item value="Locations" priority="32" />
+      <Item value="Difficulties" priority="32" />
+      <Item value="Persons" priority="32" />
+      <Item value="Region`0" priority="31" />
+      <Item value="Regions" priority="27" />
+      <Item value="Trail`0" priority="31" />
+      <Item value="Trails" priority="27" />
+      <Item value="TrailTypes" priority="27" />
+      <Item value="HasKey`1" priority="31" />
+      <Item value="p" priority="95" />
+      <Item value="Property`1" priority="63" />
+      <Item value="databaseGeneratedOption" priority="31" />
+      <Item value="DatabaseGeneratedOption`0" priority="31" />
+      <Item value="Person`0" priority="30" />
+      <Item value="persons" priority="65" />
+      <Item value="ctor" priority="31" />
+      <Item value="Assert`0" priority="63" />
+      <Item value="location" priority="95" />
+      <Item value="FirstName" priority="31" />
+      <Item value="LastName" priority="32" />
+      <Item value="DateOfBirth" priority="32" />
+      <Item value="DateTime`0" priority="32" />
+      <Item value="Gender" priority="32" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Domain.Person">
+      <Item value="Id" priority="53" />
+      <Item value="FullName" priority="54" />
+      <Item value="LastName" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration">
+      <Item value="HasColumnName`0" priority="26" />
+      <Item value="HasDatabaseGeneratedOption`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ComponentModel.DataAnnotations.DatabaseGeneratedOption">
+      <Item value="Identity" priority="26" />
+      <Item value="Computed" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration">
+      <Item value="HasColumnType`0" priority="26" />
+      <Item value="HasDatabaseGeneratedOption`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.DataAccess.EF.TrailsContext">
+      <Item value="Persons" priority="27" />
+      <Item value="Difficulties" priority="22" />
+      <Item value="Set`1" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Domain.Location">
+      <Item value="Region" priority="81" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="IsNotNull`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Domain.Region">
+      <Item value="Name" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Today" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddYears`0" priority="27" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

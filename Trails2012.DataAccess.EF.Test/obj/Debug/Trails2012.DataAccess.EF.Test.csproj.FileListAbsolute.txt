@@ -1,0 +1,12 @@
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.EF.Test.dll
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.EF.Test.pdb
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\obj\Debug\Trails2012.DataAccess.EF.Test.dll
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\obj\Debug\Trails2012.DataAccess.EF.Test.pdb
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.EF.dll
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.Domain.dll
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.EF.pdb
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.Domain.pdb
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.dll
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.pdb
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.EF.Test.dll.config

@@ -7,7 +7,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.Tests", "Trails2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.Domain", "Trails2012.Domain\Trails2012.Domain.csproj", "{AF00D12C-9FA4-445E-BEF4-0B92D886913B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD72CC93-400F-47E9-9E28-4F6485453602}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		Trails2012.vsmdi = Trails2012.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.DataAccess.EF", "Trails2012.DataAccess.EF\Trails2012.DataAccess.EF.csproj", "{B6F99750-1FDB-4650-BDA5-EA5BA58D5C27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.DataAccess.EF.Test", "Trails2012.DataAccess.EF.Test\Trails2012.DataAccess.EF.Test.csproj", "{3B4F2847-C93C-4707-8A31-1FADA659AEDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.DataAccess", "Trails2012.DataAccess\Trails2012.DataAccess.csproj", "{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}"
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Trails2012.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -25,6 +41,18 @@ Global
 		{AF00D12C-9FA4-445E-BEF4-0B92D886913B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF00D12C-9FA4-445E-BEF4-0B92D886913B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF00D12C-9FA4-445E-BEF4-0B92D886913B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F99750-1FDB-4650-BDA5-EA5BA58D5C27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F99750-1FDB-4650-BDA5-EA5BA58D5C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F99750-1FDB-4650-BDA5-EA5BA58D5C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F99750-1FDB-4650-BDA5-EA5BA58D5C27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4F2847-C93C-4707-8A31-1FADA659AEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4F2847-C93C-4707-8A31-1FADA659AEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4F2847-C93C-4707-8A31-1FADA659AEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4F2847-C93C-4707-8A31-1FADA659AEDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

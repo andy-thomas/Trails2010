@@ -1,0 +1,5 @@
+C:\Projects\Personal\Trails2012\Trails.DataAccess.Test\bin\Debug\Trails.DataAccess.EF.Test.dll
+C:\Projects\Personal\Trails2012\Trails.DataAccess.Test\bin\Debug\Trails.DataAccess.EF.Test.pdb
+C:\Projects\Personal\Trails2012\Trails.DataAccess.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Personal\Trails2012\Trails.DataAccess.Test\obj\Debug\Trails.DataAccess.EF.Test.dll
+C:\Projects\Personal\Trails2012\Trails.DataAccess.Test\obj\Debug\Trails.DataAccess.EF.Test.pdb

@@ -40,6 +40,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.Extensions" />
@@ -56,6 +58,10 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Trails2012.Domain\Trails2012.Domain.csproj">
+      <Project>{AF00D12C-9FA4-445E-BEF4-0B92D886913B}</Project>
+      <Name>Trails2012.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Trails2012\Trails2012.csproj">
       <Project>{9801FD19-CD96-40F9-A40D-21AF9D49BEEF}</Project>
       <Name>Trails2012</Name>
