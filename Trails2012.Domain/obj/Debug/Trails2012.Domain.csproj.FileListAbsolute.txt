@@ -1,0 +1,5 @@
+C:\Projects\Personal\Trails2012\Trails2012.Domain\bin\Debug\Trails2012.Domain.dll
+C:\Projects\Personal\Trails2012\Trails2012.Domain\bin\Debug\Trails2012.Domain.pdb
+C:\Projects\Personal\Trails2012\Trails2012.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Personal\Trails2012\Trails2012.Domain\obj\Debug\Trails2012.Domain.dll
+C:\Projects\Personal\Trails2012\Trails2012.Domain\obj\Debug\Trails2012.Domain.pdb
