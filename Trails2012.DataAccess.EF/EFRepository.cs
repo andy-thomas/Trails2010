@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Transactions;
 
 namespace Trails2012.DataAccess.EF
 {
@@ -14,20 +15,36 @@ namespace Trails2012.DataAccess.EF
         // see http://www.asp.net/entity-framework/tutorials/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
 
         readonly TrailsContext _context = new TrailsContext();
+        private TransactionScope _transactionScope = null;
 
         public void BeginTransaction()
         {
-            throw new NotImplementedException();
+            _transactionScope = new TransactionScope();
         }
 
         public void CommitTransaction()
         {
-            throw new NotImplementedException();
+            if (_transactionScope != null)
+            {
+                try
+                {
+                    _transactionScope.Complete();
+                }
+                finally 
+                {
+                    _transactionScope.Dispose();
+                    _transactionScope = null;
+                }
+            }
         }
 
         public void RollbackTransaction()
         {
-            throw new NotImplementedException();
+            if(_transactionScope != null)
+            {
+                _transactionScope.Dispose();
+                _transactionScope = null;
+            }
         }
 
         public void SaveChanges()
