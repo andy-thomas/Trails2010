@@ -27,7 +27,7 @@ namespace Trails2012.DataAccess.EF.Test
         [TestMethod]
         public void ShouldGetPersonById()
         {
-            int id = 1;
+            const int id = 1;
             using (TrailsContext context = new TrailsContext())
             {
                 DbSet<Person> persons = context.Persons;

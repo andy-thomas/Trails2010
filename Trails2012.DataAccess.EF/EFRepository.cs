@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Linq.Expressions;
 
 namespace Trails2012.DataAccess.EF
 {
+    [Export(typeof(IRepository))]
     public class EFRepository : IRepository
     {
         // see http://www.asp.net/entity-framework/tutorials/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
@@ -48,7 +50,7 @@ namespace Trails2012.DataAccess.EF
 
         public IEnumerable<TEntity> List<TEntity>() where TEntity : class
         {
-            throw new NotImplementedException();
+            return _context.Set<TEntity>();
         }
 
         public TEntity GetById<TEntity>(int id) where TEntity : class
