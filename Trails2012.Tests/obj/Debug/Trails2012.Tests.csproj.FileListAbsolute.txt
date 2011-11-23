@@ -10,3 +10,6 @@ C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Trails2012.Domain.dll
 C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Trails2012.Domain.pdb
 C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Trails2012.DataAccess.dll
 C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Trails2012.DataAccess.pdb
+C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\WebActivator.dll
+C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\MefContrib.Web.Mvc.dll
+C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\MefContrib.dll

@@ -35,6 +35,38 @@ namespace Trails2012
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            //DependencyResolver.SetResolver(new Trails2010DependencyResolver());
+        }
+
+        public class Trails2010DependencyResolver
+        : IDependencyResolver
+        {
+            public object GetService(Type serviceType)
+            {
+                //if (serviceType == typeof(Controllers.HomeController))
+                //{
+                //    var controller = Activator.CreateInstance(serviceType) as Controllers.HomeController;
+                //    controller.MessageText = "Welcome, this text has been injected!";
+                //    return controller;
+                //}
+
+                if (serviceType.IsInterface)
+                {
+                    if (serviceType == typeof(IControllerFactory)) return new DefaultControllerFactory();
+                    if (serviceType == typeof(IControllerActivator)) return null;
+                    if (serviceType == typeof(IFilterProvider)) return GlobalFilters.Filters;
+                    if (serviceType == typeof(IViewEngine)) return new RazorViewEngine();
+                    if (serviceType == typeof(IViewPageActivator)) return null;
+                }
+
+                return Activator.CreateInstance(serviceType);
+            }
+
+            public IEnumerable<object> GetServices(Type serviceType)
+            {
+                return new object[] { GetService(serviceType) };
+            }
         }
     }
 }

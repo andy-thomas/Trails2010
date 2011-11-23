@@ -4,7 +4,15 @@ namespace Trails2012.Domain
 {
     public class Person : EntityBase
     {
-        public virtual string FirstName { get; set; }
+        public Person()
+        {
+            Console.WriteLine( "OK");
+        }
+        public virtual string FirstName
+        {
+            get; 
+            set;
+        }
         public virtual string LastName { get; set; }
         public virtual DateTime? DateOfBirth { get; set; }  
         public virtual char Gender { get; set; } // TODO change to enum

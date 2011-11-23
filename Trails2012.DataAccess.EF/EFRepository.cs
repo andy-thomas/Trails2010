@@ -54,9 +54,16 @@ namespace Trails2012.DataAccess.EF
 
         public void Delete<TEntity>(TEntity entityToDelete) where TEntity : class
         {
-            if (_context.Entry(entityToDelete).State == EntityState.Detached)
+            //if (_context.Entry(entityToDelete).State == EntityState.Detached)
+            try
+            {
                 _context.Set<TEntity>().Attach(entityToDelete);
-            _context.Set<TEntity>().Remove(entityToDelete);
+
+            }
+            finally
+            {
+                _context.Set<TEntity>().Remove(entityToDelete);
+            } 
         }
 
         public void Delete<TEntity>(int id) where TEntity : class
@@ -67,7 +74,7 @@ namespace Trails2012.DataAccess.EF
 
         public IEnumerable<TEntity> List<TEntity>() where TEntity : class
         {
-            return _context.Set<TEntity>();
+            return _context.Set<TEntity>().ToList();
         }
 
         public TEntity GetById<TEntity>(int id) where TEntity : class
@@ -83,7 +90,7 @@ namespace Trails2012.DataAccess.EF
         public TEntity Update<TEntity>(TEntity entityToUpdate) where TEntity : class
         {
             _context.Set<TEntity>().Attach(entityToUpdate);
-            _context.Entry(entityToUpdate).State = EntityState.Modified;
+            //_context.Entry(entityToUpdate).State = EntityState.Modified;
             return entityToUpdate;
         }
 

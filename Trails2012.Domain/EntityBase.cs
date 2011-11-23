@@ -1,4 +1,6 @@
-﻿namespace Trails2012.Domain
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Trails2012.Domain
 {
     public class EntityBase
     {
