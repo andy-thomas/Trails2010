@@ -90,7 +90,7 @@ namespace Trails2012.DataAccess.EF
         public TEntity Update<TEntity>(TEntity entityToUpdate) where TEntity : class
         {
             _context.Set<TEntity>().Attach(entityToUpdate);
-            //_context.Entry(entityToUpdate).State = EntityState.Modified;
+            _context.Entry(entityToUpdate).State = EntityState.Modified;
             return entityToUpdate;
         }
 

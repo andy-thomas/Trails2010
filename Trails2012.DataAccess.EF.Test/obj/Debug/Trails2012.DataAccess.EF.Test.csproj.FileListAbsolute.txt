@@ -10,5 +10,3 @@ C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails20
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.dll
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.pdb
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\Trails2012.DataAccess.EF.Test.dll.config
-C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\EntityFramework.dll
-C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF.Test\bin\Debug\EntityFramework.xml

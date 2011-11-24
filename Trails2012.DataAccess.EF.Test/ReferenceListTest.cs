@@ -1,4 +1,5 @@
-﻿using System;
+﻿// ReSharper disable RedundantTypeArgumentsOfMethod
+using System;
 using System.Data.Entity;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -9,6 +10,12 @@ namespace Trails2012.DataAccess.EF.Test
     [TestClass]
     public class ReferenceListTest
     {
+        [ClassInitialize]
+        public static void ClassInitialize(TestContext testContext)
+        {
+            Database.SetInitializer<TrailsContext>(new TrailsInitializer());
+        }
+        
         [TestMethod]
         public void ShouldGetAllRegions()
         {
@@ -66,3 +73,4 @@ namespace Trails2012.DataAccess.EF.Test
         }
     }
 }
+// ReSharper restore RedundantTypeArgumentsOfMethod

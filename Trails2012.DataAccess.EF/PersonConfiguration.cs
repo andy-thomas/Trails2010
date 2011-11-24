@@ -12,7 +12,10 @@ namespace Trails2012.DataAccess.EF
             HasKey(p => p.Id);
 
             Property(p => p.Id).HasColumnName("PersonId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(p => p.FullName).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Computed);
+            Property(p => p.Gender).HasColumnName("Gender").HasColumnType("char").HasMaxLength(1);
+            
+            Ignore(p => p.FullName);
+            //Property(p => p.FullName).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Computed); // Bug in EF4 when trying to generate database from context
         }
     }
 }

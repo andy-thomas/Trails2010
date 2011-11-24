@@ -118,7 +118,7 @@ namespace Trails2012.Tests
                                        FirstName = "testFirstName",
                                        LastName = "testLastName",
                                        DateOfBirth = DateTime.Today.AddYears(-32),
-                                       Gender = 'F'
+                                       Gender = "F"
                                    };
 
             // Begin transaction

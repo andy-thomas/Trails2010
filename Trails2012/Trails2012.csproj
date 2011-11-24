@@ -128,9 +128,12 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -165,6 +168,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Trails2012.DataAccess.EF\Trails2012.DataAccess.EF.csproj">
+      <Project>{B6F99750-1FDB-4650-BDA5-EA5BA58D5C27}</Project>
+      <Name>Trails2012.DataAccess.EF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Trails2012.DataAccess\Trails2012.DataAccess.csproj">
       <Project>{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}</Project>
       <Name>Trails2012.DataAccess</Name>
@@ -191,6 +198,18 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- http://stackoverflow.com/questions/2905151/msbuild-script-and-vs2010-publish-apply-web-config-transform, http://forums.asp.net/t/1532038.aspx/2/10  -->
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\Web\Microsoft.Web.Publishing.Tasks.dll" />
+  <PropertyGroup>
+    <TransformInputFile>$(ProjectPath)\Web.config</TransformInputFile>
+    <TransformFile>$(ProjectPath)\Web.$(Configuration).config</TransformFile>
+    <TransformOutputFile>$(DeployPath)\Web.config</TransformOutputFile>
+    <StackTraceEnabled>False</StackTraceEnabled>
+  </PropertyGroup>
+  <Target Name="Transform">
+    <MakeDir Directories="obj\$(Configuration)" Condition="!Exists('obj\$(Configuration)')" />
+    <TransformXml Source="Web.Config" Transform="Web.$(Configuration).config" Destination="obj\$(Configuration)\Web.config" StackTrace="true" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -219,4 +238,11 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>$(MSBUILDBINPATH)\msbuild $(ProjectPath) /t:Transform /p:Configuration=$(ConfigurationName);Platform=AnyCPU</PostBuildEvent>
+  </PropertyGroup>
 </Project>

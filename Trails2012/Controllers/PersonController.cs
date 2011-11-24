@@ -49,8 +49,8 @@ namespace Trails2012.Controllers
         {
             if (ModelState.IsValid)
             {
-                //db.People.Add(person);
-                //db.SaveChanges();
+                _repository.Insert(person);
+                _repository.SaveChanges();
                 return RedirectToAction("Index");  
             }
 
@@ -74,8 +74,7 @@ namespace Trails2012.Controllers
         {
             if (ModelState.IsValid)
             {
-                //db.Entry(person).State = EntityState.Modified;
-                // how do we set the state?
+                _repository.Update(person);
                 _repository.SaveChanges();
                 return RedirectToAction("Index");
             }

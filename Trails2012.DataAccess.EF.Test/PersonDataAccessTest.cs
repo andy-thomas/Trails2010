@@ -11,6 +11,11 @@ namespace Trails2012.DataAccess.EF.Test
     [TestClass]
     public class PersonDataAccessTest
     {
+        [ClassInitialize]
+        public static void ClassInitialize(TestContext testContext)
+        {
+            Database.SetInitializer<TrailsContext>(new TrailsInitializer());          
+        }
 
         [TestMethod]
         public void ShouldGetAllPersons()
@@ -72,7 +77,7 @@ namespace Trails2012.DataAccess.EF.Test
                         FirstName = "testFirstName",
                         LastName = "testLastName",
                         DateOfBirth = DateTime.Today.AddYears(-32),
-                        Gender = 'M'
+                        Gender = "M"
                     };
 
                     // Add the new person to the context
@@ -95,4 +100,6 @@ namespace Trails2012.DataAccess.EF.Test
 
 
     }
+
+
 }
