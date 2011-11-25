@@ -16,3 +16,4 @@ C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\obj\Debug\Trails2012.Da
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\obj\Debug\Trails2012.DataAccess.EF.pdb
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.dll
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.pdb
+C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\bin\Debug\System.Data.Entity.dll

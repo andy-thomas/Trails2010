@@ -1,0 +1,15 @@
+﻿@inherits System.Web.Mvc.WebViewPage<System.DateTime?> 
+              
+@Html.TextBox("", (Model.HasValue ? Model.Value.ToShortDateString() : string.Empty), new { @class = "datePicker" }) 
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $(".datePicker").datepicker({
+            //      buttonImage: "/content/images/calendar.gif", 
+            //      showOn: "both", 
+            //      defaultDate: $("#calendar-inline").attr('rel') 
+            showAnim: 'slideDown'
+            //dateFormat: 'dd/mm/yyyy'
+
+        });
+    }); 
+</script> 

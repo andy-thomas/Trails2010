@@ -30,7 +30,7 @@ namespace Trails2012.Domain
         {
             get
             {
-                return Gender.Equals('M') ? "Male" : "Female";
+                return Gender.Equals("M") ? "Male" : "Female";
             }
         }
     

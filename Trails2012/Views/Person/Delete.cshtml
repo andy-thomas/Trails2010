@@ -1,15 +1,46 @@
 ﻿@model Trails2012.Domain.Person
 
+<link rel="stylesheet" type="text/css" href="../../Content/Person.css" media="screen"></link>
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Trails - Delete Person";
 }
 
-<h2>Delete</h2>
+<h2>Delete Person</h2>
 
-<h3>Are you sure you want to delete this?</h3>
-<fieldset>
-    <legend>Person</legend>
+<h3>Are you sure you want to delete this Person?</h3>
 
+<div class="person-list">
+     <div class="data-row">
+        <div class="column-header first-name">
+            First Name
+        </div>
+        <div class="column-header last-name">
+            Last Name
+        </div>
+        <div class="column-header dob">
+            Date Of Birth
+        </div>
+        <div class="column-header gender">
+            Gender
+        </div>
+    </div>    
+    <div class="data-row">
+        <div class="data-element first-name">
+            @Html.DisplayFor(modelItem => Model.FirstName)
+        </div>
+        <div class="data-element last-name">
+            @Html.DisplayFor(modelItem => Model.LastName) 
+        </div>
+        <div class="data-element dob">
+            @Html.DisplayFor(modelItem => Model.DateOfBirth)
+        </div>
+        <div class="data-element gender">
+            @Html.DisplayFor(modelItem => Model.GenderDesc)
+        </div>
+    </div>
+</div>
+@*
+</div>    
     <div class="display-label">FirstName</div>
     <div class="display-field">
         @Html.DisplayFor(model => model.FirstName)
@@ -39,7 +70,8 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.GenderDesc)
     </div>
-</fieldset>
+    *@
+
 @using (Html.BeginForm()) {
     <p>
         <input type="submit" value="Delete" /> |

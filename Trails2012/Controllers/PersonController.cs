@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Web.Mvc;
 using Trails2012.DataAccess;
@@ -21,6 +22,7 @@ namespace Trails2012.Controllers
 
         public ViewResult Index()
         {
+            ViewData["GenderList"] = PopulateGenderList(); 
             return View(new List<Person>(_repository.List<Person>()));
         }
 
@@ -30,6 +32,7 @@ namespace Trails2012.Controllers
         public ViewResult Details(int id)
         {
             Person person = _repository.GetById<Person>(id);
+            ViewData["GenderList"] = PopulateGenderList();
             return View(person);
         }
 
@@ -38,7 +41,8 @@ namespace Trails2012.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            Person person = new Person();
+            return PartialView("_Create", person);
         } 
 
         //
@@ -47,14 +51,27 @@ namespace Trails2012.Controllers
         [HttpPost]
         public ActionResult Create(Person person)
         {
+            ViewData["GenderList"] = PopulateGenderList();
             if (ModelState.IsValid)
             {
                 _repository.Insert(person);
                 _repository.SaveChanges();
-                return RedirectToAction("Index");  
             }
-
-            return View(person);
+            else
+            {
+                if (Request.IsAjaxRequest())
+                    return View("Create", person);
+                else
+                    return RedirectToAction("Index");
+            }
+            
+            if (Request.IsAjaxRequest())
+            {
+                IList<Person> persons = new List<Person>(_repository.List<Person>());
+                return PartialView("_List", persons);
+            }
+            else
+                return RedirectToAction("Index");
         }
         
         //
@@ -63,7 +80,7 @@ namespace Trails2012.Controllers
         public ActionResult Edit(int id)
         {
             Person person = _repository.GetById<Person>(id);
-            return View(person);
+            return PartialView("_Edit",person);
         }
 
         //
@@ -72,13 +89,34 @@ namespace Trails2012.Controllers
         [HttpPost]
         public ActionResult Edit(Person person)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _repository.Update(person);
-                _repository.SaveChanges();
+                IList<Person> persons = null;
+
+                if (ModelState.IsValid)
+                {
+                    _repository.Update(person);
+                    _repository.SaveChanges();
+                 }
+                else
+                {
+                    if (Request.IsAjaxRequest())
+                        return View("Edit", person);
+                    else
+                        return RedirectToAction("Index");                 
+                }
+                ViewData["GenderList"] = PopulateGenderList();
+                persons = new List<Person>(_repository.List<Person>());
+
+                if (Request.IsAjaxRequest())
+                    return PartialView("_List", persons);
+                else
+                    return RedirectToAction("Index");
+            }
+            catch 
+            {
                 return RedirectToAction("Index");
             }
-            return View(person);
         }
 
         //
@@ -106,6 +144,12 @@ namespace Trails2012.Controllers
         {
             _repository.Dispose();
             base.Dispose(disposing);
+        }
+
+        private IEnumerable PopulateGenderList()
+        {
+             return new Dictionary<string, string> { { "M", "Male" }, { "F", "Female" } };
+            //return new SelectList(list, "Key", "Value");
         }
     }
 }

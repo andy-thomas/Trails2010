@@ -15,7 +15,7 @@ namespace Trails2012.DataAccess.EF
         // see http://www.asp.net/entity-framework/tutorials/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
 
         readonly TrailsContext _context = new TrailsContext();
-        private TransactionScope _transactionScope = null;
+        private TransactionScope _transactionScope;
 
         public void BeginTransaction()
         {
@@ -54,16 +54,9 @@ namespace Trails2012.DataAccess.EF
 
         public void Delete<TEntity>(TEntity entityToDelete) where TEntity : class
         {
-            //if (_context.Entry(entityToDelete).State == EntityState.Detached)
-            try
-            {
+            if (_context.Entry(entityToDelete).State == EntityState.Detached)
                 _context.Set<TEntity>().Attach(entityToDelete);
-
-            }
-            finally
-            {
-                _context.Set<TEntity>().Remove(entityToDelete);
-            } 
+            _context.Set<TEntity>().Remove(entityToDelete);
         }
 
         public void Delete<TEntity>(int id) where TEntity : class

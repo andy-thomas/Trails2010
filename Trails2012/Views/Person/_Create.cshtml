@@ -1,0 +1,47 @@
+﻿@model Trails2012.Domain.Person
+           
+<div>
+    @Html.ValidationSummary("Create was unsuccessful. Please correct the errors and try again.")
+    
+    @Html.Hidden("IsModelValid", ViewData.ModelState.IsValid) 
+    
+    @using (Ajax.BeginForm("Create", "Person",
+           new AjaxOptions
+               {
+                    UpdateTargetId = "personlistdiv", 
+                    InsertionMode = InsertionMode.Replace,
+                    OnSuccess = "HideNewPersonForm"
+               },
+           new { @Class = "personcreateform" }))
+       {
+       <div class="data-row">
+            <div class="data-element submit">
+                <input type="submit" value="Create" /> @*onclick="HideNewPersonForm()" />*@
+                @*   @Html.ActionLink("Cancel", "Index", "Person") -- show the link as a button, as shown below   *@
+                <a href="@(Url.Action("Index", "Person", new { id = ViewData.Model.Id} ))"><button>Cancel</button></a> |     
+            </div>
+            <div class="data-element first-name">
+                @Html.LabelFor(model => model.FirstName)
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName, "*")
+           </div>
+            <div class="data-element last-name">
+                @Html.LabelFor(model => model.LastName)
+                @Html.EditorFor(model => model.LastName)
+                @Html.ValidationMessageFor(model => model.LastName, "*")
+            </div>
+            <div class="data-element dob">
+                @Html.LabelFor(model => model.DateOfBirth)
+                @Html.EditorFor(model => model.DateOfBirth)
+                @Html.ValidationMessageFor(model => model.DateOfBirth, "*")
+            </div>
+            <div class="data-element gender">
+                @Html.LabelFor(model => model.Gender)
+                @Html.EditorFor(model => model.Gender)
+                @Html.ValidationMessageFor(model => model.Gender)
+            </div>
+        </div>    
+    
+     }
+</div>
+

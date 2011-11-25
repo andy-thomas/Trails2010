@@ -19,15 +19,15 @@
       <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Region.cs" caret="233" fromTop="10" />
       <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="368" fromTop="13" />
       <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Difficulty.cs" caret="218" fromTop="8" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Index.cshtml" caret="0" fromTop="0" />
       <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonTest.cs" caret="6508" fromTop="12" />
       <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:PersonDataAccessTest.cs" caret="2862" fromTop="11" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="1775" fromTop="14" />
       <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:TrailsContext.cs" caret="476" fromTop="12" />
       <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Person.cs" caret="745" fromTop="11" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="2194" fromTop="15" />
       <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailsInitializer.cs" caret="183" fromTop="7" />
       <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:PersonConfiguration.cs" caret="565" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="2008" fromTop="24" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="2801" fromTop="15" />
     </RecentFiles>
     <RecentEdits>
       <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:ReferenceListTest.cs" caret="300" fromTop="11" />
