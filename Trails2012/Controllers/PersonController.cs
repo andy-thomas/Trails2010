@@ -149,7 +149,6 @@ namespace Trails2012.Controllers
         private IEnumerable PopulateGenderList()
         {
              return new Dictionary<string, string> { { "M", "Male" }, { "F", "Female" } };
-            //return new SelectList(list, "Key", "Value");
         }
     }
 }

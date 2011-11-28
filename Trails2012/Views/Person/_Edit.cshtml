@@ -32,9 +32,9 @@
                 @Html.EditorFor(model => model.LastName)
                 @Html.ValidationMessageFor(model => model.LastName, "*")
             </div>
-            <div class="data-element dob">
+            <div class="data-element-datetimepicker dob">
                 @Html.LabelFor(model => model.DateOfBirth)
-                @Html.EditorFor(model => model.DateOfBirth)
+                @Html.EditorFor(model => model.DateOfBirth, new { @class = "dobshort"})
                 @Html.ValidationMessageFor(model => model.DateOfBirth, "*")
             </div>
             <div class="data-element gender">

@@ -15,3 +15,4 @@ C:\Projects\Personal\Trails2012\Trails2012\bin\EntityFramework.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\EntityFramework.xml
 C:\Projects\Personal\Trails2012\Trails2012\bin\Trails2012.DataAccess.EF.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\Trails2012.DataAccess.EF.pdb
+C:\Projects\Personal\Trails2012\Trails2012\bin\Telerik.Web.Mvc.dll

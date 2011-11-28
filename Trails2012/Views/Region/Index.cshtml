@@ -1,0 +1,68 @@
+﻿ @using Telerik.Web.Mvc.UI
+ 
+ @model IEnumerable<Trails2012.Domain.Region>
+
+ 
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+ 
+ @*@(Html.Telerik().Menu()
+            .Name("myMenu")
+            .Items(items =>
+                       {
+                           items.Add().Text("Parent 1").Items(sub1 =>
+                                   {
+                                       sub1.Add().Text("Sub 1");
+                                   });
+                           items.Add().Text("Parent 2");
+                       }))
+    <p />
+    <p />*@
+
+    @(Html.Telerik().Grid(Model)
+        .Name("Grid")
+        .Columns(columns =>
+        {
+            columns.Bound(o => o.Name).Width(100);
+            columns.Bound(o => o.Description).Width(200);
+        })
+)
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Description
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>*@
+
+@Html.Telerik().ScriptRegistrar()
