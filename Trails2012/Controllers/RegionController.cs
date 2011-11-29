@@ -3,6 +3,7 @@ using System.ComponentModel.Composition;
 using System.Web.Mvc;
 using Trails2012.DataAccess;
 using Trails2012.Domain;
+using Telerik.Web.Mvc;
 
 namespace Trails2012.Controllers
 { 
@@ -24,22 +25,72 @@ namespace Trails2012.Controllers
             return View(new List<Region>(_repository.List<Region>()));
         }
 
+        public ActionResult RegionGrid()
+        {
+            return PartialView("_SelectAjaxEditing", new List<Region>(_repository.List<Region>()));
+        }
+
+        [GridAction]
+        public ActionResult SelectAjaxEditing()
+        {
+            List<Region> regions = new List<Region>(_repository.List<Region>());
+            var gridModel = new GridModel(regions);
+            return PartialView(gridModel);
+        }
+
+        [HttpPost]
+        [GridAction]
+        public ActionResult EditAjaxEditing(Region region)
+        {
+            if (ModelState.IsValid)
+            {
+                _repository.Update(region);
+                _repository.SaveChanges();
+            }
+            var regions = new List<Region>(_repository.List<Region>());
+            return PartialView("_SelectAjaxEditing", new GridModel(regions));
+        }
+
+        [GridAction]
+        [HttpPost]
+        public ActionResult CreateAjaxEditing(Region region)
+        {
+            if (ModelState.IsValid)
+            {
+                _repository.Insert(region);
+                _repository.SaveChanges();
+            }
+            var regions = new List<Region>(_repository.List<Region>());
+            return PartialView("_SelectAjaxEditing", new GridModel(regions));
+        }
+
+        [GridAction]
+        [HttpPost]
+        public ActionResult DeleteAjaxEditing(int id)
+        {
+            Region region = _repository.GetById<Region>(id);
+            _repository.Delete(region);
+            _repository.SaveChanges();
+            var regions = new List<Region>(_repository.List<Region>());
+            return PartialView("_SelectAjaxEditing", new GridModel(regions));
+        }
+
         //
         // GET: /Region/Details/5
 
         public ViewResult Details(int id)
         {
             Region region = _repository.GetById<Region>(id);
-             return View(region);
+            return View(region);
         }
 
         //
         // GET: /Region/Create
 
-        public ActionResult Create()
-        {
-            return View();
-        } 
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //} 
 
         //
         // POST: /Region/Create
@@ -49,22 +100,22 @@ namespace Trails2012.Controllers
         {
             if (ModelState.IsValid)
             {
-                //db.Regions.Add(region);
-                //db.SaveChanges();
+                _repository.Insert(region);
+                _repository.SaveChanges();
                 return RedirectToAction("Index");  
             }
 
             return View(region);
         }
-        
+
         //
         // GET: /Region/Edit/5
  
-        public ActionResult Edit(int id)
-        {
-            Region region = _repository.GetById<Region>(id);
-            return View(region);
-        }
+        //public ActionResult Edit(int id)
+        //{
+        //    Region region = _repository.GetById<Region>(id);
+        //    return View(region);
+        //}
 
         //
         // POST: /Region/Edit/5
@@ -74,8 +125,8 @@ namespace Trails2012.Controllers
         {
             if (ModelState.IsValid)
             {
-                //db.Entry(region).State = EntityState.Modified;
-                //db.SaveChanges();
+                _repository.Update(region);
+                _repository.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(region);
@@ -84,21 +135,21 @@ namespace Trails2012.Controllers
         //
         // GET: /Region/Delete/5
  
-        public ActionResult Delete(int id)
-        {
-            Region region = _repository.GetById<Region>(id);
-            return View(region);
-        }
+        //public ActionResult Delete(int id)
+        //{
+        //    Region region = _repository.GetById<Region>(id);
+        //    return View(region);
+        //}
 
         //
         // POST: /Region/Delete/5
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
-        {            
-            //Region region = db.Regions.Find(id);
-            //db.Regions.Remove(region);
-            //db.SaveChanges();
+        {
+            Region region = _repository.GetById<Region>(id);
+            _repository.Delete(region);
+            _repository.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -108,4 +159,6 @@ namespace Trails2012.Controllers
             base.Dispose(disposing);
         }
     }
+
+
 }

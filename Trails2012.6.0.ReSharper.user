@@ -1,68 +1,67 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:ReferenceListTest.cs" caret="51" fromTop="0" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:TrailType.cs" caret="198" fromTop="8" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trail.cs" caret="1084" fromTop="32" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Region.cs" caret="233" fromTop="10" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="368" fromTop="13" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Difficulty.cs" caret="218" fromTop="8" />
-      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonTest.cs" caret="6508" fromTop="12" />
-      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:PersonDataAccessTest.cs" caret="2862" fromTop="11" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:PersonConfiguration.cs" caret="565" fromTop="11" />
-      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailsInitializer.cs" caret="636" fromTop="0" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:TrailsContext.cs" caret="476" fromTop="12" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Person.cs" caret="999" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="750" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Create.cshtml" caret="1688" fromTop="16" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Edit.cshtml" caret="1360" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:Person.js" caret="782" fromTop="12" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Delete.cshtml" caret="812" fromTop="28" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Create.cshtml" caret="507" fromTop="13" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="3216" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery-ui-1.8.11.js" caret="254519" fromTop="14" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_List.cshtml" caret="590" fromTop="14" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:PersonModel.cs" caret="552" fromTop="8" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Site.css" caret="3651" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="1461" fromTop="23" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_PersonDetail.cshtml" caret="1097" fromTop="17" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/d:EditorTemplates/f:DateTime.cshtml" caret="362" fromTop="6" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Index.cshtml" caret="459" fromTop="16" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="1025" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="4279" fromTop="14" />
+      <File id="1BAE44B3-5032-4DE7-8A82-9BCEB3204892/f:^TransientScriptDocument3.htm" caret="4865" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery.unobtrusive-ajax.min.js" caret="114" fromTop="4" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="3216" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery-1.7.1-vsdoc.js" caret="112333" fromTop="13" />
+      <File id="1BAE44B3-5032-4DE7-8A82-9BCEB3204892/f:^TransientScriptDocument14.htm" caret="1216" fromTop="15" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Details.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Create.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery.validate.unobtrusive.js" caret="31" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery.unobtrusive-ajax.js" caret="31" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Create.cshtml" caret="505" fromTop="17" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Edit.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Delete.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="3395" fromTop="15" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="1144" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="1242" fromTop="5" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="710" fromTop="12" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="674" fromTop="15" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Index.cshtml" caret="709" fromTop="22" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1040" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:ListsController.cs" caret="744" fromTop="13" />
     </RecentFiles>
     <RecentEdits>
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:PersonModel.cs" caret="834" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:PersonModel.cs" caret="237" fromTop="10" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:PersonModel.cs" caret="537" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:PersonModel.cs" caret="412" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:PersonModel.cs" caret="647" fromTop="22" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="914" fromTop="12" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_List.cshtml" caret="736" fromTop="17" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_PersonDetail.cshtml" caret="1539" fromTop="22" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="1838" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="2414" fromTop="21" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="642" fromTop="9" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="3014" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="1378" fromTop="5" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_PersonDetail.cshtml" caret="1097" fromTop="11" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/d:EditorTemplates/f:DateTime.cshtml" caret="580" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Index.cshtml" caret="506" fromTop="23" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Index.cshtml" caret="347" fromTop="9" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="1206" fromTop="23" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="1204" fromTop="17" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Site.css" caret="3651" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="1398" fromTop="20" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="86" fromTop="12" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="1463" fromTop="8" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/d:EditorTemplates/f:DateTime.cshtml" caret="57" fromTop="1" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="806" fromTop="8" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="952" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="1025" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/d:EditorTemplates/f:DateTime.cshtml" caret="362" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Index.cshtml" caret="433" fromTop="12" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="4279" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="104" fromTop="1" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="1266" fromTop="22" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1304" fromTop="20" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1302" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2046" fromTop="19" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3257" fromTop="7" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Index.cshtml" caret="152" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Index.cshtml" caret="1351" fromTop="18" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3846" fromTop="16" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1290" fromTop="10" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1514" fromTop="20" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1290" fromTop="18" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="280" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="672" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="867" fromTop="15" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="1126" fromTop="20" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2616" fromTop="25" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2603" fromTop="16" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2129" fromTop="6" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4529" fromTop="20" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4693" fromTop="19" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4974" fromTop="22" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="731" fromTop="16" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="831" fromTop="19" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="772" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3771" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="5151" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="5151" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="5055" fromTop="18" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1232" fromTop="15" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -86,10 +85,7 @@
   <UnitTestSessions>
     <Session>
       <Name>Session #1</Name>
-      <Elements>
-        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.PersonDataAccessTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.EF.Test.PersonDataAccessTest" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
-        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.PersonDataAccessTest.ShouldGetAllPersons" ParentId="Trails2012.DataAccess.EF.Test.PersonDataAccessTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllPersons" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
-      </Elements>
+      <Elements />
     </Session>
   </UnitTestSessions>
   <CompletionStatisticsManager>
@@ -104,7 +100,7 @@
       <Item value="Locations" priority="32" />
       <Item value="Difficulties" priority="32" />
       <Item value="Persons" priority="32" />
-      <Item value="Region`0" priority="31" />
+      <Item value="Region`0" priority="63" />
       <Item value="Regions" priority="27" />
       <Item value="Trail`0" priority="31" />
       <Item value="Trails" priority="27" />
@@ -122,7 +118,7 @@
       <Item value="FirstName" priority="63" />
       <Item value="LastName" priority="65" />
       <Item value="DateOfBirth" priority="32" />
-      <Item value="DateTime`0" priority="64" />
+      <Item value="DateTime`0" priority="128" />
       <Item value="Gender" priority="65" />
       <Item value="Trails2012" priority="63" />
       <Item value="T`0" priority="31" />
@@ -130,20 +126,20 @@
       <Item value="entity" priority="64" />
       <Item value="IDisposable`0" priority="31" />
       <Item value="TrailsContext`0" priority="95" />
-      <Item value="new" priority="767" />
+      <Item value="new" priority="831" />
       <Item value="TrailsContext" priority="28" />
       <Item value="ContextBoundObject`0" priority="63" />
       <Item value="_context" priority="351" />
       <Item value="Delete`1" priority="31" />
       <Item value="id" priority="63" />
-      <Item value="if" priority="63" />
+      <Item value="if" priority="95" />
       <Item value="entityToDelete" priority="63" />
       <Item value="Detached" priority="16" />
-      <Item value="return" priority="63" />
+      <Item value="return" priority="159" />
       <Item value="entityToUpdate" priority="31" />
       <Item value="TestInitializeAttribute`0" priority="22" />
       <Item value="void" priority="31" />
-      <Item value="cw" priority="127" />
+      <Item value="cw" priority="159" />
       <Item value="IRepository`0" priority="94" />
       <Item value="typeof" priority="63" />
       <Item value="DirectoryCatalog" priority="29" />
@@ -164,11 +160,11 @@
       <Item value="null" priority="63" />
       <Item value="try" priority="31" />
       <Item value="PersonListModel`0" priority="30" />
-      <Item value="_repository" priority="159" />
+      <Item value="_repository" priority="255" />
       <Item value="modelBuilder" priority="63" />
       <Item value="Ignore`1" priority="31" />
       <Item value="ClassInitialize" priority="26" />
-      <Item value="var" priority="159" />
+      <Item value="var" priority="255" />
       <Item value="ReferenceListTest" priority="28" />
       <Item value="PersonDataAccessTest`0" priority="30" />
       <Item value="Person" priority="89" />
@@ -194,7 +190,7 @@
       <Item value="else" priority="31" />
       <Item value="Url" priority="31" />
       <Item value="Details" priority="32" />
-      <Item value="this" priority="63" />
+      <Item value="this" priority="95" />
       <Item value="Repository" priority="31" />
       <Item value="GenderList" priority="31" />
       <Item value="Dictionary" priority="31" />
@@ -203,16 +199,38 @@
       <Item value="ViewData" priority="95" />
       <Item value="PopulateGenderList`0" priority="31" />
       <Item value="viewData" priority="31" />
-      <Item value="Html" priority="59" />
+      <Item value="Html" priority="179" />
       <Item value="model" priority="31" />
       <Item value="SelectList" priority="86" />
       <Item value="list" priority="63" />
       <Item value="SelectList`0" priority="31" />
       <Item value="KeyNotFoundException`0" priority="31" />
       <Item value="ValueProvider" priority="31" />
-      <Item value="foreach" priority="31" />
+      <Item value="foreach" priority="63" />
       <Item value="keyValuePair" priority="31" />
       <Item value="object" priority="30" />
+      <Item value="." priority="26" />
+      <Item value="using" priority="29" />
+      <Item value="items" priority="63" />
+      <Item value="sub1" priority="31" />
+      <Item value="columns" priority="31" />
+      <Item value="commands" priority="90" />
+      <Item value="keys" priority="31" />
+      <Item value="region" priority="127" />
+      <Item value="dataBinding" priority="31" />
+      <Item value="editing" priority="31" />
+      <Item value="GridEditMode`0" priority="31" />
+      <Item value="Redirect`0" priority="31" />
+      <Item value="q" priority="31" />
+      <Item value="tabstrip" priority="63" />
+      <Item value="ActionResult`0" priority="31" />
+      <Item value="RedirectToAction`0" priority="63" />
+      <Item value="PartialView`0" priority="31" />
+      <Item value="GridAction" priority="31" />
+      <Item value="class" priority="30" />
+      <Item value="DateTimeExtensions`0" priority="31" />
+      <Item value="datetime" priority="31" />
+      <Item value="for" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Person">
       <Item value="Id" priority="53" />
@@ -253,14 +271,18 @@
       <Item value="IsNotNull`0" priority="134" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Region">
-      <Item value="Name" priority="26" />
+      <Item value="Name" priority="76" />
+      <Item value="Description" priority="22" />
+      <Item value="Id" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Today" priority="54" />
+      <Item value="Today" priority="82" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.DateTime">
       <Item value="AddYears`0" priority="27" />
       <Item value="ToString`0" priority="26" />
+      <Item value="AddDays`0" priority="22" />
+      <Item value="Yesterday`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Entity.DbSet`1">
       <Item value="Find`0" priority="54" />
@@ -335,10 +357,13 @@
       <Item value="Index.cshtml" priority="5" />
       <Item value="button" priority="5" />
       <Item value="class" priority="5" />
+      <Item value="p" priority="13" />
+      <Item value="textarea" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
       <Item value="RenderPartial`0" priority="26" />
       <Item value="DropDownListFor`2" priority="26" />
+      <Item value="Telerik`0" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="CssCodeCompletionContext">
       <Item value="margin-top" priority="11" />
@@ -357,6 +382,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.UrlHelper">
       <Item value="Action`0" priority="26" />
+      <Item value="Content`0" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
       <Item value="Add`0" priority="26" />
@@ -365,13 +391,90 @@
       <Item value="ViewData" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="RazorTransitionCompletionContext">
-      <Item value="Html" priority="17" />
+      <Item value="Html" priority="53" />
+      <Item value="using" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Nullable`1">
       <Item value="HasValue" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Empty" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.ViewComponentFactory`1">
+      <Item value="Menu`0" priority="26" />
+      <Item value="StyleSheetRegistrar`0" priority="27" />
+      <Item value="ScriptRegistrar`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.MenuBuilder">
+      <Item value="Name`0" priority="26" />
+      <Item value="Items`0" priority="26" />
+      <Item value="Render`0" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.MenuItemFactory">
+      <Item value="Add`0" priority="81" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.MenuItemBuilder">
+      <Item value="Text`0" priority="80" />
+      <Item value="Items`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridBuilder`1">
+      <Item value="Sortable`0" priority="26" />
+      <Item value="Filterable`0" priority="26" />
+      <Item value="Editable`0" priority="53" />
+      <Item value="ToolBar`0" priority="26" />
+      <Item value="DataKeys`0" priority="26" />
+      <Item value="DataBinding`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridBoundColumnBuilder`1">
+      <Item value="Sortable`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridColumnFactory`1">
+      <Item value="Command`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridActionCommandFactory`1">
+      <Item value="Edit`0" priority="26" />
+      <Item value="Delete`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridActionColumnBuilder">
+      <Item value="Width`0" priority="26" />
+      <Item value="Title`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridToolBarCommandFactory`1">
+      <Item value="Insert`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridDataKeyFactory`1">
+      <Item value="Add`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridDataBindingConfigurationBuilder">
+      <Item value="Server`0" priority="26" />
+      <Item value="Ajax`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridServerBindingSettingsBuilder">
+      <Item value="Select`0" priority="27" />
+      <Item value="Insert`0" priority="26" />
+      <Item value="Update`0" priority="26" />
+      <Item value="Delete`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridEditingSettingsBuilder`1">
+      <Item value="Mode`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Telerik.Web.Mvc.UI.GridEditMode">
+      <Item value="InLine" priority="45" />
+      <Item value="InForm" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.TabStripBuilder">
+      <Item value="SelectedIndex`0" priority="27" />
+      <Item value="Render`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.TabStripItemBuilder">
+      <Item value="LoadContentFrom`0" priority="53" />
+      <Item value="Text`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.TabStripItemFactory">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Controllers.RegionController">
+      <Item value="PartialView`0" priority="53" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
