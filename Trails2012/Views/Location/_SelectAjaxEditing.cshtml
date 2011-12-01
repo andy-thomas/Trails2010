@@ -24,8 +24,22 @@
                         columns.Command(commands =>
                                             {
                                                 commands.Edit();
+                                            }).Width(100);
+                        columns.Command(commands =>
+                                            {
                                                 commands.Delete();
-                                            }).Width(200).Title("Commands");
-                    }))
+                                            }).Width(200).HtmlAttributes(new {name = "delete"});
+                    })
+      .CellAction(cell =>
+                    {
+                        if(cell.DataItem.Id == 3) // TODO Andy - find if there are any Trails for this Location
+                        {
+                            if(cell.Column.HtmlAttributes["name"] == "delete")
+                            {
+                                cell.HtmlAttributes["style"] = "visibility:hidden";
+                            }
+                        }
+                    })
+                    )
 
 @Html.Telerik().ScriptRegistrar()

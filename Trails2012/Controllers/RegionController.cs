@@ -22,18 +22,18 @@ namespace Trails2012.Controllers
 
         public ViewResult Index()
         {
-            return View(new List<Region>(_repository.List<Region>()));
+            return View(new List<Region>(_repository.ListIncluding<Region>(r => r.Locations)));
         }
 
         public ActionResult RegionGrid()
         {
-            return PartialView("_SelectAjaxEditing", new List<Region>(_repository.List<Region>()));
+            return PartialView("_SelectAjaxEditing", new List<Region>(_repository.ListIncluding<Region>(r => r.Locations)));
         }
 
         [GridAction]
         public ActionResult SelectAjaxEditing()
         {
-            List<Region> regions = new List<Region>(_repository.List<Region>());
+            List<Region> regions = new List<Region>(_repository.ListIncluding<Region>(r => r.Locations));
             var gridModel = new GridModel(regions);
             return PartialView(gridModel);
         }
@@ -47,7 +47,7 @@ namespace Trails2012.Controllers
                 _repository.Update(region);
                 _repository.SaveChanges();
             }
-            var regions = new List<Region>(_repository.List<Region>());
+            var regions = new List<Region>(_repository.ListIncluding<Region>(r => r.Locations));
             return PartialView("_SelectAjaxEditing", new GridModel(regions));
         }
 
@@ -60,7 +60,7 @@ namespace Trails2012.Controllers
                 _repository.Insert(region);
                 _repository.SaveChanges();
             }
-            var regions = new List<Region>(_repository.List<Region>());
+            var regions = new List<Region>(_repository.ListIncluding<Region>(r => r.Locations));
             return PartialView("_SelectAjaxEditing", new GridModel(regions));
         }
 
@@ -71,7 +71,7 @@ namespace Trails2012.Controllers
             Region region = _repository.GetById<Region>(id);
             _repository.Delete(region);
             _repository.SaveChanges();
-            var regions = new List<Region>(_repository.List<Region>());
+            var regions = new List<Region>(_repository.ListIncluding<Region>(r => r.Locations));
             return PartialView("_SelectAjaxEditing", new GridModel(regions));
         }
 

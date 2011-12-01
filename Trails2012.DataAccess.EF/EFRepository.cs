@@ -76,10 +76,11 @@ namespace Trails2012.DataAccess.EF
             _context.Configuration.ProxyCreationEnabled = false;
 
             IQueryable<TEntity> query = _context.Set<TEntity>();
-            foreach (var includeProperty in includeProperties)
-            {
-                query = query.Include(includeProperty);
-            }
+            if (includeProperties != null)
+                foreach (var includeProperty in includeProperties)
+                {
+                    query = query.Include(includeProperty);
+                }
             IEnumerable<TEntity> list = query.ToList();
             _context.Configuration.ProxyCreationEnabled = cachedSetting;
 

@@ -142,6 +142,16 @@ namespace Trails2012.Tests
             _repositoryFactory.Repository.RollbackTransaction();
         }
 
+        [TestMethod]
+        public void ShouldGetAllLocations()
+        {
+            IEnumerable<Location> locations = _repositoryFactory.Repository.ListIncluding<Location>(l => l.Region);
+            Assert.IsNotNull(locations);
+            int count = locations.Count();
+            Assert.IsTrue(count > 0);
+            Console.WriteLine("There are {0} locations", count);
+        }
+
     }
 }
 

@@ -21,7 +21,8 @@ namespace Trails2012.Controllers
 
         private void PopulateRegions()
         {
-            _regions = new List<Region>(_repository.List<Region>());
+            _regions = new List<Region>(_repository.ListIncluding<Region>(null));
+            //_regions = new List<Region>(_repository.List<Region>());  // Don't do this - see comment 1 below
             ViewData["regions"] = _regions;
         }
 
@@ -85,3 +86,10 @@ namespace Trails2012.Controllers
 
     }
 }
+
+// _Comment 1_
+// Do not use the List<> method to get the list of Regions for the dropdown box. 
+// This is because EF creates a list of DynamicProxies, and these are cached when the 
+// Locations are subsequently loaded up a few milliseconds later.
+// If the Locations are populated with lists of DynamicProxies in the Regions property, then 
+// the Telerik grid chokes with a JSON serialization circular reference error.

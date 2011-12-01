@@ -16,7 +16,7 @@ namespace Trails2012.DataAccess.EF
             //HasRequired(p => p.Region).WithMany().Map(m => m.MapKey("RegionID")).WillCascadeOnDelete(false);    
 
             // Or this - the Telerik grid seems to want a FK property on the class
-            HasRequired(p => p.Region).WithMany().HasForeignKey(p=>p.RegionId);
+            HasRequired(p => p.Region).WithMany().HasForeignKey(p=>p.RegionId).WillCascadeOnDelete(false);
         }
     }
 
@@ -25,8 +25,13 @@ namespace Trails2012.DataAccess.EF
         public RegionConfiguration()
         {
             ToTable("Region", "dbo");
-            HasKey(p => p.Id);
-            Property(p => p.Id).HasColumnName("RegionId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);      
+            HasKey(r => r.Id);
+            Property(r => r.Id).HasColumnName("RegionId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Ignore(r => r.LocationCount);
+
+            //HasMany(o => o.Locations).WithRequired(location => location.Region).Map(m => m.MapKey("LocationId"));
+            HasMany(region => region.Locations).WithRequired(location => location.Region).HasForeignKey(location => location.RegionId).WillCascadeOnDelete(false);
+
         }
     }
 
