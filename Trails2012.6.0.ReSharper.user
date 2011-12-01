@@ -1,18 +1,9 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_List.cshtml" caret="590" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:PersonModel.cs" caret="552" fromTop="8" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Site.css" caret="3651" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_PersonDetail.cshtml" caret="1097" fromTop="17" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/d:EditorTemplates/f:DateTime.cshtml" caret="362" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Index.cshtml" caret="459" fromTop="16" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Person.css" caret="1025" fromTop="18" />
-      <File id="1BAE44B3-5032-4DE7-8A82-9BCEB3204892/f:^TransientScriptDocument3.htm" caret="4865" fromTop="8" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery.unobtrusive-ajax.min.js" caret="114" fromTop="4" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="3216" fromTop="13" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery-1.7.1-vsdoc.js" caret="112333" fromTop="13" />
-      <File id="1BAE44B3-5032-4DE7-8A82-9BCEB3204892/f:^TransientScriptDocument14.htm" caret="1216" fromTop="15" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Details.cshtml" caret="0" fromTop="0" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Create.cshtml" caret="0" fromTop="0" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery.validate.unobtrusive.js" caret="31" fromTop="0" />
@@ -20,48 +11,58 @@
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Create.cshtml" caret="505" fromTop="17" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Edit.cshtml" caret="0" fromTop="0" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Delete.cshtml" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="0" fromTop="0" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="3395" fromTop="15" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="1144" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="1242" fromTop="5" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="710" fromTop="12" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="674" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Index.cshtml" caret="709" fromTop="22" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1040" fromTop="11" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:ListsController.cs" caret="744" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="912" fromTop="18" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="1301" fromTop="12" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="149" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:SelectAjaxEditing.cshtml" caret="1333" fromTop="25" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:EntityBase.cs" caret="97" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:_SelectAjaxEditing.cshtml" caret="562" fromTop="11" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailsInitializer.cs" caret="2744" fromTop="13" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Region.cs" caret="223" fromTop="9" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="151" fromTop="7" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:ReferenceListConfiguration.cs" caret="364" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="674" fromTop="6" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="800" fromTop="20" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="2080" fromTop="15" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:ReferenceListTest.cs" caret="0" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="104" fromTop="1" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="1266" fromTop="22" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1304" fromTop="20" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1302" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2046" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3257" fromTop="7" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Index.cshtml" caret="152" fromTop="4" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Index.cshtml" caret="1351" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3846" fromTop="16" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1290" fromTop="10" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1514" fromTop="20" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1290" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="280" fromTop="4" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="672" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="867" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="1126" fromTop="20" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2616" fromTop="25" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2603" fromTop="16" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2129" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4529" fromTop="20" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4693" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4974" fromTop="22" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="731" fromTop="16" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="831" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="772" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3771" fromTop="11" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="5151" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="5151" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="5055" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1232" fromTop="15" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4301" fromTop="19" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="816" fromTop="19" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4465" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4465" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4369" fromTop="18" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3723" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="801" fromTop="5" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3723" fromTop="15" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="3120" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="4301" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2376" fromTop="25" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="178" fromTop="5" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1110" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="885" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="1613" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2049" fromTop="18" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="579" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:SelectAjaxEditing.cshtml" caret="1333" fromTop="25" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:SelectAjaxEditing.cshtml" caret="356" fromTop="6" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:SelectAjaxEditing.cshtml" caret="95" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="2268" fromTop="25" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="382" fromTop="9" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="75" fromTop="1" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="901" fromTop="16" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="517" fromTop="19" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:_SelectAjaxEditing.cshtml" caret="1345" fromTop="25" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:_SelectAjaxEditing.cshtml" caret="928" fromTop="15" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="555" fromTop="20" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="207" fromTop="9" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:ReferenceListConfiguration.cs" caret="523" fromTop="10" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -85,13 +86,16 @@
   <UnitTestSessions>
     <Session>
       <Name>Session #1</Name>
-      <Elements />
+      <Elements>
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.ReferenceListTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.EF.Test.ReferenceListTest" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.ReferenceListTest.ShouldGetAllLocations" ParentId="Trails2012.DataAccess.EF.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllLocations" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+      </Elements>
     </Session>
   </UnitTestSessions>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
       <Item value="prop" priority="351" />
-      <Item value="int" priority="374" />
+      <Item value="int" priority="406" />
       <Item value="EntityBase`0" priority="159" />
       <Item value="string" priority="313" />
       <Item value="public" priority="127" />
@@ -106,8 +110,8 @@
       <Item value="Trails" priority="27" />
       <Item value="TrailTypes" priority="27" />
       <Item value="HasKey`1" priority="31" />
-      <Item value="p" priority="287" />
-      <Item value="Property`1" priority="95" />
+      <Item value="p" priority="319" />
+      <Item value="Property`1" priority="127" />
       <Item value="databaseGeneratedOption" priority="31" />
       <Item value="DatabaseGeneratedOption`0" priority="31" />
       <Item value="Person`0" priority="187" />
@@ -135,7 +139,7 @@
       <Item value="if" priority="95" />
       <Item value="entityToDelete" priority="63" />
       <Item value="Detached" priority="16" />
-      <Item value="return" priority="159" />
+      <Item value="return" priority="191" />
       <Item value="entityToUpdate" priority="31" />
       <Item value="TestInitializeAttribute`0" priority="22" />
       <Item value="void" priority="31" />
@@ -162,7 +166,7 @@
       <Item value="PersonListModel`0" priority="30" />
       <Item value="_repository" priority="255" />
       <Item value="modelBuilder" priority="63" />
-      <Item value="Ignore`1" priority="31" />
+      <Item value="Ignore`1" priority="63" />
       <Item value="ClassInitialize" priority="26" />
       <Item value="var" priority="255" />
       <Item value="ReferenceListTest" priority="28" />
@@ -231,6 +235,7 @@
       <Item value="DateTimeExtensions`0" priority="31" />
       <Item value="datetime" priority="31" />
       <Item value="for" priority="31" />
+      <Item value="ValueType`0" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Person">
       <Item value="Id" priority="53" />
@@ -265,7 +270,7 @@
       <Item value="Locations" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Location">
-      <Item value="Region" priority="81" />
+      <Item value="Region" priority="108" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
       <Item value="IsNotNull`0" priority="134" />

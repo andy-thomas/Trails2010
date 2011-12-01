@@ -67,8 +67,24 @@ namespace Trails2012.DataAccess.EF
 
         public IEnumerable<TEntity> List<TEntity>() where TEntity : class
         {
-            return _context.Set<TEntity>().ToList();
+             return _context.Set<TEntity>().ToList();
         }
+
+        public IEnumerable<TEntity> ListIncluding<TEntity>(params Expression<Func<TEntity, object>>[] includeProperties) where TEntity : class
+        {
+            bool cachedSetting = _context.Configuration.ProxyCreationEnabled;
+            _context.Configuration.ProxyCreationEnabled = false;
+
+            IQueryable<TEntity> query = _context.Set<TEntity>();
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+            IEnumerable<TEntity> list = query.ToList();
+            _context.Configuration.ProxyCreationEnabled = cachedSetting;
+
+            return list;
+        } 
 
         public TEntity GetById<TEntity>(int id) where TEntity : class
         {
@@ -101,7 +117,7 @@ namespace Trails2012.DataAccess.EF
             }
 
             foreach (var includeProperty in includeProperties.Split
-                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                (new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
             {
                 query = query.Include(includeProperty);
             }
@@ -136,3 +152,24 @@ namespace Trails2012.DataAccess.EF
 
     }
 }
+
+// _Comment 1_
+// When the list of Locations is returned in the Location|_SelectAjaxEditing partial view
+//      it is serialized into JSON in order to get injected into the Telerik grid (by using the GridModel class, I guess)
+// When this happens, we get the following error:
+//      "A circular reference was detected while serializing an object of type 'System.Data.Entity.DynamicProxies".
+// This appears to be a known bug in Entity Framework:
+//      see for instance: http://www.google.ca/search?q=DynamicProxies+%22A+circular+reference+was+detected+while+serializing+an+object+of+type+%22&hl=en&num=10&lr=&ft=i&cr=&safe=images
+//      http://stackoverflow.com/questions/4606232/circular-reference-exception-with-json-serialisation-with-mvc3-and-ef4-ctp5w
+//      http://stackoverflow.com/questions/5588143/ef-4-1-code-first-json-circular-reference-serialization-error
+//      http://stackoverflow.com/questions/7608372/entityframework-to-json-workaround-a-circular-reference-was-detected-while-se
+// It seems that the most effective way of getting around this is to load the actual objects rather than the EF proxies. In order to do this,
+//      it is necessary to turn off the ProxyCreationEnabled setting on the EF context temporarily, and to specifically eagerly load all required 
+//      related object using the "Include" commend in the query.
+//      see http://stackoverflow.com/questions/6686525/c-sharp-entity-framework-loading-from-database-without-proxy-classes.
+// So, my implementation hack was to add a "ListIncluding" method to the repository, which is based on the AllIncluding method which is included in MVC scaffolding
+//      see http://stackoverflow.com/questions/6954387/mvc-3-scaffolding-the-model-passed-to-the-view-throws-sql-errror
+// However, this was still returning proxies for the main calls, so I enhanced it to turn off the ProxyCreationEnabled flag, and return a list rather than IQueryable 
+//      (though returning IQueryable<> is probably better). This fixes the issue where JSON serialization is used, so may only occur in this application whenever 
+//      AJAX is being used (say, when using the Telerik grid control).
+

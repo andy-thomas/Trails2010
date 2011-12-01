@@ -1,9 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Trails2012.Domain
 {
     public class Location : EntityBase
     {
+        [NonSerialized]
+        private Domain.Region _region;
+
         [Required]
         [StringLength(50)]
         public virtual string Name { get; set; }
@@ -15,6 +19,11 @@ namespace Trails2012.Domain
         [Display(Name = "Map Reference")]
         public virtual string MapReference { get; set; }
 
-        public virtual Region Region { get; set; }
+        public int RegionId { get; set; }
+        public virtual Region Region
+        {
+            get { return _region; }
+            set { _region = value; }
+        }
     }
 }

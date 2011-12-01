@@ -63,6 +63,7 @@ namespace Trails2012.DataAccess
         /// <typeparam name="TEntity">Type of entity</typeparam>
         /// <returns></returns>
         IEnumerable<TEntity> List<TEntity>() where TEntity : class;
+        IEnumerable<TEntity> ListIncluding<TEntity>(params Expression<Func<TEntity, object>>[] includeProperties) where TEntity : class;
 
         /// <summary>
         /// Gets the entity by id.
