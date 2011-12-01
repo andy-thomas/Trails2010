@@ -24,6 +24,9 @@
                        tabstrip.Add()
                            .Text("Locations")
                            .LoadContentFrom("LocationGrid", "Location");
+                       tabstrip.Add()
+                           .Text("Difficulty Levels")
+                           .LoadContentFrom("DifficultyGrid", "Difficulty");
 
                    })
                    .SelectedIndex(0)

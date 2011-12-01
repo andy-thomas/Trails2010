@@ -1,0 +1,56 @@
+﻿ @using Telerik.Web.Mvc.UI
+
+ @model IEnumerable<Trails2012.Domain.Difficulty>
+
+@* Note Andy - this grid does not hide the delete button when the difficulty setting is used on at least one Trail. *@
+
+<h2>Difficulty Levels</h2>
+
+@(Html.Telerik().Grid(Model)
+    .Name("DifficultyGrid")
+    .ToolBar(commands => commands.Insert())
+    .DataKeys(keys => keys.Add(difficulty => difficulty.Id))
+    .DataBinding(dataBinding => dataBinding.Ajax()
+                                    .Select("SelectAjaxEditing", "Difficulty")
+                                    .Insert("CreateAjaxEditing", "Difficulty")
+                                    .Update("EditAjaxEditing", "Difficulty")
+                                    .Delete("DeleteAjaxEditing", "Difficulty"))
+    .Editable(editing => editing.Mode(GridEditMode.InLine))
+    .Sortable()
+    .Filterable()
+    //.ClientEvents(events => events.OnRowDataBound("onRowDataBound"))   
+    .Columns(columns =>
+                    {
+                        columns.Bound(difficulty => difficulty.DifficultyType).Width(200);
+                       columns.Command(commands =>
+                        {
+                            commands.Edit();
+                        }).Width(100);
+                        columns.Command(commands =>
+                        {
+                            commands.Delete();
+                        }).Width(200).HtmlAttributes(new { name = "delete" });
+                    })
+        //.CellAction(cell =>
+        //          {
+        //              if (cell.DataItem.Locations != null && cell.DataItem.Locations.Count > 0) // Hide the delete button if there are any Locations for this Difficulty
+        //              {
+        //                  if (cell.Column.HtmlAttributes.ContainsKey("name") && cell.Column.HtmlAttributes["name"].ToString() == "delete")
+        //                  {
+        //                      cell.HtmlAttributes["style"] = "visibility:hidden";
+        //                  }
+        //              }
+        //          })  // CellAction only works for Server side binding, so will only work on first time through, not when editing, etc     
+                    
+                    )
+
+@Html.Telerik().ScriptRegistrar()
+
+
+    
+@* 
+See the following to show/hide the delete command button when using server side binding:
+http://www.telerik.com/community/forums/aspnet-mvc/grid/correct-way-to-disable-command-button.aspx
+and the following when using ajax binding
+http://stackoverflow.com/questions/5071390/how-do-i-hide-edit-button-on-a-ajax-bound-telerik-grid-for-mvc
+*@
