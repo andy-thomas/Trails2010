@@ -2,14 +2,15 @@
 
 <div class="data-row">
     <div class="data-element submit">
-        <input type="button" id = "showeditpersonform" value="Edit" onclick="InitEditPersonForm(this, @ViewData.Model.Id  )" > |
+        <input type="button" id = "showeditpersonform" value="Edit" onclick="InitEditPersonForm(this, @ViewData.Model.Id  )" > 
         @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ })*@
         @*  // Show action links - or do as shown below - displays the links as buttons for consistency's sake
-        @Html.ActionLink("Delete", "Delete", new { id = ViewData.Model.Id})
-        @Html.ActionLink("Details", "Details", new { id = ViewData.Model.Id })   
-        *@
         <a href="@(Url.Action("Delete", "Person", new { id = ViewData.Model.Id} ))"><button>Delete</button></a> |     
         <a href="@(Url.Action("Details", "Person", new { id = ViewData.Model.Id} ))"><button>Details</button></a> |
+        *@
+        @Html.ActionLink("Delete", "Delete", new { id = ViewData.Model.Id}) 
+        @Html.ActionLink("Details", "Details", new { id = ViewData.Model.Id }) 
+
     </div>
     <div class="data-element first-name">
         @Html.DisplayFor(modelItem => Model.FirstName)

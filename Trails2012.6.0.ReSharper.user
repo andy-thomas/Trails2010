@@ -1,67 +1,68 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Scripts/f:jquery.unobtrusive-ajax.js" caret="31" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:Create.cshtml" caret="505" fromTop="17" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Edit.cshtml" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Delete.cshtml" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="3395" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="1144" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:Index.cshtml" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:SelectAjaxEditing.cshtml" caret="1333" fromTop="25" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:EntityBase.cs" caret="97" fromTop="4" />
-      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailsInitializer.cs" caret="2744" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:ListsController.cs" caret="0" fromTop="0" />
       <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Region.cs" caret="494" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="0" fromTop="0" />
       <File id="8B1E2305-D9BC-4239-9C68-D3C76F3ABB57/f:IRepository.cs" caret="1904" fromTop="12" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:ReferenceListConfiguration.cs" caret="1046" fromTop="11" />
-      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:ReferenceListTest.cs" caret="0" fromTop="0" />
-      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonTest.cs" caret="7577" fromTop="8" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="620" fromTop="10" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="2784" fromTop="19" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:_SelectAjaxEditing.cshtml" caret="671" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="616" fromTop="12" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/d:EditorTemplates/f:GridForeignKey.cshtml" caret="701" fromTop="13" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Difficulty/f:_SelectAjaxEditing.cshtml" caret="199" fromTop="4" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="483" fromTop="17" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2538" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="1246" fromTop="13" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="91" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="1030" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="1246" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_Edit.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="418" fromTop="10" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:PersonModel.cs" caret="448" fromTop="9" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2538" fromTop="18" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:ReferenceListTest.cs" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="616" fromTop="12" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonTest.cs" caret="7577" fromTop="8" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:App.config" caret="95" fromTop="2" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="551" fromTop="7" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:App.config" caret="0" fromTop="0" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:TrailConfiguration.cs" caret="399" fromTop="6" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:TrailsContext.cs" caret="823" fromTop="13" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:TrailType.cs" caret="246" fromTop="9" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4384" fromTop="4" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:ReferenceListConfiguration.cs" caret="2366" fromTop="20" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:PersonConfiguration.cs" caret="342" fromTop="8" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="3032" fromTop="14" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailDataAccessTest.cs" caret="3092" fromTop="12" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailsInitializer.cs" caret="4400" fromTop="7" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trail.cs" caret="1177" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:TrailModel.cs" caret="238" fromTop="8" />
     </RecentFiles>
     <RecentEdits>
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Region.cs" caret="494" fromTop="14" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="620" fromTop="10" />
-      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonTest.cs" caret="7809" fromTop="28" />
-      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonTest.cs" caret="7565" fromTop="8" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:ReferenceListConfiguration.cs" caret="1046" fromTop="11" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="2564" fromTop="14" />
-      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:EFRepository.cs" caret="2715" fromTop="18" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="797" fromTop="5" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="3297" fromTop="21" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/d:EditorTemplates/f:GridForeignKey.cshtml" caret="684" fromTop="11" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="236" fromTop="2" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="648" fromTop="7" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="843" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="1325" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="1791" fromTop="16" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="2241" fromTop="12" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:DifficultyController.cs" caret="483" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Difficulty/f:_SelectAjaxEditing.cshtml" caret="1731" fromTop="8" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Difficulty/f:_SelectAjaxEditing.cshtml" caret="1107" fromTop="8" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Difficulty/f:_SelectAjaxEditing.cshtml" caret="2060" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Difficulty/f:_SelectAjaxEditing.cshtml" caret="875" fromTop="4" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="1087" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Difficulty/f:_SelectAjaxEditing.cshtml" caret="2632" fromTop="11" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Difficulty/f:_SelectAjaxEditing.cshtml" caret="199" fromTop="4" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="567" fromTop="10" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Lists/f:Index.cshtml" caret="629" fromTop="11" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="1056" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="1246" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="907" fromTop="6" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trail.cs" caret="891" fromTop="3" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:App.config" caret="312" fromTop="6" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailDataAccessTest.cs" caret="431" fromTop="13" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4166" fromTop="0" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="338" fromTop="3" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4128" fromTop="19" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4128" fromTop="0" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4128" fromTop="14" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4128" fromTop="13" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4128" fromTop="14" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4128" fromTop="8" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4010" fromTop="12" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="2646" fromTop="11" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="3169" fromTop="12" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="3668" fromTop="15" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="3456" fromTop="11" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="1628" fromTop="11" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="2335" fromTop="16" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="2013" fromTop="12" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="2867" fromTop="11" />
+      <File id="B6F99750-1FDB-4650-BDA5-EA5BA58D5C27/f:ReferenceListConfiguration.cs" caret="2176" fromTop="11" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="4384" fromTop="4" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trail.cs" caret="891" fromTop="17" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trail.cs" caret="1538" fromTop="17" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trail.cs" caret="1403" fromTop="13" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trail.cs" caret="1257" fromTop="9" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailsInitializer.cs" caret="4752" fromTop="12" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailDataAccessTest.cs" caret="2966" fromTop="9" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:TrailModel.cs" caret="33" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Models/f:TrailModel.cs" caret="238" fromTop="8" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -86,17 +87,21 @@
     <Session>
       <Name>Session #1</Name>
       <Elements>
-        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonTest" type="MsTestTestClassElement" TypeName="Trails2012.Tests.PersonTest" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
-        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.ReferenceListTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.EF.Test.ReferenceListTest" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
-        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonTest.ShouldGetAllLocations" ParentId="Trails2012.Tests.PersonTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllLocations" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
-        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.ReferenceListTest.ShouldGetAllRegions" ParentId="Trails2012.DataAccess.EF.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllRegions" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TrailDataAccessTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.EF.Test.TrailDataAccessTest" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.TrailTest" type="MsTestTestClassElement" TypeName="Trails2012.Tests.TrailTest" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.TrailTest.ShouldAddNewTrail" ParentId="Trails2012.Tests.TrailTest" type="MsTestTestMethodElement" MethodName="ShouldAddNewTrail" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.TrailTest.ShouldGetAllTrails" ParentId="Trails2012.Tests.TrailTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllTrails" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.TrailTest.ShouldGetTrailById" ParentId="Trails2012.Tests.TrailTest" type="MsTestTestMethodElement" MethodName="ShouldGetTrailById" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TrailDataAccessTest.ShouldGetTrailById" ParentId="Trails2012.DataAccess.EF.Test.TrailDataAccessTest" type="MsTestTestMethodElement" MethodName="ShouldGetTrailById" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.TrailTest.ShouldGetTrailsByName" ParentId="Trails2012.Tests.TrailTest" type="MsTestTestMethodElement" MethodName="ShouldGetTrailsByName" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.TrailTest.ShouldPlugInARepository" ParentId="Trails2012.Tests.TrailTest" type="MsTestTestMethodElement" MethodName="ShouldPlugInARepository" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
       </Elements>
     </Session>
   </UnitTestSessions>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="prop" priority="447" />
-      <Item value="int" priority="469" />
+      <Item value="prop" priority="479" />
+      <Item value="int" priority="500" />
       <Item value="EntityBase`0" priority="159" />
       <Item value="string" priority="313" />
       <Item value="public" priority="127" />
@@ -110,14 +115,14 @@
       <Item value="Trail`0" priority="31" />
       <Item value="Trails" priority="27" />
       <Item value="TrailTypes" priority="27" />
-      <Item value="HasKey`1" priority="31" />
+      <Item value="HasKey`1" priority="63" />
       <Item value="p" priority="319" />
-      <Item value="Property`1" priority="127" />
+      <Item value="Property`1" priority="159" />
       <Item value="databaseGeneratedOption" priority="31" />
       <Item value="DatabaseGeneratedOption`0" priority="31" />
       <Item value="Person`0" priority="187" />
       <Item value="persons" priority="129" />
-      <Item value="ctor" priority="223" />
+      <Item value="ctor" priority="255" />
       <Item value="Assert`0" priority="127" />
       <Item value="location" priority="127" />
       <Item value="FirstName" priority="63" />
@@ -177,7 +182,7 @@
       <Item value="List" priority="151" />
       <Item value="Location" priority="28" />
       <Item value="Name" priority="122" />
-      <Item value="Description" priority="65" />
+      <Item value="Description" priority="98" />
       <Item value="Directions" priority="32" />
       <Item value="Region" priority="61" />
       <Item value="regions" priority="96" />
@@ -239,7 +244,7 @@
       <Item value="ValueType`0" priority="31" />
       <Item value="List`1" priority="31" />
       <Item value="l" priority="31" />
-      <Item value="Location`0" priority="93" />
+      <Item value="Location`0" priority="125" />
       <Item value="bool" priority="31" />
       <Item value="false" priority="95" />
       <Item value="cachedSetting" priority="31" />
@@ -247,6 +252,24 @@
       <Item value="cell" priority="95" />
       <Item value="r" priority="63" />
       <Item value="ScriptBehaviorDescriptor`0" priority="30" />
+      <Item value="virtual" priority="30" />
+      <Item value="ToTable`0" priority="31" />
+      <Item value="t" priority="159" />
+      <Item value="Distance" priority="32" />
+      <Item value="ElevationGain" priority="65" />
+      <Item value="TrailTypeId" priority="98" />
+      <Item value="LocationId" priority="98" />
+      <Item value="DifficultyId" priority="65" />
+      <Item value="TrailType`0" priority="31" />
+      <Item value="TrailTypeName" priority="26" />
+      <Item value="EstimatedTime" priority="32" />
+      <Item value="ReturnOnEffort" priority="32" />
+      <Item value="ReturnOnCost" priority="32" />
+      <Item value="Notes" priority="32" />
+      <Item value="OverallGrade" priority="32" />
+      <Item value="trail" priority="127" />
+      <Item value="trails" priority="31" />
+      <Item value="decimal" priority="63" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Person">
       <Item value="Id" priority="53" />
@@ -270,6 +293,7 @@
       <Item value="HasMaxLength`0" priority="26" />
       <Item value="IsRequired`0" priority="26" />
       <Item value="IsOptional`0" priority="27" />
+      <Item value="HasColumnName`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.DataAccess.EF.TrailsContext">
       <Item value="Persons" priority="54" />
@@ -280,17 +304,20 @@
       <Item value="Regions" priority="26" />
       <Item value="Locations" priority="53" />
       <Item value="Configuration" priority="107" />
+      <Item value="TrailTypes" priority="27" />
+      <Item value="Trails" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Location">
-      <Item value="Region" priority="242" />
+      <Item value="Region" priority="269" />
       <Item value="RegionId" priority="83" />
       <Item value="Id" priority="26" />
+      <Item value="Name" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
       <Item value="IsNotNull`0" priority="134" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Region">
-      <Item value="Name" priority="76" />
+      <Item value="Name" priority="103" />
       <Item value="Description" priority="22" />
       <Item value="Id" priority="107" />
       <Item value="Locations" priority="164" />
@@ -345,7 +372,7 @@
       <Item value="Count`1" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
-      <Item value="Contains`0" priority="26" />
+      <Item value="Contains`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
       <Item value="OrderBy`2" priority="26" />
@@ -516,6 +543,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.DependentNavigationPropertyConfiguration`1">
       <Item value="WillCascadeOnDelete`0" priority="26" />
+      <Item value="HasForeignKey`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.CascadableNavigationPropertyConfiguration">
       <Item value="WillCascadeOnDelete`0" priority="26" />
@@ -546,7 +574,29 @@
       <Item value="alert" priority="10" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Difficulty">
-      <Item value="DifficultyType" priority="22" />
+      <Item value="DifficultyType" priority="49" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Domain.Trail">
+      <Item value="Id" priority="26" />
+      <Item value="Location" priority="81" />
+      <Item value="LocationId" priority="76" />
+      <Item value="TrailType" priority="49" />
+      <Item value="TrailTypeId" priority="22" />
+      <Item value="Difficulty" priority="49" />
+      <Item value="DifficultyId" priority="22" />
+      <Item value="Notes" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.RequiredNavigationPropertyConfiguration`2">
+      <Item value="WithRequiredPrincipal`0" priority="22" />
+      <Item value="WithOptional`0" priority="22" />
+      <Item value="WithRequiredDependent`0" priority="22" />
+      <Item value="WithMany`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.ForeignKeyNavigationPropertyConfiguration">
+      <Item value="Map`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Domain.TrailType">
+      <Item value="TrailTypeName" priority="53" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

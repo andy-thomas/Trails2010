@@ -20,7 +20,7 @@ namespace Trails2012.Domain
         [Display(Name = "Elevation Gain")]
         public virtual decimal? ElevationGain { get; set; }
 
-        [DisplayFormat(DataFormatString = @"{0:c}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = @"{0:c}", ApplyFormatInEditMode = false)]
         public virtual decimal? Cost { get; set; }
 
         [Display(Name = "Estimated Time (Hours)")]
@@ -34,15 +34,15 @@ namespace Trails2012.Domain
         public virtual Difficulty Difficulty { get; set; }
 
         [Display(Name = "Return On Cost Rating (1-10)")]
-        [Range(1, 10)]
+        [Range(1, 10, ErrorMessage = "Please provide a rating between 1 and 10")]
         public virtual decimal? ReturnOnCost { get; set; }
 
         [Display(Name = "Return On Effort Rating (1-10)")]
-        [Range(1, 10)]
+        [Range(1, 10, ErrorMessage = "Please provide a rating between 1 and 10")]
         public virtual decimal? ReturnOnEffort { get; set; }
 
         [Display(Name = "Overall Rating (1-10)")]
-        [Range(1, 10)]
+        [Range(1, 10, ErrorMessage = "Please provide a rating between 1 and 10")]
         public virtual decimal? OverallGrade { get; set; }
 
         public virtual string Notes { get; set; }

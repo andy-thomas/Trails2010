@@ -1,0 +1,130 @@
+@using Trails2012.Domain
+@model Trail
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Name)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Name)
+    @Html.ValidationMessageFor(model => model.Name)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Description)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Description)
+    @Html.ValidationMessageFor(model => model.Description)
+</div>
+
+<div class="editor-label">
+    Location
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.LocationId, ((IEnumerable<Trails2012.Domain.Location>)ViewBag.PossibleLocations).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.Id.ToString(),
+        Selected = (Model != null) && (option.Id == Model.LocationId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.LocationId)
+</div>
+
+<div class="editor-label">
+    TrailType
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.TrailTypeId, ((IEnumerable<Trails2012.Domain.TrailType>)ViewBag.PossibleTrailTypes).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.Id.ToString(),
+        Selected = (Model != null) && (option.Id == Model.TrailTypeId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.TrailTypeId)
+</div>
+
+<div class="editor-label">
+    Difficulty
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.DifficultyId, ((IEnumerable<Trails2012.Domain.Difficulty>)ViewBag.PossibleDifficulties).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.Id.ToString(),
+        Selected = (Model != null) && (option.Id == Model.DifficultyId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.DifficultyId)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Distance)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Distance)
+    @Html.ValidationMessageFor(model => model.Distance)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ElevationGain)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ElevationGain)
+    @Html.ValidationMessageFor(model => model.ElevationGain)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Cost)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Cost)
+    @Html.ValidationMessageFor(model => model.Cost)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.EstimatedTime)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.EstimatedTime)
+    @Html.ValidationMessageFor(model => model.EstimatedTime)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.IsLoop)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.IsLoop)
+    @Html.ValidationMessageFor(model => model.IsLoop)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ReturnOnCost)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ReturnOnCost)
+    @Html.ValidationMessageFor(model => model.ReturnOnCost)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.ReturnOnEffort)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.ReturnOnEffort)
+    @Html.ValidationMessageFor(model => model.ReturnOnEffort)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.OverallGrade)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.OverallGrade)
+    @Html.ValidationMessageFor(model => model.OverallGrade)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Notes)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Notes)
+    @Html.ValidationMessageFor(model => model.Notes)
+</div>
+
+

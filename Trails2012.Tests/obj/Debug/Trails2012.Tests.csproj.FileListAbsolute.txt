@@ -13,6 +13,4 @@ C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Trails2012.DataAccess
 C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\WebActivator.dll
 C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\MefContrib.Web.Mvc.dll
 C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\MefContrib.dll
-C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\EntityFramework.dll
-C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\EntityFramework.xml
 C:\Projects\Personal\Trails2012\Trails2012.Tests\bin\Debug\Telerik.Web.Mvc.dll

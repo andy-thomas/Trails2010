@@ -17,6 +17,11 @@ namespace Trails2012.DataAccess.EF
         readonly TrailsContext _context = new TrailsContext();
         private TransactionScope _transactionScope;
 
+        public EFRepository()
+        {
+            _context.Configuration.ProxyCreationEnabled = false;
+        }
+
         public void BeginTransaction()
         {
             _transactionScope = new TransactionScope();
