@@ -45,4 +45,14 @@ namespace Trails2012.DataAccess.EF
          }
     }
 
+    public class TrailTypeConfiguration : EntityTypeConfiguration<TrailType>
+    {
+        public TrailTypeConfiguration()
+        {
+            ToTable("TrailType", "dbo");
+            HasKey(t => t.Id);
+            Property(t => t.Id).HasColumnName("TrailTypeId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(t => t.TrailTypeName).HasColumnName("TrailType");
+        }
+    }
 }

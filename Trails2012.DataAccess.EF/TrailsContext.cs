@@ -9,8 +9,8 @@ namespace Trails2012.DataAccess.EF
         public DbSet<Location> Locations { get; set; }
         public DbSet<Person> Persons { get; set; }
         public DbSet<Region> Regions { get; set; }
-        //public DbSet<Trail> Trails { get; set; }
-        //public DbSet<TrailType> TrailTypes { get; set; }
+        public DbSet<Trail> Trails { get; set; }
+        public DbSet<TrailType> TrailTypes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -24,6 +24,8 @@ namespace Trails2012.DataAccess.EF
             modelBuilder.Configurations.Add(new LocationConfiguration());
             modelBuilder.Configurations.Add(new RegionConfiguration());
             modelBuilder.Configurations.Add(new DifficultyConfiguration());
+            modelBuilder.Configurations.Add(new TrailTypeConfiguration());
+            modelBuilder.Configurations.Add(new TrailConfiguration());
             
         }
     }

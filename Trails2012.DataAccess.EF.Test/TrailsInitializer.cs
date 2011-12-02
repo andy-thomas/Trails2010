@@ -36,7 +36,7 @@ namespace Trails2012.DataAccess.EF.Test
                                   new Region {Name = "Jasper National Park"},
                                   new Region {Name = "Kootenay National Park"},
                                   new Region {Name = "Banff National Park - North"},
-                                  new Region {Name = "Kananaskis Country"},
+                                  new Region {Name = "Kananaskis Country"}
                               };
             regions.ForEach(r => context.Regions.Add(r));
 
@@ -57,7 +57,7 @@ namespace Trails2012.DataAccess.EF.Test
                                             Description = "20 minutes north of Lake Louise on IceField Parkway",
                                             Region = regions[3]
                                         },
-                                    new Location {Name = "Smith Dorrien Highway", Region = regions[4]},
+                                    new Location {Name = "Smith Dorrien Highway", Region = regions[4]}
                                 };
             locations.ForEach(l => context.Locations.Add(l));
 
@@ -67,10 +67,29 @@ namespace Trails2012.DataAccess.EF.Test
                                        new Difficulty {DifficultyType = "Easy"},
                                        new Difficulty {DifficultyType = "Moderate"},
                                        new Difficulty {DifficultyType = "Challenging"},
-                                       new Difficulty {DifficultyType = "Difficult"},
+                                       new Difficulty {DifficultyType = "Difficult"}
                                    };
             difficulties.ForEach(d => context.Difficulties.Add(d));
 
+            // Seed TrailType Levels
+            var trailTypes = new List<TrailType>
+                                   {
+                                       new TrailType {TrailTypeName = "Land"},
+                                       new TrailType {TrailTypeName = "Air"},
+                                       new TrailType {TrailTypeName = "Water"}
+                                   };
+            trailTypes.ForEach(t => context.TrailTypes.Add(t));
+
+            // Seed Trails
+            var trails = new List<Trail>
+                              {
+                                  new Trail {Name = "Johnstone Canyon", Description = "Johnstone Canyon", Distance = 4.8F, ElevationGain = 200, EstimatedTime = 2, LocationId = 1, TrailType = trailTypes[0], DifficultyId = 1, ReturnOnEffort = 9.2F, OverallGrade = 7.2F, Notes="Good Waterfalls scenery. Good in all seasons. Take crampons in winter/spring"},
+                                  new Trail {Name = "Burstall Pass", Description = "Burstall Pass", Distance = 8.53F, ElevationGain = 390, EstimatedTime = 4, LocationId = 2, TrailType = trailTypes[0], DifficultyId = 1, ReturnOnEffort = 8.1F, OverallGrade = 8.1F, Notes="Excellent view from the pass"},
+                                  new Trail {Name = "Helen Lake", Description = "Helen Lake", Distance = 8F, ElevationGain = 480, EstimatedTime = 4.5F, LocationId = 3, TrailType = trailTypes[0], DifficultyId = 4, ReturnOnEffort = 7.8F, OverallGrade = 7.8F, Notes="Views across to the Dolomite range."},
+                                  new Trail {Name = "Chester Lake", Description = "Chester Lake", Distance = 8.11F, ElevationGain = 520, EstimatedTime = 4.5F, LocationId = 3, TrailType = trailTypes[0], DifficultyId = 2, ReturnOnEffort = 6.9F, OverallGrade = 6.9F, Notes="Don't stop at Chester Lake - go on to Three Lake Valley"}
+                              };
+
+            trails.ForEach(t => context.Trails.Add(t));
 
         }
     }

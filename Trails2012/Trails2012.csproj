@@ -243,6 +243,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\PersonModel.cs" />
+    <Compile Include="Models\TrailModel.cs" />
     <Compile Include="Models\Trails2012Context.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

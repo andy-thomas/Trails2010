@@ -28,8 +28,8 @@
     .ClientEvents(events => events.OnRowDataBound("onRowDataBound"))   
     .Columns(columns =>
                     {
-                        columns.Bound(region => region.Name).Width(100);
-                        columns.Bound(region => region.Description).Width(200).Sortable(false);
+                        columns.Bound(region => region.Name).Width(150);
+                        columns.Bound(region => region.Description).Width(300).Sortable(false);
                         columns.Bound(region => region.LocationCount).Visible(false);
                         columns.Command(commands =>
                         {

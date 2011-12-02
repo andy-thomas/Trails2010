@@ -51,6 +51,7 @@
     <Compile Include="EFRepository.cs" />
     <Compile Include="PersonConfiguration.cs" />
     <Compile Include="ReferenceListConfiguration.cs" />
+    <Compile Include="TrailConfiguration.cs" />
     <Compile Include="TrailsContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

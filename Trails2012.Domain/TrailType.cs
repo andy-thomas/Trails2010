@@ -2,7 +2,7 @@
 
 namespace Trails2012.Domain
 {
-    public class TrailType
+    public class TrailType : EntityBase
     {
         [Required]
         [StringLength(50)]
