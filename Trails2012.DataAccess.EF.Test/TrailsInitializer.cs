@@ -83,10 +83,10 @@ namespace Trails2012.DataAccess.EF.Test
             // Seed Trails
             var trails = new List<Trail>
                               {
-                                  new Trail {Name = "Johnstone Canyon", Description = "Johnstone Canyon", Distance = 4.8F, ElevationGain = 200, EstimatedTime = 2, LocationId = 1, TrailType = trailTypes[0], DifficultyId = 1, ReturnOnEffort = 9.2F, OverallGrade = 7.2F, Notes="Good Waterfalls scenery. Good in all seasons. Take crampons in winter/spring"},
-                                  new Trail {Name = "Burstall Pass", Description = "Burstall Pass", Distance = 8.53F, ElevationGain = 390, EstimatedTime = 4, LocationId = 2, TrailType = trailTypes[0], DifficultyId = 1, ReturnOnEffort = 8.1F, OverallGrade = 8.1F, Notes="Excellent view from the pass"},
-                                  new Trail {Name = "Helen Lake", Description = "Helen Lake", Distance = 8F, ElevationGain = 480, EstimatedTime = 4.5F, LocationId = 3, TrailType = trailTypes[0], DifficultyId = 4, ReturnOnEffort = 7.8F, OverallGrade = 7.8F, Notes="Views across to the Dolomite range."},
-                                  new Trail {Name = "Chester Lake", Description = "Chester Lake", Distance = 8.11F, ElevationGain = 520, EstimatedTime = 4.5F, LocationId = 3, TrailType = trailTypes[0], DifficultyId = 2, ReturnOnEffort = 6.9F, OverallGrade = 6.9F, Notes="Don't stop at Chester Lake - go on to Three Lake Valley"}
+                                  new Trail {Name = "Johnstone Canyon", Description = "Johnstone Canyon", Distance = 4.8M, ElevationGain = 200, EstimatedTime = 2, LocationId = 1, TrailType = trailTypes[0], DifficultyId = 1, ReturnOnEffort = 9.2M, OverallGrade = 7.2M, Notes="Good Waterfalls scenery. Good in all seasons. Take crampons in winter/spring"},
+                                  new Trail {Name = "Burstall Pass", Description = "Burstall Pass", Distance = 8.53M, ElevationGain = 390, EstimatedTime = 4, LocationId = 2, TrailType = trailTypes[0], DifficultyId = 1, ReturnOnEffort = 8.1M, OverallGrade = 8.1M, Notes="Excellent view from the pass"},
+                                  new Trail {Name = "Helen Lake", Description = "Helen Lake", Distance = 8M, ElevationGain = 480, EstimatedTime = 4.5M, LocationId = 3, TrailType = trailTypes[0], DifficultyId = 4, ReturnOnEffort = 7.8M, OverallGrade = 7.8M, Notes="Views across to the Dolomite range."},
+                                  new Trail {Name = "Chester Lake", Description = "Chester Lake", Distance = 8.11M, ElevationGain = 520, EstimatedTime = 4.5M, LocationId = 3, TrailType = trailTypes[0], DifficultyId = 2, ReturnOnEffort = 6.9M, OverallGrade = 6.9M, Notes="Don't stop at Chester Lake - go on to Three Lake Valley"}
                               };
 
             trails.ForEach(t => context.Trails.Add(t));

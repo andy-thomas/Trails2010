@@ -77,7 +77,7 @@ namespace Trails2012.DataAccess.EF.Test
                         Name = "testTrailName",
                         Description = "testDescription",
                         Distance = 32,
-                        ElevationGain = 3000F,
+                        ElevationGain = 3000M,
                         TrailTypeId = 1,
                         LocationId = 1,
                         DifficultyId = 1

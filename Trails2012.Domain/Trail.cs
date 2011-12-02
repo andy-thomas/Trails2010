@@ -15,16 +15,16 @@ namespace Trails2012.Domain
         public virtual TrailType TrailType { get; set; }
 
         public virtual string Description { get; set; }
-        public virtual double? Distance { get; set; }
+        public virtual decimal? Distance { get; set; }
 
         [Display(Name = "Elevation Gain")]
-        public virtual double? ElevationGain { get; set; }
+        public virtual decimal? ElevationGain { get; set; }
 
         [DisplayFormat(DataFormatString = @"{0:c}", ApplyFormatInEditMode = true)]
-        public virtual double? Cost { get; set; }
+        public virtual decimal? Cost { get; set; }
 
         [Display(Name = "Estimated Time (Hours)")]
-        public virtual double? EstimatedTime { get; set; }
+        public virtual decimal? EstimatedTime { get; set; }
 
         [Display(Name = "Is Loop)")]
         public virtual bool IsLoop { get; set; }
@@ -34,16 +34,16 @@ namespace Trails2012.Domain
         public virtual Difficulty Difficulty { get; set; }
 
         [Display(Name = "Return On Cost Rating (1-10)")]
-        //[Range(1F, 10F)]
-        public virtual double? ReturnOnCost { get; set; }
+        [Range(1, 10)]
+        public virtual decimal? ReturnOnCost { get; set; }
 
         [Display(Name = "Return On Effort Rating (1-10)")]
-        [Range(1F, 10F)]
-        public virtual double? ReturnOnEffort { get; set; }
+        [Range(1, 10)]
+        public virtual decimal? ReturnOnEffort { get; set; }
 
         [Display(Name = "Overall Rating (1-10)")]
-        [Range(1F, 10F)]
-        public virtual double? OverallGrade { get; set; }
+        [Range(1, 10)]
+        public virtual decimal? OverallGrade { get; set; }
 
         public virtual string Notes { get; set; }
     }
