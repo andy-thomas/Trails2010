@@ -47,7 +47,9 @@ namespace Trails2012.Controllers
         //
         // POST: /Trail/Create
 
-        [HttpPost]
+        // Andy - set ValidateInput(false) so that the Notes editor can set formatting tags without causing the 
+        // "A potentially dangerous Request.Form value was detected from the client" error.
+        [HttpPost, ValidateInput(false)]
         public ActionResult Create(Trail trail)
         {
             if (ModelState.IsValid) {
@@ -76,15 +78,18 @@ namespace Trails2012.Controllers
 
         //
         // POST: /Trail/Edit/5
-
-        [HttpPost]
+        // Andy - set ValidateInput(false) so that the Notes editor can set formatting tags without causing the 
+        // "A potentially dangerous Request.Form value was detected from the client" error.
+        [HttpPost, ValidateInput(false)]
         public ActionResult Edit(Trail trail)
         {
             if (ModelState.IsValid) {
                 _repository.Update(trail);
                 _repository.SaveChanges();
                 return RedirectToAction("Index");
-            } else {
+            } 
+            else 
+            {
                 ViewBag.PossibleLocations = _repository.List<Location>();
                 ViewBag.PossibleTrailTypes = _repository.List<TrailType>();
                 ViewBag.PossibleDifficulties = _repository.List<Difficulty>();

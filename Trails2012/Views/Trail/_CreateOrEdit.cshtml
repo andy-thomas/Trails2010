@@ -1,105 +1,198 @@
+@using Telerik.Web.Mvc.UI
 @using Trails2012.Domain
 @model Trail
 
 @* This partial view defines form fields that will appear when creating and editing entities *@
+<script type="text/javascript">
+     $(function() {
+//         $("#OverallGradeSlider").slider({
+//			min: 1,max: 10,step: 0.1, value: @Html.Raw(Model.OverallGrade.ToString()),
+//			slide: function( event, ui ) {
+//			    $("#OverallGrade").val(ui.value);
+//			}
+//		});
+//        $("#OverallGrade").val($("#OverallGradeSlider").slider("value"));
+         SetUpSlider($("#ReturnOnCostSlider"), $("#ReturnOnCost"), @Html.Raw((Model.ReturnOnCost ?? 1).ToString()));
+         SetUpSlider($("#ReturnOnEffortSlider"), $("#ReturnOnEffort"), @Html.Raw((Model.ReturnOnEffort ?? 1).ToString()));
+         SetUpSlider($("#OverallGradeSlider"), $("#OverallGrade"), @Html.Raw((Model.OverallGrade ?? 1).ToString()));
+	});
+     
+      function SetUpSlider(sliderElement, textboxElement, initialValue) {
+         sliderElement.slider({
+			min: 1,max: 10,step: 0.1, value: initialValue,
+			slide: function( event, ui ) {
+			    textboxElement.val(ui.value);
+			}
+		});
+        textboxElement.val(sliderElement.slider("value"));
+	}
+      
+</script>
 
-<div class="editor-label">
-    @Html.LabelFor(model => model.Name)
-</div>
-<div class="editor-field">
-    @Html.EditorFor(model => model.Name)
-    @Html.ValidationMessageFor(model => model.Name)
-</div>
+       <table class="noborder">
+            <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Name)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.Name)
+                        @Html.ValidationMessageFor(model => model.Name)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <div class="editor-label">
+                        @Html.LabelFor(model => model.Description)
+                    </div>
+                 </td>
+                 <td>
+                    <div class="editor-field">
+                        @Html.TextAreaFor(model => model.Description, new { @class = "description"})
+                        @*@Html.EditorFor(model => model.Description)*@
+                        @Html.ValidationMessageFor(model => model.Description)
+                    </div>
+                 </td>
+              </tr>
 
-<div class="editor-label">
-    @Html.LabelFor(model => model.Description)
-</div>
-<div class="editor-field">
-    @Html.EditorFor(model => model.Description)
-    @Html.ValidationMessageFor(model => model.Description)
-</div>
+           <tr>
+                <td>
+                    <div class="editor-label">
+                        Location
+                    </div>
+                 </td>
+                 <td>
+                   <div class="editor-field">
+                        @Html.DropDownListFor(model => model.LocationId, ((IEnumerable<Trails2012.Domain.Location>)ViewBag.PossibleLocations).Select(option => new SelectListItem {
+                            Text = (option == null ? "None" : option.Name), 
+                            Value = option.Id.ToString(),
+                            Selected = (Model != null) && (option.Id == Model.LocationId)
+                        }), "Choose...")
+                        @Html.ValidationMessageFor(model => model.LocationId)
+                    </div>
+               </td>
+            </tr>
+           <tr>
+                <td>
+                    <div class="editor-label">
+                        TrailType
+                    </div>
+                </td>
+                 <td>
+                    <div class="editor-field">
+                        @Html.DropDownListFor(model => model.TrailTypeId, ((IEnumerable<Trails2012.Domain.TrailType>)ViewBag.PossibleTrailTypes).Select(option => new SelectListItem {
+                            Text = Html.DisplayTextFor(_ => option).ToString(), 
+                            Value = option.Id.ToString(),
+                            Selected = (Model != null) && (option.Id == Model.TrailTypeId)
+                        }), "Choose...")
+                        @Html.ValidationMessageFor(model => model.TrailTypeId)
+                    </div>
+               </td>
+            </tr>
+           <tr>
+                <td>
+                    <div class="editor-label">
+                        Difficulty
+                    </div>
+                </td>
+                 <td>
+                     <div class="editor-field">
+                        @Html.DropDownListFor(model => model.DifficultyId, ((IEnumerable<Trails2012.Domain.Difficulty>)ViewBag.PossibleDifficulties).Select(option => new SelectListItem {
+                            Text = Html.DisplayTextFor(_ => option).ToString(), 
+                            Value = option.Id.ToString(),
+                            Selected = (Model != null) && (option.Id == Model.DifficultyId)
+                        }), "Choose...")
+                        @Html.ValidationMessageFor(model => model.DifficultyId)
+                    </div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Distance)
+                    </div>
+                 </td>
+                 <td>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.Distance)
+                        @Html.ValidationMessageFor(model => model.Distance)
+                    </div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.ElevationGain)
+                    </div>
+                 </td>
+                 <td>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.ElevationGain)
+                        @Html.ValidationMessageFor(model => model.ElevationGain)
+                    </div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Cost)
+                    </div>
+                  </td>
+                 <td>
+                   <div class="editor-field">
+                        @(Html.Telerik().CurrencyTextBoxFor(model => model.Cost)
+                                            .Spinners(true)
+                                            .MinValue(0)
+                                            )
+                        @*@Html.EditorFor(model => model.Cost)*@
+                        @Html.ValidationMessageFor(model => model.Cost)
+                    </div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.EstimatedTime)
+                    </div>
+                 </td>
+                 <td>
+                    <div class="editor-field">
+                        @(Html.Telerik().NumericTextBoxFor(model => model.EstimatedTime)
+                                            .Spinners(true)
+                                            .MinValue(0)
+                                            .DecimalDigits(1)
+                                            .IncrementStep(0.1M)
+                                            )
+                        @*@Html.EditorFor(model => model.EstimatedTime)*@
+                        @Html.ValidationMessageFor(model => model.EstimatedTime)
+                    </div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.IsLoop)
+                    </div>
+                 </td>
+                 <td>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.IsLoop)
+                        @Html.ValidationMessageFor(model => model.IsLoop)
+                    </div>
+              </td>
+            </tr>
+      </table>
 
-<div class="editor-label">
-    Location
-</div>
-<div class="editor-field">
-    @Html.DropDownListFor(model => model.LocationId, ((IEnumerable<Trails2012.Domain.Location>)ViewBag.PossibleLocations).Select(option => new SelectListItem {
-        Text = (option == null ? "None" : option.Name), 
-        Value = option.Id.ToString(),
-        Selected = (Model != null) && (option.Id == Model.LocationId)
-    }), "Choose...")
-    @Html.ValidationMessageFor(model => model.LocationId)
-</div>
-
-<div class="editor-label">
-    TrailType
-</div>
-<div class="editor-field">
-    @Html.DropDownListFor(model => model.TrailTypeId, ((IEnumerable<Trails2012.Domain.TrailType>)ViewBag.PossibleTrailTypes).Select(option => new SelectListItem {
-        Text = Html.DisplayTextFor(_ => option).ToString(), 
-        Value = option.Id.ToString(),
-        Selected = (Model != null) && (option.Id == Model.TrailTypeId)
-    }), "Choose...")
-    @Html.ValidationMessageFor(model => model.TrailTypeId)
-</div>
-
-<div class="editor-label">
-    Difficulty
-</div>
-<div class="editor-field">
-    @Html.DropDownListFor(model => model.DifficultyId, ((IEnumerable<Trails2012.Domain.Difficulty>)ViewBag.PossibleDifficulties).Select(option => new SelectListItem {
-        Text = Html.DisplayTextFor(_ => option).ToString(), 
-        Value = option.Id.ToString(),
-        Selected = (Model != null) && (option.Id == Model.DifficultyId)
-    }), "Choose...")
-    @Html.ValidationMessageFor(model => model.DifficultyId)
-</div>
-
-<div class="editor-label">
-    @Html.LabelFor(model => model.Distance)
-</div>
-<div class="editor-field">
-    @Html.EditorFor(model => model.Distance)
-    @Html.ValidationMessageFor(model => model.Distance)
-</div>
-
-<div class="editor-label">
-    @Html.LabelFor(model => model.ElevationGain)
-</div>
-<div class="editor-field">
-    @Html.EditorFor(model => model.ElevationGain)
-    @Html.ValidationMessageFor(model => model.ElevationGain)
-</div>
-
-<div class="editor-label">
-    @Html.LabelFor(model => model.Cost)
-</div>
-<div class="editor-field">
-    @Html.EditorFor(model => model.Cost)
-    @Html.ValidationMessageFor(model => model.Cost)
-</div>
-
-<div class="editor-label">
-    @Html.LabelFor(model => model.EstimatedTime)
-</div>
-<div class="editor-field">
-    @Html.EditorFor(model => model.EstimatedTime)
-    @Html.ValidationMessageFor(model => model.EstimatedTime)
-</div>
-
-<div class="editor-label">
-    @Html.LabelFor(model => model.IsLoop)
-</div>
-<div class="editor-field">
-    @Html.EditorFor(model => model.IsLoop)
-    @Html.ValidationMessageFor(model => model.IsLoop)
-</div>
 
 <div class="editor-label">
     @Html.LabelFor(model => model.ReturnOnCost)
 </div>
 <div class="editor-field">
-    @Html.EditorFor(model => model.ReturnOnCost)
+    @Html.TextBoxFor(model => model.ReturnOnCost, new { @readonly = "readonly", @class = "grade" })
+    <div id="ReturnOnCostSlider"></div>
     @Html.ValidationMessageFor(model => model.ReturnOnCost)
 </div>
 
@@ -107,7 +200,8 @@
     @Html.LabelFor(model => model.ReturnOnEffort)
 </div>
 <div class="editor-field">
-    @Html.EditorFor(model => model.ReturnOnEffort)
+    @Html.TextBoxFor(model => model.ReturnOnEffort, new { @readonly = "readonly", @class = "grade" })
+    <div id="ReturnOnEffortSlider"></div>
     @Html.ValidationMessageFor(model => model.ReturnOnEffort)
 </div>
 
@@ -115,7 +209,8 @@
     @Html.LabelFor(model => model.OverallGrade)
 </div>
 <div class="editor-field">
-    @Html.EditorFor(model => model.OverallGrade)
+     @Html.TextBoxFor(model => model.OverallGrade, new { @readonly = "readonly", @class = "grade" })
+    <div id="OverallGradeSlider"></div>
     @Html.ValidationMessageFor(model => model.OverallGrade)
 </div>
 
@@ -123,8 +218,14 @@
     @Html.LabelFor(model => model.Notes)
 </div>
 <div class="editor-field">
-    @Html.EditorFor(model => model.Notes)
+    @(Html.Telerik().EditorFor(model => model.Notes)
+                        .Encode(false)
+                        .HtmlAttributes(new { style = "height:200px" })
+                        )
+    @*@Html.EditorFor(model => model.Notes)*@
     @Html.ValidationMessageFor(model => model.Notes)
 </div>
 
 
+
+@Html.Telerik().ScriptRegistrar().jQuery(false)

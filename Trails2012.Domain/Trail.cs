@@ -4,7 +4,7 @@ namespace Trails2012.Domain
 {
     public class Trail : EntityBase
     {
-        [Required]
+        [Required(ErrorMessage = "A trail name is required", AllowEmptyStrings = false)]
         [StringLength(50)]
         public virtual string Name { get; set; }
 
@@ -14,6 +14,7 @@ namespace Trails2012.Domain
         public virtual int TrailTypeId { get; set; }
         public virtual TrailType TrailType { get; set; }
 
+        //[StringLength(1000)]
         public virtual string Description { get; set; }
         public virtual decimal? Distance { get; set; }
 
@@ -26,7 +27,7 @@ namespace Trails2012.Domain
         [Display(Name = "Estimated Time (Hours)")]
         public virtual decimal? EstimatedTime { get; set; }
 
-        [Display(Name = "Is Loop)")]
+        [Display(Name = "Is Loop")]
         public virtual bool IsLoop { get; set; }
 
         [Display(Name = "Difficulty Level)")]

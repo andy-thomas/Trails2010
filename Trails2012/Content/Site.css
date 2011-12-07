@@ -231,6 +231,7 @@ table th {
     border: solid 1px #e8eef4;
 }
 
+
 /* MISC  
 ----------------------------------------------------------*/
 .clear {
@@ -322,3 +323,26 @@ div#title {
 .tri-state {
     width: 6em;
 }
+
+
+/* -------------- Andy custom stuff here ---------------- */
+input.grade {
+    width: 3em;
+}
+
+ textarea.description {
+     width: 50em
+ }
+ 
+input:read-only
+{
+    background-color: #E6E6E6;
+}
+
+table.noborder {
+        border-style:hidden;
+    }
+
+table.noborder td {
+        border-style:hidden;
+    }
