@@ -330,6 +330,10 @@ input.grade {
     width: 3em;
 }
 
+input.coordinate {
+    width: 5em;
+}
+
  textarea.description {
      width: 50em
  }

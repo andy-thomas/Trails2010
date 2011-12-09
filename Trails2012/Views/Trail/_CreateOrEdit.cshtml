@@ -5,13 +5,6 @@
 @* This partial view defines form fields that will appear when creating and editing entities *@
 <script type="text/javascript">
      $(function() {
-//         $("#OverallGradeSlider").slider({
-//			min: 1,max: 10,step: 0.1, value: @Html.Raw(Model.OverallGrade.ToString()),
-//			slide: function( event, ui ) {
-//			    $("#OverallGrade").val(ui.value);
-//			}
-//		});
-//        $("#OverallGrade").val($("#OverallGradeSlider").slider("value"));
          SetUpSlider($("#ReturnOnCostSlider"), $("#ReturnOnCost"), @Html.Raw((Model.ReturnOnCost ?? 1).ToString()));
          SetUpSlider($("#ReturnOnEffortSlider"), $("#ReturnOnEffort"), @Html.Raw((Model.ReturnOnEffort ?? 1).ToString()));
          SetUpSlider($("#OverallGradeSlider"), $("#OverallGrade"), @Html.Raw((Model.OverallGrade ?? 1).ToString()));
@@ -66,7 +59,7 @@
                  </td>
                  <td>
                    <div class="editor-field">
-                        @Html.DropDownListFor(model => model.LocationId, ((IEnumerable<Trails2012.Domain.Location>)ViewBag.PossibleLocations).Select(option => new SelectListItem {
+                        @Html.DropDownListFor(model => model.LocationId, ((IEnumerable<Location>)ViewBag.PossibleLocations).Select(option => new SelectListItem {
                             Text = (option == null ? "None" : option.Name), 
                             Value = option.Id.ToString(),
                             Selected = (Model != null) && (option.Id == Model.LocationId)
@@ -83,7 +76,7 @@
                 </td>
                  <td>
                     <div class="editor-field">
-                        @Html.DropDownListFor(model => model.TrailTypeId, ((IEnumerable<Trails2012.Domain.TrailType>)ViewBag.PossibleTrailTypes).Select(option => new SelectListItem {
+                        @Html.DropDownListFor(model => model.TrailTypeId, ((IEnumerable<TrailType>)ViewBag.PossibleTrailTypes).Select(option => new SelectListItem {
                             Text = Html.DisplayTextFor(_ => option).ToString(), 
                             Value = option.Id.ToString(),
                             Selected = (Model != null) && (option.Id == Model.TrailTypeId)
@@ -100,7 +93,7 @@
                 </td>
                  <td>
                      <div class="editor-field">
-                        @Html.DropDownListFor(model => model.DifficultyId, ((IEnumerable<Trails2012.Domain.Difficulty>)ViewBag.PossibleDifficulties).Select(option => new SelectListItem {
+                        @Html.DropDownListFor(model => model.DifficultyId, ((IEnumerable<Difficulty>)ViewBag.PossibleDifficulties).Select(option => new SelectListItem {
                             Text = Html.DisplayTextFor(_ => option).ToString(), 
                             Value = option.Id.ToString(),
                             Selected = (Model != null) && (option.Id == Model.DifficultyId)
@@ -224,6 +217,9 @@
                         )
     @*@Html.EditorFor(model => model.Notes)*@
     @Html.ValidationMessageFor(model => model.Notes)
+</div>
+<div class="editor-field">
+		@Html.Partial("_Map", Model)
 </div>
 
 

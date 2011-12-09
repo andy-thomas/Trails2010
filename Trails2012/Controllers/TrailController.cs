@@ -38,10 +38,11 @@ namespace Trails2012.Controllers
 
         public ActionResult Create()
         {
+            Trail newTrail = new Trail();
 			ViewBag.PossibleLocations = _repository.List<Location>();
             ViewBag.PossibleTrailTypes = _repository.List<TrailType>();
             ViewBag.PossibleDifficulties = _repository.List<Difficulty>();
-            return View();
+            return View(newTrail);
         } 
 
         //
@@ -52,16 +53,17 @@ namespace Trails2012.Controllers
         [HttpPost, ValidateInput(false)]
         public ActionResult Create(Trail trail)
         {
-            if (ModelState.IsValid) {
+            if (ModelState.IsValid) 
+            {
                 _repository.Insert(trail);
                 _repository.SaveChanges();
                 return RedirectToAction("Index");
-            } else {
-                ViewBag.PossibleLocations = _repository.List<Location>();
-                ViewBag.PossibleTrailTypes = _repository.List<TrailType>();
-                ViewBag.PossibleDifficulties = _repository.List<Difficulty>();
-                return View();
-			}
+            }
+
+            ViewBag.PossibleLocations = _repository.List<Location>();
+            ViewBag.PossibleTrailTypes = _repository.List<TrailType>();
+            ViewBag.PossibleDifficulties = _repository.List<Difficulty>();
+            return View();
         }
         
         //
@@ -83,18 +85,17 @@ namespace Trails2012.Controllers
         [HttpPost, ValidateInput(false)]
         public ActionResult Edit(Trail trail)
         {
-            if (ModelState.IsValid) {
+            if (ModelState.IsValid) 
+            {
                 _repository.Update(trail);
                 _repository.SaveChanges();
                 return RedirectToAction("Index");
-            } 
-            else 
-            {
-                ViewBag.PossibleLocations = _repository.List<Location>();
-                ViewBag.PossibleTrailTypes = _repository.List<TrailType>();
-                ViewBag.PossibleDifficulties = _repository.List<Difficulty>();
-                return View();
-			}
+            }
+
+            ViewBag.PossibleLocations = _repository.List<Location>();
+            ViewBag.PossibleTrailTypes = _repository.List<TrailType>();
+            ViewBag.PossibleDifficulties = _repository.List<Difficulty>();
+            return View();
         }
 
         //

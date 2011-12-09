@@ -6,4 +6,5 @@
   <Module PersistentId="3B4F2847-C93C-4707-8A31-1FADA659AEDA" ModuleId="Trails2012.DataAccess.EF.Test" />
   <Module PersistentId="8B1E2305-D9BC-4239-9C68-D3C76F3ABB57" ModuleId="Trails2012.DataAccess_1" />
   <Module PersistentId="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.Web.Mvc" />
+  <Module PersistentId="System.Data.Entity, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data.Entity" />
 </Modules>

@@ -20,6 +20,11 @@
                     group.Add("telerik.common.css")
                     .Add("telerik.outlook.css"))
                 
+    @RenderSection("Scripts", false)
+    <style type="text/css"> 
+       @RenderSection("Styles", false) 
+    </style>
+
 
 </head>
 <body>
