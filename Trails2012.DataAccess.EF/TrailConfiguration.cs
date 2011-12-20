@@ -11,7 +11,9 @@ namespace Trails2012.DataAccess.EF
             ToTable("Trail", "dbo");
             HasKey(t => t.Id);
             Property(t => t.Id).HasColumnName("TrailId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            
+
+            Property(p => p.Image).HasColumnType("image"); // if this is missing, default behaviour is to map to varbinary(max)
+
             //Ignore(t => t.Notes);
            
             //HasRequired(t => t.Location).WithRequiredDependent().Map(m => m.MapKey("LocationId"));

@@ -1,5 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using System.Drawing;
+using System.IO;
+using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
 using Trails2012.DataAccess;
 using Trails2012.Domain;
@@ -51,14 +56,49 @@ namespace Trails2012.Controllers
         // Andy - set ValidateInput(false) so that the Notes editor can set formatting tags without causing the 
         // "A potentially dangerous Request.Form value was detected from the client" error.
         [HttpPost, ValidateInput(false)]
-        public ActionResult Create(Trail trail)
+        public ActionResult Create(Trail trail, HttpPostedFileBase file)
         {
             if (ModelState.IsValid) 
             {
+
+
+                BinaryReader binaryReader = new BinaryReader(file.InputStream); 
+                byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
+                trail.Image = byteArray;
+
+
+
                 _repository.Insert(trail);
                 _repository.SaveChanges();
                 return RedirectToAction("Index");
             }
+
+            //=================================
+            var image = WebImage.GetImageFromRequest();
+
+            if (image != null)
+            {
+                if (image.Width > 500)
+                {
+                    image.Resize(500, ((500 * image.Height) / image.Width));
+                }
+             //newImage.MimeType = image.ContentType;
+           //     file.ContentType
+ 
+
+                var binaryReader = new BinaryReader(file.InputStream);
+                //newImage.Data = 
+                byte[] byteArray =  binaryReader.ReadBytes(file.ContentLength);
+                binaryReader.Close();
+ 
+                //var filename = Path.GetFileName(image.FileName);
+                //image.Save(Path.Combine("../Uploads/Images", filename));
+                //filename = Path.Combine("~/Uploads/Images", filename);
+                //string ImageUrl = Url.Content(filename);
+                //string ImageAltText = image.FileName.Substring(0, image.FileName.Length - 4);
+
+            }
+            //=================================
 
             ViewBag.PossibleLocations = _repository.List<Location>();
             ViewBag.PossibleTrailTypes = _repository.List<TrailType>();
@@ -83,10 +123,18 @@ namespace Trails2012.Controllers
         // Andy - set ValidateInput(false) so that the Notes editor can set formatting tags without causing the 
         // "A potentially dangerous Request.Form value was detected from the client" error.
         [HttpPost, ValidateInput(false)]
-        public ActionResult Edit(Trail trail)
+        public ActionResult Edit(Trail trail, HttpPostedFileBase file)
         {
             if (ModelState.IsValid) 
             {
+              
+              if (file != null)
+              {
+                 BinaryReader binaryReader = new BinaryReader(file.InputStream);
+                  byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
+                  trail.Image = byteArray;
+              }
+
                 _repository.Update(trail);
                 _repository.SaveChanges();
                 return RedirectToAction("Index");
@@ -117,6 +165,14 @@ namespace Trails2012.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public ActionResult ShowImage(int TrailId)
+        {
+            Trail trail = _repository.GetById<Trail>(TrailId);
+            return File(trail.Image, "image/jpg");
+        }
+
+
     }
 }
 

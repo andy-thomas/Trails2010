@@ -350,3 +350,7 @@ table.noborder {
 table.noborder td {
         border-style:hidden;
     }
+    
+img.TrailImage {
+     height: 200px;
+ }   

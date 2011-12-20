@@ -19,7 +19,7 @@ namespace Trails2012.Domain
         [Display(Name = "Map Reference")]
         public virtual string MapReference { get; set; }
 
-        public int RegionId { get; set; }
+        public virtual int RegionId { get; set; }
         public virtual Region Region
         {
             get { return _region; }

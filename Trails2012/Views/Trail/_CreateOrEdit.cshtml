@@ -1,5 +1,6 @@
 @using Telerik.Web.Mvc.UI
 @using Trails2012.Domain
+
 @model Trail
 
 @* This partial view defines form fields that will appear when creating and editing entities *@
@@ -222,6 +223,13 @@
 		@Html.Partial("_Map", Model)
 </div>
 
-
+<fieldset>
+        <legend>@Html.LabelFor(model => model.Image)</legend>
+        <div class="editor-field">
+             <img class = 'TrailImage' src='@Url.Action("ShowImage", "Trail", new { TrailId = Model.Id }) ' alt="" /> 
+             <p></p>
+              <input type="file" name="file" id="file" />
+        </div>
+</fieldset>
 
 @Html.Telerik().ScriptRegistrar().jQuery(false)

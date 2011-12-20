@@ -48,9 +48,12 @@ namespace Trails2012.Domain
 
         public virtual string Notes { get; set; }
 
-        public decimal? Latitude { get; set; }
-        public decimal? Longitude { get; set; }
+        public virtual decimal? Latitude { get; set; }
+        public virtual decimal? Longitude { get; set; }
         // I considered using the SQL Server Geography type, but it involved some extra plumbing in order to not couple the domain to Microsoft-specific data type
         // and anyway, it has been removed from EF v4.2 - won't be available until v4.5. Keep simple with Lat & Long coordinates for now
+
+        public virtual byte[] Image { get; set; } 
+
     }
 }

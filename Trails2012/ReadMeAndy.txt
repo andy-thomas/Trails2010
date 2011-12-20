@@ -16,3 +16,12 @@ Thus, the Entity framework repository can be plugged in simply by dropping the "
 (Although, if we _were_ to reference the Trails2010.DataAccess.EF project within the web project, then of course the current up-to-date version would get copied in 
 on every build for us, which is more convenient, but leads to tighter coupling). This way, we could simply replace the EF repository with another, say one based on NHibernate, 
 simply by swapping the DLLs out.
+
+
+Links for uploading files:
+http://stackoverflow.com/questions/4784225/mvc-3-file-upload-and-model-binding  <----
+http://aspzone.com/tech/jquery-file-upload-in-asp-net-mvc-without-using-flash/
+http://haacked.com/archive/2010/07/16/uploading-files-with-aspnetmvc.aspx
+http://www.hanselman.com/blog/ABackToBasicsCaseStudyImplementingHTTPFileUploadWithASPNETMVCIncludingTestsAndMocks.aspx
+Links for dealing with images
+http://stackoverflow.com/questions/4896439/action-image-mvc3-razor

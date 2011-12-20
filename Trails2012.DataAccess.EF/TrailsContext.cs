@@ -16,7 +16,8 @@ namespace Trails2012.DataAccess.EF
         {
             // See http://weblogs.asp.net/scottgu/archive/2010/07/23/entity-framework-4-code-first-custom-database-schema-mapping.aspx
 
-            Configuration.ProxyCreationEnabled = false;
+            // What to do here? - this enables on lazy loading, but causes problems with JSON serialization on the Telerik grid control
+            //Configuration.ProxyCreationEnabled = false;
 
             //Database.SetInitializer<TrailsContext>(null); // Use this to by-pass checks for changes to the domain when the database contains a EdmMetadata table
 
