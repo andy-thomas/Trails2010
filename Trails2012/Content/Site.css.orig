@@ -17,7 +17,7 @@ body {
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #7DA5E0), color-stop(1, #11171F));
 	/* Webkit (Chrome 11+) */ 
 	background-image: -webkit-linear-gradient(bottom, #7DA5E0 0%, #11171F 100%);
-	/* Proposed W3C Markup  */
+	/* Proposed W3C Markup */ 
 	background-image: linear-gradient(bottom, #7DA5E0 0%, #11171F 100%);
 	background-repeat:no-repeat;
     
@@ -115,7 +115,7 @@ header h1, #header h1
 	font-weight: bold;
 	padding: 5px 0;
 	margin: 0;
-	color: #b42727;
+	color: #1C366C;
 	border: none;
 	line-height: 2em;
 	font-size: 32px !important;
@@ -326,12 +326,12 @@ div#title {
 ----------------------------------------------------------*/
 .display-label, 
 .editor-label {
-    /*margin: 1em 0 0 0;*/
+    margin: 1em 0 0 0;
 }
 
 .display-field, 
 .editor-field {
-    /*margin: 0.5em 0 0 0;*/
+    margin: 0.5em 0 0 0;
 }
 
 .text-box {
@@ -369,19 +369,15 @@ table.noborder {
         border-style:hidden;
     }
 
-
-table.noborder tr {
-        vertical-align: top;
-    }
-    
 table.noborder td {
         border-style:hidden;
     }
     
+<<<<<<< HEAD
 img.TrailImage {
      height: 200px;
  }   
- 
+=======
 #title {
     position: relative;
     margin-bottom: 0px;
@@ -390,3 +386,4 @@ img.TrailImage {
     height: 190px;
 	background-position:left bottom 
 }
+>>>>>>> c91a6f245d649c9480dbfeaf85c08b33c3a42b2a

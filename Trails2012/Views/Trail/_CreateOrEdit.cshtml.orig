@@ -223,29 +223,20 @@
 		@Html.Partial("_Map", Model)
 </div>
 
+<<<<<<< HEAD
 <fieldset>
         <legend>@Html.LabelFor(model => model.Image)</legend>
-
         <div class="editor-field">
-           @if (Model.Image != null)
-            {
-                <img class = 'TrailImage' src='@Url.Action("ShowImage", "Trail", new {TrailId = Model.Id}) ' alt="Image of @Html.DisplayFor(model => model.Name)" />
-                <p></p>
-            }
-            <input type="file" name="file" id="file" />
+             <img class = 'TrailImage' src='@Url.Action("ShowImage", "Trail", new { TrailId = Model.Id }) ' alt="" /> 
+             <p></p>
+              <input type="file" name="file" id="file" />
         </div>
-
 </fieldset>
+
+@Html.Telerik().ScriptRegistrar().jQuery(false)
+=======
 
 @*
 @Html.Telerik().ScriptRegistrar().jQuery(false)
 *@
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#file").change(function () {
-            //If the user has changed the image, then just hide the existing one
-            $('.TrailImage').hide();
-        });
-    }); 
-</script>
+>>>>>>> c91a6f245d649c9480dbfeaf85c08b33c3a42b2a

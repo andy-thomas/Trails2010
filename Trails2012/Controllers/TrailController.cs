@@ -35,6 +35,7 @@ namespace Trails2012.Controllers
 
         public ViewResult Details(int id)
         {
+            ViewBag.IsReadOnly = true;
             return View(_repository.GetById<Trail>(id));
         }
 
@@ -125,17 +126,21 @@ namespace Trails2012.Controllers
         [HttpPost, ValidateInput(false)]
         public ActionResult Edit(Trail trail, HttpPostedFileBase file)
         {
-            if (ModelState.IsValid) 
+            // Get the trail data back from the database and only then populate it from the model, 
+            // because the form does not contain every piece of information about the entity;
+            // specifically, it is missing the Image
+            Trail savedTrail = _repository.GetById<Trail>(trail.Id);
+            if (ModelState.IsValid)
             {
-              
-              if (file != null)
-              {
-                 BinaryReader binaryReader = new BinaryReader(file.InputStream);
-                  byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
-                  trail.Image = byteArray;
-              }
+                UpdateModel(savedTrail);
 
-                _repository.Update(trail);
+                if (file != null)
+                {
+                    BinaryReader binaryReader = new BinaryReader(file.InputStream);
+                    byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
+                    savedTrail.Image = byteArray;
+                }
+                _repository.Update(savedTrail);
                 _repository.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -169,6 +174,7 @@ namespace Trails2012.Controllers
         public ActionResult ShowImage(int TrailId)
         {
             Trail trail = _repository.GetById<Trail>(TrailId);
+            if (trail == null || trail.Image == null) return null;
             return File(trail.Image, "image/jpg");
         }
 

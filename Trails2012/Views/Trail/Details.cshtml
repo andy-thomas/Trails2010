@@ -9,47 +9,141 @@
 <fieldset>
     <legend>Trail</legend>
 
-    <div class="display-label">Name</div>
-    <div class="display-field">@Model.Name</div>
+        <table class="noborder">
+            <tr>
+                <td>
+                   <div class="display-label">Name</div>
+                </td>
+                <td>
+                    <div class="display-field">@Model.Name</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">Location</div>
+                </td>
+                <td>
+                    <div class="display-field">@(Model.Location == null ? "None" : Model.Location.Name)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">TrailType</div>
+                </td>
+                <td>
+                    <div class="display-field">@(Model.TrailType == null ? "None" : Model.TrailType.TrailTypeName)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">Description</div>
+                </td>
+                <td>
+                    <div class="display-field">@Model.Description</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">Distance (km)</div>
+                </td>
+                <td>
+                    <div class="display-field">@String.Format("{0:F}", Model.Distance)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">ElevationGain (m)</div>
+                </td>
+                <td>
+                    <div class="display-field">@String.Format("{0:F}", Model.ElevationGain)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">Cost ($)</div>
+                </td>
+                <td>
+                    <div class="display-field">@String.Format("{0:F}", Model.Cost)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">EstimatedTime (hours)</div>
+                </td>
+                <td>
+                    <div class="display-field">@String.Format("{0:F}", Model.EstimatedTime)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">IsLoop</div>
+                </td>
+                <td>
+                    <div class="display-field">@(Model.IsLoop ? "Yes" : "No")</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">Difficulty</div>
+                </td>
+                <td>
+                    <div class="display-field">@(Model.Difficulty == null ? "None" : Model.Difficulty.DifficultyType)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">ReturnOnCost</div>
+                </td>
+                <td>
+                    <div class="display-field">@String.Format("{0:F}", Model.ReturnOnCost)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">ReturnOnEffort</div>
+                </td>
+                <td>
+                    <div class="display-field">@String.Format("{0:F}", Model.ReturnOnEffort)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">OverallGrade</div>
+                </td>
+                <td>
+                    <div class="display-field">@String.Format("{0:F}", Model.OverallGrade)</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">Notes</div>
+                </td>
+                <td>
+                    <div class="display-field">@Model.Notes</div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="display-label">Image</div>
+                </td>
+               <td>
+                   <div class="display-field">
+                       @if (Model.Image != null)
+                        {
+                            <img class = 'TrailImage' src='@Url.Action("ShowImage", "Trail", new {TrailId = Model.Id}) ' alt="Image of @Html.DisplayFor(model => model.Name)" />
+                        }
+                     </div>
+                </td>
+            </tr>
+       </table>           
+                @*<div class="display-label">Trailhead</div>*@
 
-    <div class="display-label">Location</div>
-    <div class="display-field">@(Model.Location == null ? "None" : Model.Location.Name)</div>
+    @if (Model.Latitude != null)
+    {
+                @Html.Partial("_Map", Model)
+    }
 
-    <div class="display-label">TrailType</div>
-    <div class="display-field">@Html.DisplayTextFor(_ => Model.TrailType).ToString()</div>
 
-    <div class="display-label">Description</div>
-    <div class="display-field">@Model.Description</div>
-
-    <div class="display-label">Distance</div>
-    <div class="display-field">@String.Format("{0:F}", Model.Distance)</div>
-
-    <div class="display-label">ElevationGain</div>
-    <div class="display-field">@String.Format("{0:F}", Model.ElevationGain)</div>
-
-    <div class="display-label">Cost</div>
-    <div class="display-field">@String.Format("{0:F}", Model.Cost)</div>
-
-    <div class="display-label">EstimatedTime</div>
-    <div class="display-field">@String.Format("{0:F}", Model.EstimatedTime)</div>
-
-    <div class="display-label">IsLoop</div>
-    <div class="display-field">@Model.IsLoop</div>
-
-    <div class="display-label">Difficulty</div>
-    <div class="display-field">@Html.DisplayTextFor(_ => Model.Difficulty).ToString()</div>
-
-    <div class="display-label">ReturnOnCost</div>
-    <div class="display-field">@String.Format("{0:F}", Model.ReturnOnCost)</div>
-
-    <div class="display-label">ReturnOnEffort</div>
-    <div class="display-field">@String.Format("{0:F}", Model.ReturnOnEffort)</div>
-
-    <div class="display-label">OverallGrade</div>
-    <div class="display-field">@String.Format("{0:F}", Model.OverallGrade)</div>
-
-    <div class="display-label">Notes</div>
-    <div class="display-field">@Model.Notes</div>
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |

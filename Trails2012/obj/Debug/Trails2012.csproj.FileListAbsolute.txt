@@ -11,8 +11,4 @@ C:\Projects\Personal\Trails2012\Trails2012\bin\MefContrib.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\MefContrib.Web.Mvc.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\Microsoft.Web.Infrastructure.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\WebActivator.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\EntityFramework.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\EntityFramework.xml
 C:\Projects\Personal\Trails2012\Trails2012\bin\Telerik.Web.Mvc.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\Trails2012.DataAccess.EF.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\Trails2012.DataAccess.EF.pdb

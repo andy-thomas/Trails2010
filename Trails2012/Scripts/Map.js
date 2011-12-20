@@ -4,7 +4,7 @@
 var map;
 var markersArray = [];
 
-function initializeMap(latitude, longitude) {
+function initializeMap(latitude, longitude, isreadonly) {
 
     if (latitude != "" && longitude != "") {
         var latlng = new google.maps.LatLng(latitude, longitude);
@@ -22,14 +22,16 @@ function initializeMap(latitude, longitude) {
 			("map_canvas"), options);
 
     if (latitude != "" && longitude != "")
-        placeMarker(latlng, map);
+        placeMarker(latlng, map, isreadonly);
 
-    google.maps.event.addListener(map, 'click', function (e) {
-        placeMarker(e.latLng, map);
-    });
+    if (isreadonly != "True") {
+        google.maps.event.addListener(map, 'click', function(e) {
+            placeMarker(e.latLng, map, isreadonly);
+        });
+    }
 }
 
-function placeMarker(position, map) {
+function placeMarker(position, map, isreadonly) {
     var marker = new google.maps.Marker({
         position: position,
         map: map
@@ -38,12 +40,14 @@ function placeMarker(position, map) {
     markersArray.push(marker);
     $("#Latitude").val(position.lat());
     $("#Longitude").val(position.lng());
-    
-    google.maps.event.addListener(marker, 'dblclick', function (point, source, overlay) {
-        marker.setMap(null);
-        $("#Latitude").val("");
-        $("#Longitude").val("");
-    });
+
+    if (isreadonly != "True") {
+        google.maps.event.addListener(marker, 'dblclick', function(point, source, overlay) {
+            marker.setMap(null);
+            $("#Latitude").val("");
+            $("#Longitude").val("");
+        });
+    }
     //map.panTo(position);
 }
 
