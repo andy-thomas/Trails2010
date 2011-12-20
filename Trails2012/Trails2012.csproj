@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.4.2.0.0\lib\net40\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="MefContrib">
       <HintPath>..\packages\MefContrib.1.2.0.0\lib\MefContrib.dll</HintPath>
     </Reference>
@@ -74,8 +71,7 @@
     <Reference Include="Telerik.Web.Mvc">
       <HintPath>..\packages\TelerikMvcExtensions.2011.3.1115\lib\net40\Telerik.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="WebActivator, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="WebActivator">
       <HintPath>..\packages\WebActivator.1.5\lib\net40\WebActivator.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -452,6 +448,13 @@
     <Content Include="Content\2011.3.1115\Windows7\sprite.png" />
     <Content Include="Content\Images\calendar.gif" />
     <Content Include="Content\Images\calendar2.gif" />
+    <Content Include="Content\Images\eagleclipart.jpg" />
+    <Content Include="Content\Images\eagleclipart2.gif" />
+    <Content Include="Content\Images\Landscapes020.gif" />
+    <Content Include="Content\Images\Landscapes024.gif" />
+    <Content Include="Content\Images\Landscapes035.gif" />
+    <Content Include="Content\Images\TrailsMontage.gif" />
+    <Content Include="Content\Images\Trail_Hd.gif" />
     <Content Include="Content\Person.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -609,10 +612,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Trails2012.DataAccess.EF\Trails2012.DataAccess.EF.csproj">
-      <Project>{B6F99750-1FDB-4650-BDA5-EA5BA58D5C27}</Project>
-      <Name>Trails2012.DataAccess.EF</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Trails2012.DataAccess\Trails2012.DataAccess.csproj">
       <Project>{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}</Project>
       <Name>Trails2012.DataAccess</Name>
@@ -666,6 +665,45 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Region\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Lists\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Region\_SelectAjaxEditing.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Location\SelectAjaxEditing.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Location\_SelectAjaxEditing.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\EditorTemplates\GridForeignKey.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Difficulty\_SelectAjaxEditing.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trail\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trail\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trail\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trail\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trail\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trail\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trail\_Map.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_GlobalResources\UploadLocalization.zh-CN.resx">
@@ -846,45 +884,6 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>EditorLocalization.bg-BG.designer.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Region\_SelectAjaxEditing.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Location\SelectAjaxEditing.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Location\_SelectAjaxEditing.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\EditorTemplates\GridForeignKey.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Difficulty\_SelectAjaxEditing.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Trail\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Trail\Edit.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Trail\Create.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Trail\Delete.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Trail\Details.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Trail\_CreateOrEdit.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Trail\_Map.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
