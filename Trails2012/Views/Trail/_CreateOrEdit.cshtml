@@ -225,11 +225,13 @@
 
 <fieldset>
         <legend>@Html.LabelFor(model => model.Image)</legend>
+
         <div class="editor-field">
              <img class = 'TrailImage' src='@Url.Action("ShowImage", "Trail", new { TrailId = Model.Id }) ' alt="" /> 
              <p></p>
               <input type="file" name="file" id="file" />
         </div>
 </fieldset>
-
+@*
 @Html.Telerik().ScriptRegistrar().jQuery(false)
+*@

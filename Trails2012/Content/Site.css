@@ -4,7 +4,23 @@ to use a different color start by replacing all instances of
 #5c87b2 with your new color.
 ----------------------------------------------------------*/
 body {
-    background-color: #5c87b2;
+    background-color: #7DA5E0;
+    
+    /* http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/default.html */
+    /* IE10 */ 
+	background-image: -ms-linear-gradient(bottom, #7DA5E0 0%, #11171F 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, #7DA5E0 0%, #11171F 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #7DA5E0 0%, #11171F 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #7DA5E0), color-stop(1, #11171F));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #7DA5E0 0%, #11171F 100%);
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(bottom, #7DA5E0 0%, #11171F 100%);
+	background-repeat:no-repeat;
+    
     font-size: .85em;
     font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
     margin: 0;
@@ -87,17 +103,23 @@ header, #header {
     margin-bottom: 0px;
     color: #000;
     padding: 0;
+    
+    height: 207px;
+	background-image:url(./images/trailsmontage.gif);
+	background-repeat:repeat-x;	
+	background-position:left bottom 
 }
 
-header h1, #header h1 {
-    font-weight: bold;
-    padding: 5px 0;
-    margin: 0;
-    color: #fff;
-    border: none;
-    line-height: 2em;
-    font-size: 32px !important;
-    text-shadow: 1px 1px 2px #111;
+header h1, #header h1
+{
+	font-weight: bold;
+	padding: 5px 0;
+	margin: 0;
+	color: #1C366C;
+	border: none;
+	line-height: 2em;
+	font-size: 32px !important;
+	text-shadow: 1px 1px 2px #111;
 }
 
 #main {
@@ -146,7 +168,7 @@ ul#menu li#greeting {
 }
 
 ul#menu li a {
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
     font-weight: bold;
     text-decoration: none;
     line-height: 2.8em;
@@ -244,7 +266,7 @@ table th {
 
 nav, 
 #menucontainer {
-    margin-top: 40px;
+    margin-top: 135px;
 }
 
 div#title {
@@ -354,3 +376,12 @@ table.noborder td {
 img.TrailImage {
      height: 200px;
  }   
+ 
+#title {
+    position: relative;
+    margin-bottom: 0px;
+    background-image:url(./images/Trail_Hd.gif);
+	background-repeat:no-repeat;	
+    height: 190px;
+	background-position:left bottom 
+}
