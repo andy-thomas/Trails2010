@@ -5,6 +5,10 @@ using System.Runtime.CompilerServices;
 
 namespace Trails2012.DataAccess
 {
+    /// <summary>
+    ///  This is just a container into which MEF can import a repository plug-in.
+    ///  Used for unit tests
+    /// </summary>
     public class RepositoryFactory
     {
         [Import]

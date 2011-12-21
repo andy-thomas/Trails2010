@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Transactions;
 
 namespace Trails2012.DataAccess.EF
@@ -110,10 +111,10 @@ namespace Trails2012.DataAccess.EF
         }
 
         public IQueryable<TEntity> Get<TEntity>(
-                Expression<Func<TEntity, bool>> filter = null, 
-                Func<IQueryable<TEntity>, 
+                Expression<Func<TEntity, bool>> filter = null,
+                Func<IQueryable<TEntity>,
                 IOrderedQueryable<TEntity>> orderBy = null,
-                string includeProperties = "") where TEntity : class
+                Expression<Func<TEntity, object>>[] includeProperties = null) where TEntity : class
         {
             IQueryable<TEntity> query = _context.Set<TEntity>();
 
@@ -122,11 +123,12 @@ namespace Trails2012.DataAccess.EF
                 query = query.Where(filter);
             }
 
-            foreach (var includeProperty in includeProperties.Split
-                (new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
-            {
-                query = query.Include(includeProperty);
-            }
+            if (includeProperties != null)
+                foreach (Expression<Func<TEntity, object>> includeProperty in includeProperties)
+                {
+                    string propertyName = Util.GetPropertyNameFromExpression(includeProperty);
+                    query = query.Include(propertyName);
+                }
 
             if (orderBy != null)
             {

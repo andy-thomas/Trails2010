@@ -1,0 +1,26 @@
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class xmlns="urn:nhibernate-mapping-2.2" name="Trails2012.Domain.Location, Trails2012.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Location`">
+    <id name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="LocationId" />
+      <generator class="identity" />
+    </id>
+    <property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="Name" />
+    </property>
+    <property name="Description" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="Description" />
+    </property>
+    <property name="Directions" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="Directions" />
+    </property>
+    <property name="MapReference" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="MapReference" />
+    </property>
+    <property name="RegionId" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="RegionId" />
+    </property>
+    <many-to-one class="Trails2012.Domain.Region, Trails2012.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Region">
+      <column name="RegionId" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

@@ -100,7 +100,7 @@ namespace Trails2012.DataAccess
         IQueryable<TEntity> Get<TEntity>(
             Expression<Func<TEntity, bool>> filter = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-            string includeProperties = "") where TEntity : class;
+            Expression<Func<TEntity, object>>[] includeProperties = null) where TEntity : class;
 
     }
 }

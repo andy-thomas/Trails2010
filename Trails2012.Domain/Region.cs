@@ -14,7 +14,7 @@ namespace Trails2012.Domain
 
         [ScriptIgnore] // This helps suppress some circular reference errors when using EF and the Telerik grid
         public virtual ICollection<Location> Locations { get; set; }
-        public int LocationCount
+        public virtual int LocationCount
         {
             get
             {
@@ -23,6 +23,7 @@ namespace Trails2012.Domain
                     count = Locations.Count;
                 return count;
             }
+            private set { }
         }
     }
 }
