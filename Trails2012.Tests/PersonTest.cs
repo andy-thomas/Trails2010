@@ -32,7 +32,8 @@ namespace Trails2012.Tests
             // NOTE: we do not (indeed, we should not) have an explicit reference to the assembly containing our plugabble repository 
             // NOTE:         (i.e. the one that uses Entity Framework - "Trails2012.DataAccess.EF")
             // NOTE: so a version of the assembly file is _not_ copied into the executing folder automatically whenever this ("Trails2102.Test") assembly is built. 
-            // NOTE: We need to explicitly place a _current_copy of the Trails2012.DataAccess.EF.dll file into our executing folder.
+            // NOTE: We need to explicitly place a _current_copy of the Trails2012.DataAccess.EF.dll file into our executing folder,
+            // NOTE: as well as all of its dependencies
             DirectoryCatalog repositoryCatalog = new DirectoryCatalog(@".\");
 
             // 3. Use the Directory Catalog and point to the folder which contains our pluggable component
@@ -152,6 +153,16 @@ namespace Trails2012.Tests
             Console.WriteLine("There are {0} locations", count);
         }
 
+        [TestMethod]
+        public void ShouldGetAllRegions()
+        {
+            //IEnumerable<Region> regions = _repositoryFactory.Repository.List<Region>();
+            IEnumerable<Region> regions = _repositoryFactory.Repository.ListIncluding<Region>(r => r.Locations);
+            Assert.IsNotNull(regions);
+            int count = regions.Count();
+            Assert.IsTrue(count > 0);
+            Console.WriteLine("There are {0} regions", count);
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 ﻿// ReSharper disable ConditionIsAlwaysTrueOrFalse
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Linq.Expressions;
 using FluentNHibernate.Automapping;
@@ -14,6 +15,7 @@ using Trails2012.Domain;
 
 namespace Trails2012.DataAccess.NHib
 {
+    [Export(typeof(IRepository))]
     public class NHibRepository : IRepository
     {
         readonly ISessionFactory _sessionFactory;
@@ -35,22 +37,30 @@ namespace Trails2012.DataAccess.NHib
 #if(DEBUG)
             const bool exportFiles = true;
 
-            return Fluently.Configure()
-                .Database(FluentNHibernate.Cfg.Db.MsSqlConfiguration.MsSql2008.ConnectionString
-                              (c => c.FromConnectionStringWithKey("TrailsContext")).ShowSql())
-                //.ProxyFactoryFactory("NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle")
-                .Mappings(m =>
-                              {
-                                  m.FluentMappings.AddFromAssemblyOf<PersonMap>();
-                                  if (exportFiles)
-                                      m.FluentMappings.ExportTo(@"C:\Projects\Personal\Trails2012\ExportedMappings");
+            try
+            {
+                return Fluently.Configure()
+              .Database(FluentNHibernate.Cfg.Db.MsSqlConfiguration.MsSql2008.ConnectionString
+                            (c => c.FromConnectionStringWithKey("TrailsContext")).ShowSql())
+                    //.ProxyFactoryFactory("NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle")
+              .Mappings(m =>
+                            {
+                                m.FluentMappings.AddFromAssemblyOf<PersonMap>();
+                                if (exportFiles)
+                                    m.FluentMappings.ExportTo(@"C:\Projects\Personal\Trails2012\ExportedMappings");
 
-                                  m.AutoMappings.Add(model);
-                                  if (exportFiles)
-                                      m.AutoMappings.ExportTo(@"C:\Projects\Personal\Trails2012\ExportedMappings");
-                              })
-                .BuildSessionFactory();
+                                m.AutoMappings.Add(model);
+                                if (exportFiles)
+                                    m.AutoMappings.ExportTo(@"C:\Projects\Personal\Trails2012\ExportedMappings");
+                            })
+              .BuildSessionFactory();
 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                throw;
+            }
 #else
                 return Fluently.Configure()
                     .Database(FluentNHibernate.Cfg.Db.MsSqlConfiguration.MsSql2008.ConnectionString(c => c.FromConnectionStringWithKey("TrailsContext")))
@@ -123,13 +133,23 @@ namespace Trails2012.DataAccess.NHib
         public IEnumerable<TEntity> ListIncluding<TEntity>(params Expression<Func<TEntity, object>>[] includeProperties) where TEntity : class
         {
             ISession session = NHibernateSessionTracker.GetCurrentSession(_sessionFactory);
-            ICriteria criteria = session.CreateCriteria<TEntity>();
-            foreach (Expression<Func<TEntity, object>> includeProperty in includeProperties)
-            {
-                string propertyName = Util.GetPropertyNameFromExpression(includeProperty);
-                criteria.SetFetchMode(propertyName, FetchMode.Eager);
-            }
-            return criteria.List<TEntity>();
+            //ICriteria criteria = session.CreateCriteria<TEntity>();
+            //foreach (Expression<Func<TEntity, object>> includeProperty in includeProperties)
+            //{
+            //    string propertyName = Util.GetPropertyNameFromExpression(includeProperty);
+            //    criteria.SetFetchMode(propertyName, FetchMode.Eager);
+            //}
+            //return criteria.List<TEntity>();
+
+            IQueryable<TEntity> query = session.Query<TEntity>();
+            // Include Properties
+            if (includeProperties != null)
+                foreach (Expression<Func<TEntity, object>> includeProperty in includeProperties)
+                {
+                    query = query.Fetch(includeProperty);
+                }
+
+            return query.ToList();
         }
 
         public TEntity GetById<TEntity>(int id) where TEntity : class

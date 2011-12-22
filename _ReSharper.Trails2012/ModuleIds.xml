@@ -11,4 +11,5 @@
   <Module PersistentId="3FEC4379-017B-4295-834D-8B6517B2DB47" ModuleId="Trails2012.DataAcees.NHib.Test" />
   <Module PersistentId="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Transactions" />
   <Module PersistentId="FluentNHibernate, Version=1.2.0.712, Culture=neutral, PublicKeyToken=8aa435e3cb308880" ModuleId="FluentNHibernate" />
+  <Module PersistentId="System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.ComponentModel.Composition" />
 </Modules>

@@ -49,6 +49,11 @@ namespace Trails2012.Controllers
             if (ModelState.IsValid)
             {
                 _repository.Update(location);
+
+                // see Comment 2
+                Region region = _repository.GetById<Region>(location.RegionId);
+                location.Region = region;
+ 
                 _repository.SaveChanges();
             }
             ViewData["regions"] = _regions;
@@ -63,6 +68,11 @@ namespace Trails2012.Controllers
             if (ModelState.IsValid)
             {
                 _repository.Insert(location);
+                
+                // see Comment 2
+                Region region = _repository.GetById<Region>(location.RegionId);
+                location.Region = region;
+
                 _repository.SaveChanges();
             }
             ViewData["regions"] = _regions;
@@ -93,3 +103,9 @@ namespace Trails2012.Controllers
 // Locations are subsequently loaded up a few milliseconds later.
 // If the Locations are populated with lists of DynamicProxies in the Regions property, then 
 // the Telerik grid chokes with a JSON serialization circular reference error.
+
+// _Comment 2_
+// Andy - The RegionId has been updated from the form.
+// Assign the Region - this step is only necessary if using the current NHib reprository.
+// (The current EF repository is mapped to work with the foreign key RegionId directly, 
+// but NHib works through the related Region object)

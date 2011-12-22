@@ -5,8 +5,8 @@ namespace Trails2012.Domain
 {
     public class Location : EntityBase
     {
-        [NonSerialized]
-        private Domain.Region _region;
+        //[NonSerialized]
+        //private Region _region;
 
         [Required]
         [StringLength(50)]
@@ -19,11 +19,12 @@ namespace Trails2012.Domain
         [Display(Name = "Map Reference")]
         public virtual string MapReference { get; set; }
 
+        [Display(Name = "Region")]
         public virtual int RegionId { get; set; }
-        public virtual Region Region
-        {
-            get { return _region; }
-            set { _region = value; }
-        }
+        public virtual Region Region { get; set; }
+        //{
+        //    get { return _region; }
+        //    set { _region = value; }
+        //}
     }
 }

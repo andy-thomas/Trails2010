@@ -4,14 +4,20 @@
       <column name="TrailId" />
       <generator class="identity" />
     </id>
-    <property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-      <column name="Name" />
+    <property name="Image" type="BinaryBlob">
+      <column name="Image" length="2147483647" not-null="false" />
     </property>
-    <property name="LocationId" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <property name="LocationId" insert="false" update="false" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="LocationId" />
     </property>
-    <property name="TrailTypeId" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <property name="TrailTypeId" insert="false" update="false" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="TrailTypeId" />
+    </property>
+    <property name="DifficultyId" insert="false" update="false" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="DifficultyId" />
+    </property>
+    <property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="Name" />
     </property>
     <property name="Description" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="Description" />
@@ -31,9 +37,6 @@
     <property name="IsLoop" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="IsLoop" />
     </property>
-    <property name="DifficultyId" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-      <column name="DifficultyId" />
-    </property>
     <property name="ReturnOnCost" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="ReturnOnCost" />
     </property>
@@ -51,9 +54,6 @@
     </property>
     <property name="Longitude" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="Longitude" />
-    </property>
-    <property name="Image" type="System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-      <column name="Image" />
     </property>
     <many-to-one class="Trails2012.Domain.Location, Trails2012.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Location">
       <column name="LocationId" />

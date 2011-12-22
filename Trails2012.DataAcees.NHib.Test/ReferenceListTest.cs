@@ -109,5 +109,41 @@ namespace Trails2012.DataAcees.NHib.Test
                     location.Id, location.Name, location.Region.Name);
             }
         }
+
+        [TestMethod]
+        public void ShouldUpdateLocation()
+        {
+            const int id =2;
+            const string testDescription = "Test Description";
+            using (IRepository repository = new NHibRepository())
+            {
+                repository.BeginTransaction();
+
+                Location location = repository.GetById<Location>(id);
+                Assert.IsNotNull(location);
+                Assert.AreEqual(location.Id, id);
+                Assert.AreNotEqual(location.Description, testDescription);
+
+                location.Description = testDescription;
+                repository.Update(location);
+                repository.SaveChanges();
+
+                Location savedLocation = repository.GetById<Location>(id);
+                Assert.AreEqual(savedLocation.Description, testDescription);
+              
+                repository.RollbackTransaction();
+            }
+        }
+
+        [TestMethod]
+        public void ShouldGetAllTrailTypes()
+        {
+            using (IRepository repository = new NHibRepository())
+            {
+                IEnumerable<TrailType> trailTypes = repository.List<TrailType>();
+                Assert.IsTrue(trailTypes.Count() > 0);
+                Console.WriteLine("There are {0} trailTypes", trailTypes.Count());
+            }
+        }
     }
 }

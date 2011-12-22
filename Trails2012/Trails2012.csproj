@@ -454,6 +454,7 @@
     <Content Include="Content\Images\Landscapes024.gif" />
     <Content Include="Content\Images\Landscapes035.gif" />
     <Content Include="Content\Images\TrailsMontage.gif" />
+    <Content Include="Content\Images\TrailsMontage2.gif" />
     <Content Include="Content\Images\Trail_Hd.gif" />
     <Content Include="Content\Person.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -612,6 +613,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Trails2012.DataAccess.NHib\Trails2012.DataAccess.NHib.csproj">
+      <Project>{64952E38-DB4A-461E-86C4-49B06FA379E0}</Project>
+      <Name>Trails2012.DataAccess.NHib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Trails2012.DataAccess\Trails2012.DataAccess.csproj">
       <Project>{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}</Project>
       <Name>Trails2012.DataAccess</Name>

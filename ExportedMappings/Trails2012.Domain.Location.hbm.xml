@@ -4,6 +4,9 @@
       <column name="LocationId" />
       <generator class="identity" />
     </id>
+    <property name="RegionId" insert="false" update="false" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="RegionId" />
+    </property>
     <property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="Name" />
     </property>
@@ -15,9 +18,6 @@
     </property>
     <property name="MapReference" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="MapReference" />
-    </property>
-    <property name="RegionId" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-      <column name="RegionId" />
     </property>
     <many-to-one class="Trails2012.Domain.Region, Trails2012.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Region">
       <column name="RegionId" />

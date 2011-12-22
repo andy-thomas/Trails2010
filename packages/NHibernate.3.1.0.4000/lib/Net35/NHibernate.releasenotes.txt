@@ -2112,7 +2112,7 @@ PreAlpha Build 3
 - Added support for <bag> and <id-bag> mappings. 
 - Implemented sorted collections. 
 - Build files rewritten. 
-- MsSql Dialect now issues one statement to Insert and retrieve identity value. 
+- MsSql Dialect now issues one statement to Insert and retrieve identity value.  
 - Fixed a bug with <generator class="sequence"> 
 - Implemented SqlExpression for Criteria queries. 
 - Initial fix of Multiple IDataReaders being opened with Entities that contain <component> mappings. 

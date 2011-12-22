@@ -62,11 +62,20 @@ namespace Trails2012.Controllers
             if (ModelState.IsValid) 
             {
 
-
                 BinaryReader binaryReader = new BinaryReader(file.InputStream); 
                 byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
                 trail.Image = byteArray;
 
+                // see Comment 1
+                if (trail.DifficultyId.HasValue)
+                {
+                    Difficulty difficulty = _repository.GetById<Difficulty>(trail.DifficultyId.Value);
+                    trail.Difficulty = difficulty;
+                }
+                Location location = _repository.GetById<Location>(trail.LocationId);
+                trail.Location = location;
+                TrailType trailType = _repository.GetById<TrailType>(trail.TrailTypeId);
+                trail.TrailType = trailType;
 
 
                 _repository.Insert(trail);
@@ -139,6 +148,26 @@ namespace Trails2012.Controllers
                     BinaryReader binaryReader = new BinaryReader(file.InputStream);
                     byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
                     savedTrail.Image = byteArray;
+
+                    // see Comment 1
+                    if (trail.DifficultyId.HasValue)
+                    {
+                        Difficulty difficulty = _repository.GetById<Difficulty>(trail.DifficultyId.Value);
+                        trail.Difficulty = difficulty;
+                    }
+                    else
+                        trail.Difficulty = null;
+                    if (trail.Location == null || trail.Location.Id != trail.LocationId)
+                    {
+                        Location location = _repository.GetById<Location>(trail.LocationId);
+                        trail.Location = location;
+                    }
+                    if (trail.TrailType == null || trail.TrailType.Id != trail.TrailTypeId)
+                    {
+                        TrailType trailType = _repository.GetById<TrailType>(trail.TrailTypeId);
+                        trail.TrailType = trailType;
+                    }
+
                 }
                 _repository.Update(savedTrail);
                 _repository.SaveChanges();
@@ -182,3 +211,8 @@ namespace Trails2012.Controllers
     }
 }
 
+// _Comment 1_
+// Andy - The foreign keys (LocationId, etc) have been updated from the form.
+// Assign the objects - this step is only necessary if using the current NHib reprository.
+// (The current EF repository is mapped to work with the foreign keys such as LocationId directly, 
+// but NHib works through the related objects)
