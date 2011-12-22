@@ -42,9 +42,11 @@ namespace Trails2012.Controllers
         [GridAction]
         public ActionResult EditAjaxEditing(Region region)
         {
+            Region savedRegion = _repository.GetById<Region>(region.Id);
             if (ModelState.IsValid)
             {
-                _repository.Update(region);
+                UpdateModel(savedRegion);
+                _repository.Update(savedRegion);
                 _repository.SaveChanges();
             }
             var regions = new List<Region>(_repository.ListIncluding<Region>(r => r.Locations));

@@ -20,7 +20,7 @@ namespace Trails2012.Tests
         public void Setup()
         {
             // See notes in TrailTest class about wiring up the repository
-            DirectoryCatalog repositoryCatalog = new DirectoryCatalog(@".\"); 
+            DirectoryCatalog repositoryCatalog = new DirectoryCatalog(@".\PlugIns"); 
             _repositoryFactory = new RepositoryFactory();
 
             // Now, set up the MEF container and use it to hydrate the _repositoryFactory object

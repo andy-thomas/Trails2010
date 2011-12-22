@@ -12,10 +12,3 @@ C:\Projects\Personal\Trails2012\Trails2012\bin\MefContrib.Web.Mvc.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\Microsoft.Web.Infrastructure.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\WebActivator.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\Telerik.Web.Mvc.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\Trails2012.DataAccess.NHib.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\FluentNHibernate.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\NHibernate.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\Iesi.Collections.dll
-C:\Projects\Personal\Trails2012\Trails2012\bin\Trails2012.DataAccess.NHib.pdb
-C:\Projects\Personal\Trails2012\Trails2012\bin\FluentNHibernate.pdb
-C:\Projects\Personal\Trails2012\Trails2012\bin\Iesi.Collections.pdb

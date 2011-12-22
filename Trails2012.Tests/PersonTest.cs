@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.Linq;
+using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Trails2012.DataAccess;
 using Trails2012.Domain;
@@ -34,7 +35,7 @@ namespace Trails2012.Tests
             // NOTE: so a version of the assembly file is _not_ copied into the executing folder automatically whenever this ("Trails2102.Test") assembly is built. 
             // NOTE: We need to explicitly place a _current_copy of the Trails2012.DataAccess.EF.dll file into our executing folder,
             // NOTE: as well as all of its dependencies
-            DirectoryCatalog repositoryCatalog = new DirectoryCatalog(@".\");
+            DirectoryCatalog repositoryCatalog = new DirectoryCatalog(@".\PlugIns");
 
             // 3. Use the Directory Catalog and point to the folder which contains our pluggable component
             //      (which in this case is likely to be C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\bin\Debug)
@@ -66,7 +67,6 @@ namespace Trails2012.Tests
             // Now, set up the MEF container and use it to hydrate the _repositoryFactory object
             _container = new CompositionContainer(repositoryCatalog);
             _container.SatisfyImportsOnce(_repositoryFactory);
-
         }
 
         [TestMethod]

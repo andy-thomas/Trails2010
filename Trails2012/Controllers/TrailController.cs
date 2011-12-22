@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
-using System.Drawing;
 using System.IO;
 using System.Web;
 using System.Web.Helpers;
@@ -200,9 +198,9 @@ namespace Trails2012.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult ShowImage(int TrailId)
+        public ActionResult ShowImage(int trailId)
         {
-            Trail trail = _repository.GetById<Trail>(TrailId);
+            Trail trail = _repository.GetById<Trail>(trailId);
             if (trail == null || trail.Image == null) return null;
             return File(trail.Image, "image/jpg");
         }

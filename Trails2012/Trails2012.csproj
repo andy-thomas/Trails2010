@@ -613,10 +613,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Trails2012.DataAccess.NHib\Trails2012.DataAccess.NHib.csproj">
-      <Project>{64952E38-DB4A-461E-86C4-49B06FA379E0}</Project>
-      <Name>Trails2012.DataAccess.NHib</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Trails2012.DataAccess\Trails2012.DataAccess.csproj">
       <Project>{8B1E2305-D9BC-4239-9C68-D3C76F3ABB57}</Project>
       <Name>Trails2012.DataAccess</Name>

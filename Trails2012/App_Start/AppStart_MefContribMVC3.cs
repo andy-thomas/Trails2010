@@ -23,8 +23,15 @@ namespace Trails2012.App_Start
             // on ASP.NET MVC controllers. When implementing multiple constructors ensure that
             // there is one constructor marked with the [ImportingConstructor] attribute.
             var catalog = new AggregateCatalog(
-                new DirectoryCatalog("bin"),
+                new DirectoryCatalog(@"bin\PlugIns\"), // see comment 1
                 new ConventionCatalog(new MvcApplicationRegistry())); // Note: add your own (convention)catalogs here if needed.
+
+            // Comment 1
+            // Andy - change the directory from "bin" to "bin\Plugins" - 
+            // Use the PlugIns diectory to hold the MEF plug ins, including all dependent dlls, 
+            // and use probing to allow the executing assembly to locate the dependent assemblies.
+            // That way, the plug in dlls do not deleted on each rebuild.
+            // However, it requires the PlugIns folder to be manually created, and plug in dlls need to be manually added in there.
 
             // Tell MVC3 to use MEF as its dependency resolver.
             var dependencyResolver = new CompositionDependencyResolver(catalog);
