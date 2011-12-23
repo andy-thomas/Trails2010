@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.DataAccess", "Tr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.DataAccess.NHib", "Trails2012.DataAccess.NHib\Trails2012.DataAccess.NHib.csproj", "{64952E38-DB4A-461E-86C4-49B06FA379E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.DataAcees.NHib.Test", "Trails2012.DataAcees.NHib.Test\Trails2012.DataAcees.NHib.Test.csproj", "{3FEC4379-017B-4295-834D-8B6517B2DB47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails2012.DataAccess.NHib.Test", "Trails2012.DataAcees.NHib.Test\Trails2012.DataAccess.NHib.Test.csproj", "{3FEC4379-017B-4295-834D-8B6517B2DB47}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution

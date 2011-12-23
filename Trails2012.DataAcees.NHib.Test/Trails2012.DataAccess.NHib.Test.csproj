@@ -9,8 +9,8 @@
     <ProjectGuid>{3FEC4379-017B-4295-834D-8B6517B2DB47}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Trails2012.DataAcees.NHib.Test</RootNamespace>
-    <AssemblyName>Trails2012.DataAcees.NHib.Test</AssemblyName>
+    <RootNamespace>Trails2012.DataAccess.NHib.Test</RootNamespace>
+    <AssemblyName>Trails2012.DataAccess.NHib.Test</AssemblyName>
     <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,6 +53,7 @@
     <Compile Include="PersonTest.cs" />
     <Compile Include="ReferenceListTest.cs" />
     <Compile Include="TrailTest.cs" />
+    <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

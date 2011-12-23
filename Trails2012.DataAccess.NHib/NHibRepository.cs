@@ -2,11 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using FluentNHibernate;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
+using FluentNHibernate.Cfg.Db;
 using NHibernate;
+using NHibernate.Cfg;
 using NHibernate.Linq;
 using Trails2012.DataAccess.NHib.Conventions;
 using Trails2012.DataAccess.NHib.Mappings;
@@ -24,36 +28,74 @@ namespace Trails2012.DataAccess.NHib
             _sessionFactory = CreateSessionFactory();
         }
 
-        private ISessionFactory CreateSessionFactory()
+        public NHibRepository(bool useInMemoryDatabase)
         {
+            _sessionFactory = CreateSessionFactory(useInMemoryDatabase);
+        }
 
-            AutoPersistenceModel model = AutoMap.AssemblyOf<Trail>(new TrailsConfiguration())
-                .IgnoreBase<EntityBase>()
-                .Conventions.AddFromAssemblyOf<CustomForeignKeyConvention>()
-                // does this line even work? Does not appear to add CustomPrimaryKeyConvention
-                .Conventions.Add<CustomPrimaryKeyConvention>()
-                .UseOverridesFromAssemblyOf<DifficultyMappingOverride>();
+        private ISessionFactory CreateSessionFactory(bool useInMemoryDatabase = false)
+        {
+                AutoPersistenceModel model = AutoMap.AssemblyOf<Trail>(new TrailsConfiguration())
+                    .IgnoreBase<EntityBase>()
+                    .Conventions.AddFromAssemblyOf<CustomForeignKeyConvention>()
+                    // does this line even work? Does not appear to add CustomPrimaryKeyConvention
+                    .Conventions.Add<CustomPrimaryKeyConvention>()
+                    .UseOverridesFromAssemblyOf<DifficultyMappingOverride>();
 
 #if(DEBUG)
             const bool exportFiles = true;
 
             try
             {
-                return Fluently.Configure()
-              .Database(FluentNHibernate.Cfg.Db.MsSqlConfiguration.MsSql2008.ConnectionString
-                            (c => c.FromConnectionStringWithKey("TrailsContext")).ShowSql())
-                    //.ProxyFactoryFactory("NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle")
-              .Mappings(m =>
-                            {
-                                m.FluentMappings.AddFromAssemblyOf<PersonMap>();
-                                if (exportFiles)
-                                    m.FluentMappings.ExportTo(@"C:\Projects\Personal\Trails2012\ExportedMappings");
 
-                                m.AutoMappings.Add(model);
-                                if (exportFiles)
-                                    m.AutoMappings.ExportTo(@"C:\Projects\Personal\Trails2012\ExportedMappings");
-                            })
-              .BuildSessionFactory();
+                if (useInMemoryDatabase)
+                {
+                    FluentConfiguration config = Fluently.Configure()
+                        .Database(SQLiteConfiguration.Standard.InMemory)
+                        //.ExposeConfiguration(BuildSchema)     this does not appear to work - see comment 1
+                        .Mappings(m =>
+                        {
+                            m.FluentMappings.AddFromAssemblyOf<PersonMap>();
+                            if (exportFiles)
+                                m.FluentMappings.ExportTo(
+                                    @"C:\Projects\Personal\Trails2012\ExportedMappings");
+
+                            m.AutoMappings.Add(model);
+                            if (exportFiles)
+                                m.AutoMappings.ExportTo(
+                                    @"C:\Projects\Personal\Trails2012\ExportedMappings");
+                        });
+
+                    ISessionFactory sessionFactory = config.BuildSessionFactory();
+
+                    // Build the schema here using the current session - see Comment 1
+                    SessionSource sessionSource = new SessionSource(config);
+                    ISession session = NHibernateSessionTracker.GetCurrentSession(sessionFactory);
+                    sessionSource.BuildSchema(session);
+ 
+                    return sessionFactory;
+
+                }
+                else
+                {
+                    return Fluently.Configure()
+                        .Database(FluentNHibernate.Cfg.Db.MsSqlConfiguration.MsSql2008.ConnectionString
+                                      (c => c.FromConnectionStringWithKey("TrailsContext")).ShowSql())
+                        //.ProxyFactoryFactory("NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle")
+                        .Mappings(m =>
+                                      {
+                                          m.FluentMappings.AddFromAssemblyOf<PersonMap>();
+                                          if (exportFiles)
+                                              m.FluentMappings.ExportTo(
+                                                  @"C:\Projects\Personal\Trails2012\ExportedMappings");
+
+                                          m.AutoMappings.Add(model);
+                                          if (exportFiles)
+                                              m.AutoMappings.ExportTo(
+                                                  @"C:\Projects\Personal\Trails2012\ExportedMappings");
+                                      })
+                        .BuildSessionFactory();
+                }
 
             }
             catch (Exception ex)
@@ -210,6 +252,47 @@ namespace Trails2012.DataAccess.NHib
         }
 
         #endregion
+
+
+
+        // Comment 1
+        // Andy - this should (and does) build the schema for the SQLite in memory database
+        // However, it appears to not take effect when running unit tests ("error no such table...")
+        // So instead, I create the configuration and SessionFactory, and then get the current session.
+        // Only the do I explicitly build the schema. This way, the schema is built using the same session that the unit test use.
+        // see http://stackoverflow.com/questions/4325800/testing-nhibernate-with-sqlite-no-such-table-schema-is-generated 
+        // and James' link for some more background.
+        private void BuildSchema(Configuration cfg)
+        {
+            // This will write the schema creation script to file
+            // However, see comment 1 
+            string path = @"C:\Projects\Personal\Trails2012\ExportedMappings\Schema.sql";
+            if (File.Exists(path)) File.Delete(path);
+
+            Action<string> updateExport = x =>
+            {
+                using (
+                     FileStream file = new FileStream(path, FileMode.Append, FileAccess.Write))
+                using (StreamWriter sw = new StreamWriter(file))
+                {
+                    sw.Write(x);
+                    sw.Close();
+                }
+            };
+
+            // Option 1 - see http://stackoverflow.com/questions/2096808/sqlite-no-such-table-when-saving-object
+            //ISession session = GetSessionFactory().OpenSession();
+            ////the key point is pass your session.Connection here 
+            //new SchemaExport(cfg).Execute(true, true, false, session.Connection, null);
+
+            // Option 2 - from http://stackoverflow.com/questions/2483424/make-fluent-nhibernate-output-schema-update-to-file
+            //new SchemaUpdate(cfg).Execute(updateExport, true);
+
+            // Option 3 - from Fluent Nhib Wiki - http://wiki.fluentnhibernate.org/Schema_generation
+            //new SchemaExport(cfg).Create(false, true);
+        }
+
+
     }
 
 }

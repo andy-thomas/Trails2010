@@ -42,7 +42,13 @@ namespace Trails2012.Controllers
         [GridAction]
         public ActionResult EditAjaxEditing(Region region)
         {
-            Region savedRegion = _repository.GetById<Region>(region.Id);
+            // Get and update the existing record 
+            //          (only needed if using NHib repo - else the line 
+            //          _repository.Update(region);
+            //          tries to set RegionId to null (since the field is mapped to readonly) , and 
+            //          throws error: "could not delete collection: [Trails2012.Domain.Region.Locations#2")
+            Region savedRegion = _repository.GetById<Region>(region.Id); 
+
             if (ModelState.IsValid)
             {
                 UpdateModel(savedRegion);
