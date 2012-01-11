@@ -39,6 +39,15 @@ namespace Trails2012.DataAccess.NHib
             session.Clear(); 
         }
 
+        /// <summary>
+        /// Only used to expose session for unit testing - we should really make this internal
+        /// and expose internal to the test project
+        /// </summary>
+        public ISession GetCurrentSession()
+        {
+            return NHibernateSessionTracker.GetCurrentSession(_sessionFactory);
+        }
+
         private ISessionFactory CreateSessionFactory(bool useInMemoryDatabase = false)
         {
             AutoPersistenceModel model = AutoMap.AssemblyOf<Trail>(new TrailsConfiguration())

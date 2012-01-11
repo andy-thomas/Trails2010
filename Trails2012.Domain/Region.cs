@@ -25,5 +25,23 @@ namespace Trails2012.Domain
             }
             private set { }
         }
+
+        // Andy - I have put this in to make sure that the test that uses VerifyTheMappings 
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+
+            Region region = obj as Region;
+            if (region == null) return false;
+
+            if (!Id.Equals(region.Id)) return false;
+            if ((Name != null && !Name.Equals(region.Name)) ||
+                (Name == null && region.Name != null)) return false;
+            if ((Description != null && !Description.Equals(region.Description)) ||
+                (Description == null && region.Description != null)) return false;
+  
+            return true;
+
+        }
     }
 }

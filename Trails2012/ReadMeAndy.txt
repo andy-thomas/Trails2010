@@ -36,7 +36,10 @@ It can viewed through the Visual Studio Server Explorer. I have added a custom E
 handled exceptions through to elmah. This is set up in the RegisterGlobalFilters method in Global.asax. I have also added a customErrors entry in Web.config with a 
 default redirect url = "~/error". In order for this url to work, I created an ErrorController which simply displays the shared Error.cshtml view. 
 I have added a link on this shared Error view to navigate the users to elmah.axd, where they can view the detailed errors 
-(although, in practice, this page should only be available to admin/support users).
+(although, in practice, this page should only be available to admin/support users - see http://code.google.com/p/elmah/wiki/SecuringErrorLogPages).
+(If you want a laugh, see "11 easy steps" to setting up "404" error handling in MVC - http://secretgeek.net/custom_errors_mvc.asp). 
+Also see the following for a more balanced summary:
+http://community.codesmithtools.com/CodeSmith_Community/b/tdupont/archive/2011/03/01/error-handling-and-customerrors-and-mvc3-oh-my.aspx.)
 
 
 Links for uploading files:
