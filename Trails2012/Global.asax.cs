@@ -14,7 +14,12 @@ namespace Trails2012
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            //filters.Add(new HandleErrorAttribute());
+
+            // Andy - The default error handler does not pass handled exceptions through to Elmah,
+            // so instead of using the MVC version of the class, use our custom version, which 
+            // writes passes exceptions through to elmah 
+            filters.Add(new Trails2012.Attributes.HandleErrorAttribute());
         }
 
         public static void RegisterRoutes(RouteCollection routes)

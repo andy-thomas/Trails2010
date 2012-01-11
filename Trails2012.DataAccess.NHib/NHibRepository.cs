@@ -33,14 +33,20 @@ namespace Trails2012.DataAccess.NHib
             _sessionFactory = CreateSessionFactory(useInMemoryDatabase);
         }
 
+        public void ClearSession()
+        {
+            ISession session = NHibernateSessionTracker.GetCurrentSession(_sessionFactory);
+            session.Clear(); 
+        }
+
         private ISessionFactory CreateSessionFactory(bool useInMemoryDatabase = false)
         {
-                AutoPersistenceModel model = AutoMap.AssemblyOf<Trail>(new TrailsConfiguration())
-                    .IgnoreBase<EntityBase>()
-                    .Conventions.AddFromAssemblyOf<CustomForeignKeyConvention>()
-                    // does this line even work? Does not appear to add CustomPrimaryKeyConvention
-                    .Conventions.Add<CustomPrimaryKeyConvention>()
-                    .UseOverridesFromAssemblyOf<DifficultyMappingOverride>();
+            AutoPersistenceModel model = AutoMap.AssemblyOf<Trail>(new TrailsConfiguration())
+                .IgnoreBase<EntityBase>()
+                .Conventions.AddFromAssemblyOf<CustomForeignKeyConvention>()
+                // does this line even work? Does not appear to add CustomPrimaryKeyConvention
+                .Conventions.Add<CustomPrimaryKeyConvention>()
+                .UseOverridesFromAssemblyOf<DifficultyMappingOverride>();
 
 #if(DEBUG)
             const bool exportFiles = true;
@@ -53,18 +59,22 @@ namespace Trails2012.DataAccess.NHib
                     FluentConfiguration config = Fluently.Configure()
                         .Database(SQLiteConfiguration.Standard.InMemory)
                         //.ExposeConfiguration(BuildSchema)     this does not appear to work - see comment 1
+                        .ExposeConfiguration(x =>
+                                                 {
+                                                     x.SetProperty("current_session_context_class", "thread_static");
+                                                 })
                         .Mappings(m =>
-                        {
-                            m.FluentMappings.AddFromAssemblyOf<PersonMap>();
-                            if (exportFiles)
-                                m.FluentMappings.ExportTo(
-                                    @"C:\Projects\Personal\Trails2012\ExportedMappings");
+                                      {
+                                          m.FluentMappings.AddFromAssemblyOf<PersonMap>();
+                                          if (exportFiles)
+                                              m.FluentMappings.ExportTo(
+                                                  @"C:\Projects\Personal\Trails2012\ExportedMappings");
 
-                            m.AutoMappings.Add(model);
-                            if (exportFiles)
-                                m.AutoMappings.ExportTo(
-                                    @"C:\Projects\Personal\Trails2012\ExportedMappings");
-                        });
+                                          m.AutoMappings.Add(model);
+                                          if (exportFiles)
+                                              m.AutoMappings.ExportTo(
+                                                  @"C:\Projects\Personal\Trails2012\ExportedMappings");
+                                      });
 
                     ISessionFactory sessionFactory = config.BuildSessionFactory();
 
@@ -72,7 +82,7 @@ namespace Trails2012.DataAccess.NHib
                     SessionSource sessionSource = new SessionSource(config);
                     ISession session = NHibernateSessionTracker.GetCurrentSession(sessionFactory);
                     sessionSource.BuildSchema(session);
- 
+
                     return sessionFactory;
 
                 }

@@ -10,7 +10,7 @@ using Trails2012.Domain;
 namespace Trails2012.Tests
 {
     [TestClass]
-    public class TrailTest
+    public class TrailIntegrationTests
     {
         private const int Id = 1;
         private CompositionContainer _container;

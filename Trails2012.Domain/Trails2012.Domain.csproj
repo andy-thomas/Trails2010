@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TransportType.cs" />
     <Compile Include="Difficulty.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="Location.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Trail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrailType.cs" />
+    <Compile Include="Trip.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

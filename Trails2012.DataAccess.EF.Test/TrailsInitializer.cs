@@ -71,7 +71,7 @@ namespace Trails2012.DataAccess.EF.Test
                                    };
             difficulties.ForEach(d => context.Difficulties.Add(d));
 
-            // Seed TrailType Levels
+            // Seed TrailTypes
             var trailTypes = new List<TrailType>
                                    {
                                        new TrailType {TrailTypeName = "Land"},
@@ -79,6 +79,18 @@ namespace Trails2012.DataAccess.EF.Test
                                        new TrailType {TrailTypeName = "Water"}
                                    };
             trailTypes.ForEach(t => context.TrailTypes.Add(t));
+
+            // Seed TransportType 
+            var transportTypes = new List<TransportType>
+                                   {
+                                       new TransportType {TransportTypeName = "Hike"},
+                                       new TransportType {TransportTypeName = "Cycle"},
+                                       new TransportType {TransportTypeName = "Canoe"},
+                                       new TransportType {TransportTypeName = "Ski"},
+                                       new TransportType {TransportTypeName = "Snowshoe"},
+                                       new TransportType {TransportTypeName = "Aeroplane"}
+                                   };
+            transportTypes.ForEach(t => context.TransportTypes.Add(t));
 
             // Seed Trails
             var trails = new List<Trail>
@@ -91,6 +103,34 @@ namespace Trails2012.DataAccess.EF.Test
 
             trails.ForEach(t => context.Trails.Add(t));
 
+            // Seed Trips
+            var trips = new List<Trip>
+                            {
+                                new Trip
+                                    {
+                                        Date = new DateTime(2001, 9, 1),
+                                        TransportTypeId = 1,
+                                        TrailId = 1,
+                                        Weather = "Cloudy",
+                                        TimeTaken = 3.3M,
+                                        Notes = "Very slippery - cramps needed.",
+                                                                                Persons = new List<Person> 
+                                        {
+                                            persons[0], persons[1],persons[2]
+                                        }
+                                    },
+                                new Trip
+                                    {
+                                        Date = new DateTime(2004, 7, 31),
+                                        TransportTypeId = 2,
+                                        TrailId = 1,
+                                        Weather = "Sunny",
+                                        TimeTaken = 2.3M,
+                                        Notes = "First time on this trail."
+
+                                    }
+                            };
+            trips.ForEach(t => context.Trips.Add(t));
         }
     }
 }

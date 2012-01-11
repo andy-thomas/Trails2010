@@ -12,3 +12,5 @@ C:\Projects\Personal\Trails2012\Trails2012\bin\MefContrib.Web.Mvc.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\Microsoft.Web.Infrastructure.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\WebActivator.dll
 C:\Projects\Personal\Trails2012\Trails2012\bin\Telerik.Web.Mvc.dll
+C:\Projects\Personal\Trails2012\Trails2012\bin\Elmah.dll
+C:\Projects\Personal\Trails2012\Trails2012\bin\System.Data.SqlServerCe.dll

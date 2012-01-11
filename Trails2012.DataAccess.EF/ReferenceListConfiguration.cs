@@ -55,4 +55,15 @@ namespace Trails2012.DataAccess.EF
             Property(t => t.TrailTypeName).HasColumnName("TrailType");
         }
     }
+
+    public class TransportTypeConfiguration : EntityTypeConfiguration<TransportType>
+    {
+        public TransportTypeConfiguration()
+        {
+            ToTable("TransportType", "dbo");
+            HasKey(t => t.Id);
+            Property(t => t.Id).HasColumnName("TransportTypeId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(t => t.TransportTypeName).HasColumnName("TransportType");
+        }
+    }
 }

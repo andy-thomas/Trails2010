@@ -9,11 +9,11 @@ namespace Trails2012.Controllers
 {
     public class LocationController : Controller
     {
-       private readonly IRepository _repository;
+        private readonly IRepository _repository;
         private List<Region> _regions;
 
         [ImportingConstructor]
-       public LocationController(IRepository repository)
+        public LocationController(IRepository repository)
         {
             _repository = repository;
             PopulateRegions();
@@ -48,12 +48,11 @@ namespace Trails2012.Controllers
         {
             if (ModelState.IsValid)
             {
-                _repository.Update(location);
-
                 // see Comment 2
                 Region region = _repository.GetById<Region>(location.RegionId);
                 location.Region = region;
- 
+
+                _repository.Update(location);
                 _repository.SaveChanges();
             }
             ViewData["regions"] = _regions;
@@ -67,12 +66,11 @@ namespace Trails2012.Controllers
         {
             if (ModelState.IsValid)
             {
-                _repository.Insert(location);
-                
                 // see Comment 2
                 Region region = _repository.GetById<Region>(location.RegionId);
                 location.Region = region;
 
+                _repository.Insert(location);
                 _repository.SaveChanges();
             }
             ViewData["regions"] = _regions;

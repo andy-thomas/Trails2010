@@ -1,68 +1,68 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:UnitTest1.cs" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="864" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Content/f:Site.css" caret="2542" fromTop="12" />
-      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="637" fromTop="13" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/d:Mappings/f:PersonMap.cs" caret="163" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="3972" fromTop="8" />
-      <File id="8B1E2305-D9BC-4239-9C68-D3C76F3ABB57/f:RepositoryFactory.cs" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TrailController.cs" caret="7352" fromTop="180" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:App_Start/f:AppStart_MefContribMVC3.cs" caret="1219" fromTop="5" />
-      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailTest.cs" caret="668" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Global.asax.cs" caret="0" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="4726" fromTop="10" />
-      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:App.config" caret="511" fromTop="13" />
-      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonTest.cs" caret="2075" fromTop="8" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/d:Overrides/f:RegionMappingOverride.cs" caret="0" fromTop="0" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/d:Overrides/f:TrailMappingOverride.cs" caret="407" fromTop="7" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/d:Overrides/f:TrailTypeMappingOverride.cs" caret="0" fromTop="0" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/d:Overrides/f:DifficultyMappingOverride.cs" caret="322" fromTop="9" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:ReadMeAndy.txt" caret="2163" fromTop="17" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:RegionController.cs" caret="2410" fromTop="13" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/d:Overrides/f:LocationMappingOverride.cs" caret="1051" fromTop="16" />
-      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TrailsInitializer.cs" caret="907" fromTop="19" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/f:TrailsConfiguration.cs" caret="363" fromTop="1" />
-      <File id="8B1E2305-D9BC-4239-9C68-D3C76F3ABB57/f:IRepository.cs" caret="2548" fromTop="11" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/f:NHibRepository.cs" caret="1999" fromTop="0" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:TrailTest.cs" caret="624" fromTop="10" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/f:NHibernateSessionTracker.cs" caret="752" fromTop="11" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:Util.cs" caret="147" fromTop="8" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:ReferenceListTest.cs" caret="327" fromTop="12" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="463" fromTop="5" />
+      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:App.config" caret="0" fromTop="0" />
+      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/d:Overrides/f:TripMappingOverride.cs" caret="499" fromTop="14" />
+      <File id="3B4F2847-C93C-4707-8A31-1FADA659AEDA/f:TripTest.cs" caret="1327" fromTop="6" />
+      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:Util.cs" caret="9960" fromTop="6" />
+      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:TripTest.cs" caret="617" fromTop="9" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:TransportType.cs" caret="132" fromTop="6" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trip.cs" caret="287" fromTop="3" />
+      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:TrailTest.cs" caret="503" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Region/f:_SelectAjaxEditing.cshtml" caret="1800" fromTop="19" />
+      <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Location.cs" caret="0" fromTop="0" />
+      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:ReferenceListTest.cs" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Difficulty/f:_SelectAjaxEditing.cshtml" caret="2281" fromTop="31" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:UnitTest1.cs" caret="491" fromTop="21" />
+      <File id="8B1E2305-D9BC-4239-9C68-D3C76F3ABB57/f:RepositoryFactory.cs" caret="368" fromTop="12" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:TrailIntegrationTests.cs" caret="798" fromTop="24" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:LocationController.cs" caret="1541" fromTop="9" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonIntegrationTests.cs" caret="4382" fromTop="11" />
+      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/f:NHibRepository.cs" caret="611" fromTop="15" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:MvcMoqHelper.cs" caret="1627" fromTop="20" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="3216" fromTop="15" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.Debug.config" caret="1076" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/f:Web.config" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:App_Data/f:ElmahErrors.txt" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:ErrorController.cs" caret="376" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Attributes/f:HandleErrorAttribute.cs" caret="592" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="596" fromTop="12" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Global.asax.cs" caret="410" fromTop="5" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="2165" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:Error.cshtml" caret="216" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:ReadMeAndy.txt" caret="3094" fromTop="11" />
     </RecentFiles>
     <RecentEdits>
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/f:NHibRepository.cs" caret="1741" fromTop="10" />
-      <File id="64952E38-DB4A-461E-86C4-49B06FA379E0/f:NHibRepository.cs" caret="1999" fromTop="8" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="121" fromTop="3" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:ReferenceListTest.cs" caret="153" fromTop="4" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:TrailTest.cs" caret="121" fromTop="3" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:TrailTest.cs" caret="527" fromTop="9" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:TrailTest.cs" caret="1806" fromTop="18" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="971" fromTop="3" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="1513" fromTop="14" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="1963" fromTop="10" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="2062" fromTop="16" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="1651" fromTop="9" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="2631" fromTop="7" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="2632" fromTop="14" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="4063" fromTop="9" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="4063" fromTop="12" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="4063" fromTop="17" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="4063" fromTop="8" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:Util.cs" caret="7572" fromTop="145" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:Util.cs" caret="48" fromTop="1" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:Util.cs" caret="147" fromTop="8" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:ReferenceListTest.cs" caret="521" fromTop="5" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:ReferenceListTest.cs" caret="338" fromTop="10" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="482" fromTop="9" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="4064" fromTop="10" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:ReferenceListTest.cs" caret="852" fromTop="6" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:ReferenceListTest.cs" caret="1003" fromTop="12" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="299" fromTop="5" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="195" fromTop="6" />
-      <File id="3FEC4379-017B-4295-834D-8B6517B2DB47/f:PersonTest.cs" caret="4050" fromTop="18" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="13111" fromTop="21" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="13692" fromTop="16" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="16210" fromTop="22" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="14603" fromTop="9" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="13944" fromTop="18" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="12688" fromTop="11" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="18392" fromTop="11" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="19052" fromTop="18" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="13036" fromTop="11" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="16141" fromTop="16" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="14343" fromTop="1" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="15368" fromTop="19" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="12375" fromTop="6" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="22568" fromTop="19" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="21308" fromTop="3" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="22231" fromTop="12" />
+      <File id="42E8FC38-B474-4314-8EB4-172149679BC7/f:PersonControllerTests.cs" caret="21770" fromTop="10" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="675" fromTop="5" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="7887" fromTop="16" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="7887" fromTop="20" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="2119" fromTop="10" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Attributes/f:HandleErrorAttribute.cs" caret="2007" fromTop="21" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Attributes/f:HandleErrorAttribute.cs" caret="13" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Attributes/f:HandleErrorAttribute.cs" caret="379" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:PersonController.cs" caret="236" fromTop="9" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Global.asax.cs" caret="761" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:ErrorController.cs" caret="338" fromTop="9" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:Error.cshtml" caret="161" fromTop="9" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:ReadMeAndy.txt" caret="193" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:ReadMeAndy.txt" caret="3094" fromTop="11" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -87,26 +87,67 @@
     <Session>
       <Name>Session #1</Name>
       <Elements>
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests" type="MsTestTestClassElement" TypeName="Trails2012.Tests.PersonControllerTests" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
         <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.PersonTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.NHib.Test.PersonTest" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
         <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.NHib.Test.ReferenceListTest" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.ReferenceListTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.EF.Test.ReferenceListTest" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TrailDataAccessTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.EF.Test.TrailDataAccessTest" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.TrailTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.NHib.Test.TrailTest" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TripTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.EF.Test.TripTest" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.TripTest" type="MsTestTestClassElement" TypeName="Trails2012.DataAccess.NHib.Test.TripTest" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.PersonTest.ShouldAddNewPerson" ParentId="Trails2012.DataAccess.NHib.Test.PersonTest" type="MsTestTestMethodElement" MethodName="ShouldAddNewPerson" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TrailDataAccessTest.ShouldAddNewTrail" ParentId="Trails2012.DataAccess.EF.Test.TrailDataAccessTest" type="MsTestTestMethodElement" MethodName="ShouldAddNewTrail" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TripTest.ShouldAddNewTrip" ParentId="Trails2012.DataAccess.EF.Test.TripTest" type="MsTestTestMethodElement" MethodName="ShouldAddNewTrip" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldCreateOnAjaxPostback" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldCreateOnAjaxPostback" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldCreateOnPostback" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldCreateOnPostback" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldDeleteOnPostback" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldDeleteOnPostback" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldDisplayCreate" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldDisplayCreate" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldDisplayDelete" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldDisplayDelete" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldDisplayDetails" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldDisplayDetails" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldDisplayEdit" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldDisplayEdit" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldDisplayEditIfInvallidModelOnAjaxPostback" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldDisplayEditIfInvallidModelOnAjaxPostback" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldDisplayIndex" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldDisplayIndex" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldEditOnAjaxPostback" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldEditOnAjaxPostback" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldEditOnPostback" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldEditOnPostback" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldEditRedirectToIndexOnExceptionDuringPostback" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldEditRedirectToIndexOnExceptionDuringPostback" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
         <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest.ShouldGetAllDifficulties" ParentId="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllDifficulties" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest.ShouldGetAllLocations" ParentId="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllLocations" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest.ShouldGetAllLocationsIncludeRegions" ParentId="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllLocationsIncludeRegions" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
         <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.PersonTest.ShouldGetAllPersons" ParentId="Trails2012.DataAccess.NHib.Test.PersonTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllPersons" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
         <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest.ShouldGetAllRegions" ParentId="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllRegions" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.TrailTest.ShouldGetAllTrails" ParentId="Trails2012.DataAccess.NHib.Test.TrailTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllTrails" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest.ShouldGetAllTrailTypes" ParentId="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllTrailTypes" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.ReferenceListTest.ShouldGetAllTransportTypes" ParentId="Trails2012.DataAccess.EF.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllTransportTypes" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TripTest.ShouldGetAllTrips" ParentId="Trails2012.DataAccess.EF.Test.TripTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllTrips" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.TripTest.ShouldGetAllTrips" ParentId="Trails2012.DataAccess.NHib.Test.TripTest" type="MsTestTestMethodElement" MethodName="ShouldGetAllTrips" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest.ShouldGetLocationById" ParentId="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetLocationById" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest.ShouldGetLocationByIdIncludeRegion" ParentId="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldGetLocationByIdIncludeRegion" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.PersonTest.ShouldGetPersonById" ParentId="Trails2012.DataAccess.NHib.Test.PersonTest" type="MsTestTestMethodElement" MethodName="ShouldGetPersonById" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.PersonTest.ShouldGetPersonByNameUsingLinq2NHib" ParentId="Trails2012.DataAccess.NHib.Test.PersonTest" type="MsTestTestMethodElement" MethodName="ShouldGetPersonByNameUsingLinq2NHib" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.PersonTest.ShouldGetPersonsByLastName" ParentId="Trails2012.DataAccess.NHib.Test.PersonTest" type="MsTestTestMethodElement" MethodName="ShouldGetPersonsByLastName" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.TrailTest.ShouldGetTrailById" ParentId="Trails2012.DataAccess.NHib.Test.TrailTest" type="MsTestTestMethodElement" MethodName="ShouldGetTrailById" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.TrailTest.ShouldGetTrailByIdUsingLinqOnList" ParentId="Trails2012.DataAccess.NHib.Test.TrailTest" type="MsTestTestMethodElement" MethodName="ShouldGetTrailByIdUsingLinqOnList" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.TripTest.ShouldGetTripById" ParentId="Trails2012.DataAccess.NHib.Test.TripTest" type="MsTestTestMethodElement" MethodName="ShouldGetTripById" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TripTest.ShouldGetTripById" ParentId="Trails2012.DataAccess.EF.Test.TripTest" type="MsTestTestMethodElement" MethodName="ShouldGetTripById" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.TripTest.ShouldGetTripByIdUsingLinqOnList" ParentId="Trails2012.DataAccess.NHib.Test.TripTest" type="MsTestTestMethodElement" MethodName="ShouldGetTripByIdUsingLinqOnList" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.EF.Test.TripTest.ShouldGetTripsByTransportType" ParentId="Trails2012.DataAccess.EF.Test.TripTest" type="MsTestTestMethodElement" MethodName="ShouldGetTripsByTransportType" Project="3B4F2847-C93C-4707-8A31-1FADA659AEDA" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.Tests.PersonControllerTests.ShouldRedirectEditToIndexIfInvallidModelOnPostback" ParentId="Trails2012.Tests.PersonControllerTests" type="MsTestTestMethodElement" MethodName="ShouldRedirectEditToIndexIfInvallidModelOnPostback" Project="42E8FC38-B474-4314-8EB4-172149679BC7" />
+        <UnitTestElement Provider="MSTest" Id="Trails2012.DataAccess.NHib.Test.ReferenceListTest.ShouldUpdateLocation" ParentId="Trails2012.DataAccess.NHib.Test.ReferenceListTest" type="MsTestTestMethodElement" MethodName="ShouldUpdateLocation" Project="3FEC4379-017B-4295-834D-8B6517B2DB47" />
       </Elements>
     </Session>
   </UnitTestSessions>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="prop" priority="639" />
-      <Item value="int" priority="593" />
-      <Item value="EntityBase`0" priority="191" />
+      <Item value="prop" priority="671" />
+      <Item value="int" priority="625" />
+      <Item value="EntityBase`0" priority="223" />
       <Item value="string" priority="473" />
-      <Item value="public" priority="319" />
+      <Item value="public" priority="383" />
       <Item value="double" priority="31" />
       <Item value="Difficulty`0" priority="223" />
       <Item value="Locations" priority="128" />
       <Item value="Difficulties" priority="32" />
-      <Item value="Persons" priority="32" />
+      <Item value="Persons" priority="65" />
       <Item value="Region`0" priority="95" />
       <Item value="Regions" priority="27" />
       <Item value="Trail`0" priority="318" />
@@ -117,15 +158,15 @@
       <Item value="Property`1" priority="191" />
       <Item value="databaseGeneratedOption" priority="31" />
       <Item value="DatabaseGeneratedOption`0" priority="31" />
-      <Item value="Person`0" priority="314" />
-      <Item value="persons" priority="129" />
+      <Item value="Person`0" priority="410" />
+      <Item value="persons" priority="386" />
       <Item value="ctor" priority="415" />
-      <Item value="Assert`0" priority="223" />
+      <Item value="Assert`0" priority="607" />
       <Item value="location" priority="352" />
-      <Item value="FirstName" priority="63" />
-      <Item value="LastName" priority="65" />
+      <Item value="FirstName" priority="96" />
+      <Item value="LastName" priority="98" />
       <Item value="DateOfBirth" priority="32" />
-      <Item value="DateTime`0" priority="128" />
+      <Item value="DateTime`0" priority="161" />
       <Item value="Gender" priority="65" />
       <Item value="Trails2012" priority="63" />
       <Item value="T`0" priority="31" />
@@ -133,26 +174,26 @@
       <Item value="entity" priority="128" />
       <Item value="IDisposable`0" priority="31" />
       <Item value="TrailsContext`0" priority="95" />
-      <Item value="new" priority="1248" />
+      <Item value="new" priority="1732" />
       <Item value="TrailsContext" priority="28" />
       <Item value="ContextBoundObject`0" priority="63" />
       <Item value="_context" priority="543" />
       <Item value="Delete`1" priority="31" />
       <Item value="id" priority="95" />
-      <Item value="if" priority="569" />
+      <Item value="if" priority="665" />
       <Item value="entityToDelete" priority="63" />
       <Item value="Detached" priority="16" />
-      <Item value="return" priority="799" />
+      <Item value="return" priority="831" />
       <Item value="entityToUpdate" priority="31" />
       <Item value="TestInitializeAttribute`0" priority="22" />
-      <Item value="void" priority="63" />
+      <Item value="void" priority="95" />
       <Item value="cw" priority="351" />
-      <Item value="IRepository`0" priority="126" />
-      <Item value="typeof" priority="159" />
+      <Item value="IRepository`0" priority="158" />
+      <Item value="typeof" priority="255" />
       <Item value="DirectoryCatalog" priority="29" />
       <Item value="container" priority="95" />
-      <Item value="private" priority="31" />
-      <Item value="repository" priority="416" />
+      <Item value="private" priority="63" />
+      <Item value="repository" priority="443" />
       <Item value="repositoryFactory" priority="127" />
       <Item value="RepositoryFactory" priority="57" />
       <Item value="CompositionBatch" priority="28" />
@@ -164,29 +205,29 @@
       <Item value="internal" priority="31" />
       <Item value="IQueryable`0" priority="31" />
       <Item value="_transactionScope" priority="127" />
-      <Item value="null" priority="447" />
-      <Item value="try" priority="31" />
+      <Item value="null" priority="479" />
+      <Item value="try" priority="63" />
       <Item value="PersonListModel`0" priority="30" />
       <Item value="_repository" priority="287" />
       <Item value="modelBuilder" priority="63" />
       <Item value="Ignore`1" priority="127" />
       <Item value="ClassInitialize" priority="26" />
-      <Item value="var" priority="511" />
+      <Item value="var" priority="607" />
       <Item value="ReferenceListTest" priority="28" />
       <Item value="PersonDataAccessTest`0" priority="30" />
-      <Item value="Person" priority="89" />
-      <Item value="context" priority="127" />
-      <Item value="List" priority="151" />
+      <Item value="Person" priority="118" />
+      <Item value="context" priority="159" />
+      <Item value="List" priority="180" />
       <Item value="Location" priority="28" />
       <Item value="Name" priority="122" />
       <Item value="Description" priority="98" />
       <Item value="Directions" priority="32" />
       <Item value="Region" priority="61" />
       <Item value="regions" priority="96" />
-      <Item value="locations" priority="31" />
+      <Item value="locations" priority="163" />
       <Item value="Difficulty" priority="28" />
       <Item value="DifficultyType" priority="31" />
-      <Item value="difficulties" priority="26" />
+      <Item value="difficulties" priority="153" />
       <Item value="StringLength" priority="26" />
       <Item value="DisplayFormat" priority="58" />
       <Item value="DataFormatString" priority="63" />
@@ -197,7 +238,7 @@
       <Item value="else" priority="127" />
       <Item value="Url" priority="31" />
       <Item value="Details" priority="32" />
-      <Item value="this" priority="159" />
+      <Item value="this" priority="191" />
       <Item value="Repository" priority="31" />
       <Item value="GenderList" priority="31" />
       <Item value="Dictionary" priority="31" />
@@ -242,16 +283,16 @@
       <Item value="List`1" priority="63" />
       <Item value="l" priority="159" />
       <Item value="Location`0" priority="446" />
-      <Item value="bool" priority="95" />
+      <Item value="bool" priority="127" />
       <Item value="false" priority="159" />
       <Item value="cachedSetting" priority="31" />
       <Item value="DefaultViewLocationCache`0" priority="31" />
       <Item value="cell" priority="95" />
-      <Item value="r" priority="63" />
+      <Item value="r" priority="191" />
       <Item value="ScriptBehaviorDescriptor`0" priority="30" />
-      <Item value="virtual" priority="30" />
+      <Item value="virtual" priority="62" />
       <Item value="ToTable`0" priority="31" />
-      <Item value="t" priority="223" />
+      <Item value="t" priority="287" />
       <Item value="Distance" priority="32" />
       <Item value="ElevationGain" priority="65" />
       <Item value="TrailTypeId" priority="98" />
@@ -262,10 +303,10 @@
       <Item value="EstimatedTime" priority="32" />
       <Item value="ReturnOnEffort" priority="32" />
       <Item value="ReturnOnCost" priority="32" />
-      <Item value="Notes" priority="32" />
+      <Item value="Notes" priority="65" />
       <Item value="OverallGrade" priority="32" />
-      <Item value="trail" priority="480" />
-      <Item value="trails" priority="63" />
+      <Item value="trail" priority="512" />
+      <Item value="trails" priority="129" />
       <Item value="decimal" priority="187" />
       <Item value="TrailModel" priority="28" />
       <Item value="ErrorMessage" priority="63" />
@@ -275,7 +316,7 @@
       <Item value="ModelState" priority="63" />
       <Item value="AllowEmptyStrings" priority="31" />
       <Item value="CssClassPropertyAttribute`0" priority="32" />
-      <Item value="true" priority="159" />
+      <Item value="true" priority="223" />
       <Item value="AllowHtml" priority="31" />
       <Item value="Trail" priority="28" />
       <Item value="TrailHeadPosition" priority="95" />
@@ -298,10 +339,10 @@
       <Item value="m" priority="95" />
       <Item value="AutoMappingsContainer`0" priority="32" />
       <Item value="type" priority="159" />
-      <Item value="x" priority="191" />
+      <Item value="x" priority="319" />
       <Item value="AutoMap`0" priority="32" />
       <Item value="override" priority="127" />
-      <Item value="session" priority="255" />
+      <Item value="session" priority="351" />
       <Item value="ClassInitializeAttribute`0" priority="31" />
       <Item value="c" priority="63" />
       <Item value="exportFiles" priority="32" />
@@ -316,7 +357,7 @@
       <Item value="memberExpression" priority="86" />
       <Item value="as" priority="95" />
       <Item value="IFilter`0" priority="31" />
-      <Item value="throw" priority="31" />
+      <Item value="throw" priority="63" />
       <Item value="propInfo" priority="31" />
       <Item value="member" priority="31" />
       <Item value="mappedTypes" priority="31" />
@@ -343,7 +384,7 @@
       <Item value="long" priority="31" />
       <Item value="Expression&lt;Func&lt;Location,object&gt;&gt;" priority="86" />
       <Item value="Func&lt;IQueryable&lt;Location&gt;,IOrderedQueryable&lt;Location&gt;&gt;" priority="28" />
-      <Item value="mapping" priority="95" />
+      <Item value="mapping" priority="223" />
       <Item value="ex" priority="31" />
       <Item value="const" priority="31" />
       <Item value="testDescription" priority="31" />
@@ -352,7 +393,7 @@
       <Item value="trailType" priority="64" />
       <Item value="UpdateModel`1" priority="31" />
       <Item value="savedRegion" priority="31" />
-      <Item value="sessionFactory" priority="193" />
+      <Item value="sessionFactory" priority="225" />
       <Item value="ISession`0" priority="31" />
       <Item value="ISessionFactory`0" priority="63" />
       <Item value="config" priority="31" />
@@ -360,14 +401,47 @@
       <Item value="SessionSource`0" priority="31" />
       <Item value="cfg" priority="31" />
       <Item value="path" priority="32" />
+      <Item value="HasMany`1" priority="31" />
+      <Item value="pt" priority="63" />
+      <Item value="Trip" priority="28" />
+      <Item value="Date" priority="58" />
+      <Item value="DateTime" priority="57" />
+      <Item value="TransportTypeId" priority="32" />
+      <Item value="Weather" priority="32" />
+      <Item value="TimeTaken" priority="32" />
+      <Item value="Trip`0" priority="31" />
+      <Item value="trips" priority="31" />
+      <Item value="transportTypes" priority="98" />
+      <Item value="TrailId" priority="65" />
+      <Item value="List&lt;Person&gt;" priority="57" />
+      <Item value="PersonControllerTests`0" priority="31" />
+      <Item value="PersonController" priority="28" />
+      <Item value="repositoryMock" priority="127" />
+      <Item value="controller" priority="63" />
+      <Item value="result" priority="159" />
+      <Item value="Id" priority="31" />
+      <Item value="Times`0" priority="63" />
+      <Item value="Mock`0" priority="57" />
+      <Item value="httpRequestMock" priority="31" />
+      <Item value="WebHeaderCollection" priority="25" />
+      <Item value="contextMock" priority="31" />
+      <Item value="Web" priority="26" />
+      <Item value="Mvc" priority="26" />
+      <Item value="RedirectResult`0" priority="22" />
+      <Item value="RedirectToRouteResult`0" priority="22" />
+      <Item value="PartialViewResult`0" priority="31" />
+      <Item value="InvalidOperationException" priority="28" />
+      <Item value="HandleError" priority="31" />
+      <Item value="Error" priority="32" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Person">
-      <Item value="Id" priority="107" />
+      <Item value="Id" priority="161" />
       <Item value="FullName" priority="135" />
       <Item value="LastName" priority="131" />
       <Item value="FirstName" priority="99" />
       <Item value="Gender" priority="108" />
       <Item value="DateOfBirth" priority="54" />
+      <Item value="GetHashCode`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration">
       <Item value="HasColumnName`0" priority="53" />
@@ -387,7 +461,7 @@
       <Item value="HasColumnName`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.DataAccess.EF.TrailsContext">
-      <Item value="Persons" priority="54" />
+      <Item value="Persons" priority="77" />
       <Item value="Difficulties" priority="49" />
       <Item value="Set`1" priority="239" />
       <Item value="SaveChanges`0" priority="26" />
@@ -397,6 +471,7 @@
       <Item value="Configuration" priority="161" />
       <Item value="TrailTypes" priority="27" />
       <Item value="Trails" priority="27" />
+      <Item value="TransportTypes" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Location">
       <Item value="Region" priority="407" />
@@ -406,8 +481,11 @@
       <Item value="Description" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
-      <Item value="IsNotNull`0" priority="188" />
+      <Item value="IsNotNull`0" priority="324" />
       <Item value="AreNotEqual`1" priority="26" />
+      <Item value="Equals`0" priority="26" />
+      <Item value="IsTrue`0" priority="81" />
+      <Item value="AreEqual`1" priority="108" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Region">
       <Item value="Name" priority="103" />
@@ -417,7 +495,7 @@
       <Item value="LocationCount" priority="77" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Today" priority="82" />
+      <Item value="Today" priority="110" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.DateTime">
       <Item value="AddYears`0" priority="27" />
@@ -434,6 +512,7 @@
       <Item value="ToList`1" priority="26" />
       <Item value="Include`0" priority="27" />
       <Item value="All`1" priority="22" />
+      <Item value="ElementAt`1" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Entity.Infrastructure.DbEntityEntry`1">
       <Item value="State" priority="80" />
@@ -448,15 +527,15 @@
     <ItemStatistics item="Qualified:Trails2012.DataAccess.IRepository">
       <Item value="GetType`0" priority="26" />
       <Item value="Get`1" priority="53" />
-      <Item value="List`1" priority="212" />
-      <Item value="GetById`1" priority="287" />
+      <Item value="List`1" priority="295" />
+      <Item value="GetById`1" priority="315" />
       <Item value="BeginTransaction`0" priority="80" />
       <Item value="RollbackTransaction`0" priority="104" />
       <Item value="CommitTransaction`0" priority="50" />
-      <Item value="Delete`1" priority="26" />
-      <Item value="Update`1" priority="53" />
-      <Item value="SaveChanges`0" priority="80" />
-      <Item value="Insert`1" priority="81" />
+      <Item value="Delete`1" priority="49" />
+      <Item value="Update`1" priority="136" />
+      <Item value="SaveChanges`0" priority="162" />
+      <Item value="Insert`1" priority="109" />
       <Item value="ListEagerly`1" priority="22" />
       <Item value="AllIncluding`1" priority="22" />
       <Item value="ListIncluding`1" priority="22" />
@@ -500,20 +579,23 @@
       <Item value="SetInitializer`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
-      <Item value="ForEach`0" priority="107" />
+      <Item value="ForEach`0" priority="134" />
       <Item value="Contains`0" priority="26" />
+      <Item value="Count" priority="80" />
+      <Item value="ToArray`0" priority="55" />
+      <Item value="ConvertAll`1" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="HtmlCodeCompletionContext">
       <Item value="div" priority="35" />
       <Item value="id" priority="5" />
       <Item value="style" priority="5" />
       <Item value="float" priority="8" />
-      <Item value="a" priority="5" />
-      <Item value="href" priority="5" />
+      <Item value="a" priority="11" />
+      <Item value="href" priority="11" />
       <Item value="Index.cshtml" priority="5" />
       <Item value="button" priority="5" />
       <Item value="class" priority="5" />
-      <Item value="p" priority="31" />
+      <Item value="p" priority="37" />
       <Item value="textarea" priority="6" />
       <Item value="script" priority="17" />
       <Item value="type" priority="29" />
@@ -528,6 +610,7 @@
       <Item value="fieldset" priority="5" />
       <Item value="form" priority="5" />
       <Item value="width" priority="5" />
+      <Item value="elmah.axd" priority="5" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
       <Item value="RenderPartial`0" priority="26" />
@@ -584,6 +667,8 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
       <Item value="Add`0" priority="26" />
+      <Item value="Contains`1" priority="26" />
+      <Item value="ContainsKey`0" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ASP._Page_Views_Person__List_cshtml">
       <Item value="ViewData" priority="26" />
@@ -599,7 +684,7 @@
     <ItemStatistics item="Qualified:System.Nullable`1">
       <Item value="HasValue" priority="80" />
       <Item value="ToString`0" priority="29" />
-      <Item value="Value" priority="26" />
+      <Item value="Value" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Empty" priority="26" />
@@ -714,9 +799,11 @@
     <ItemStatistics item="Qualified:System.Object">
       <Item value="ToString`0" priority="53" />
       <Item value="IsReadOnly" priority="26" />
+      <Item value="GetType`0" priority="54" />
+      <Item value="GetHashCode`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
-      <Item value="Count" priority="80" />
+      <Item value="Count" priority="107" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
       <Item value="ContainsKey`0" priority="26" />
@@ -752,11 +839,11 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Trail">
       <Item value="Id" priority="80" />
-      <Item value="Location" priority="190" />
+      <Item value="Location" priority="217" />
       <Item value="LocationId" priority="130" />
-      <Item value="TrailType" priority="289" />
+      <Item value="TrailType" priority="317" />
       <Item value="TrailTypeId" priority="95" />
-      <Item value="Difficulty" priority="178" />
+      <Item value="Difficulty" priority="201" />
       <Item value="DifficultyId" priority="95" />
       <Item value="Notes" priority="53" />
       <Item value="OverallGrade" priority="110" />
@@ -860,10 +947,12 @@
       <Item value="Get`1" priority="49" />
       <Item value="CreateCriteria`1" priority="27" />
       <Item value="SaveOrUpdate`0" priority="27" />
-      <Item value="Flush`0" priority="53" />
+      <Item value="Flush`0" priority="80" />
       <Item value="Delete`0" priority="26" />
       <Item value="Linq`1" priority="26" />
       <Item value="Query`1" priority="27" />
+      <Item value="CacheMode" priority="26" />
+      <Item value="Clear`0" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NHibernate.ICriteria">
       <Item value="List`1" priority="54" />
@@ -884,6 +973,8 @@
     <ItemStatistics item="Qualified:NHibernate.ISessionFactory">
       <Item value="Dispose`0" priority="26" />
       <Item value="OpenSession`0" priority="27" />
+      <Item value="GetCurrentSession`0" priority="26" />
+      <Item value="GetAllCollectionMetadata`0" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Trails2012.DataAccess.NHib.NHibernateSession">
       <Item value="CloseSession`0" priority="27" />
@@ -912,9 +1003,11 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentNHibernate.Automapping.AutoMapping`1">
       <Item value="HasOne`1" priority="22" />
-      <Item value="IgnoreProperty`0" priority="49" />
+      <Item value="IgnoreProperty`0" priority="103" />
       <Item value="ReadOnly`0" priority="26" />
       <Item value="Map`0" priority="76" />
+      <Item value="HasManyToMany`1" priority="26" />
+      <Item value="Id`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentNHibernate.Automapping.DefaultAutomappingConfiguration">
       <Item value="ShouldMap`0" priority="26" />
@@ -955,6 +1048,87 @@
     <ItemStatistics item="Qualified:@System.IO.File">
       <Item value="Exists`0" priority="26" />
       <Item value="Delete`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Domain.Trip">
+      <Item value="Persons" priority="68" />
+      <Item value="Date" priority="27" />
+      <Item value="TimeTaken" priority="81" />
+      <Item value="TransportType" priority="50" />
+      <Item value="TrailId" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.ManyNavigationPropertyConfiguration`2">
+      <Item value="WithMany`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.ManyToManyNavigationPropertyConfiguration">
+      <Item value="Map`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.ManyToManyAssociationMappingConfiguration">
+      <Item value="MapLeftKey`0" priority="26" />
+      <Item value="MapRightKey`0" priority="26" />
+      <Item value="ToTable`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Domain.TransportType">
+      <Item value="TransportTypeName" priority="49" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.ManyToManyPart`1">
+      <Item value="Table`0" priority="26" />
+      <Item value="ParentKeyColumn`0" priority="26" />
+      <Item value="ChildKeyColumn`0" priority="26" />
+      <Item value="Cascade" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.DataAccess.NHib.NHibRepository">
+      <Item value="ClearSessionCache`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Mock`1">
+      <Item value="Object" priority="26" />
+      <Item value="Setup`0" priority="80" />
+      <Item value="Verify`0" priority="22" />
+      <Item value="SetupGet`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Trails2012.Controllers.PersonController">
+      <Item value="Index`0" priority="26" />
+      <Item value="Details`0" priority="27" />
+      <Item value="Create`0" priority="54" />
+      <Item value="SetFakeControllerContext`0" priority="27" />
+      <Item value="Edit`0" priority="55" />
+      <Item value="Delete`0" priority="27" />
+      <Item value="DeleteConfirmed`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ViewResult">
+      <Item value="ViewBag" priority="26" />
+      <Item value="ViewData" priority="22" />
+      <Item value="Model" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
+      <Item value="Returns`0" priority="26" />
+      <Item value="Throws`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.IReturnsResult`1">
+      <Item value="Verifiable`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Moq.Times">
+      <Item value="Exactly`0" priority="49" />
+      <Item value="AtLeastOnce`0" priority="49" />
+      <Item value="Once`0" priority="83" />
+      <Item value="Never`0" priority="83" />
+      <Item value="nguid" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
+      <Item value="Headers" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetupGetter`2">
+      <Item value="Returns`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ActionResult">
+      <Item value="GetType`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.RedirectToRouteResult">
+      <Item value="RouteValues" priority="26" />
+      <Item value="RouteName" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.PartialViewResult">
+      <Item value="Model" priority="22" />
+      <Item value="ViewName" priority="22" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

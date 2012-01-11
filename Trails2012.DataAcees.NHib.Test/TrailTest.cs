@@ -16,7 +16,15 @@ namespace Trails2012.DataAccess.NHib.Test
         {
             bool useSQLite = true;
             _repository = new NHibRepository(useSQLite);
-            if(useSQLite) Util.SeedData(_repository);
+            if (useSQLite)
+            {
+                Util.SeedData(_repository);
+
+                // Nowclear the cached objects from the session:
+                // Some objects were added to the session during the seeding process;
+                // We want the unit tests to get the ones from the database afresh.
+                ((NHibRepository)_repository).ClearSession();
+            }
         }
 
         [TestMethod]
@@ -36,7 +44,7 @@ namespace Trails2012.DataAccess.NHib.Test
             {
                 Assert.IsNotNull(trail);
                 Assert.AreEqual(trail.Id, id);
-                Assert.IsNotNull(trail.Location);   // TODO Why does this fail when using SQLite?
+                Assert.IsNotNull(trail.Location);   
                 Assert.IsNotNull(trail.Difficulty);
                 Assert.IsNotNull(trail.TrailType);
                 Console.WriteLine(
@@ -56,7 +64,7 @@ namespace Trails2012.DataAccess.NHib.Test
                 Trail trail = trails.FirstOrDefault(t => t.Id == id);
                 Assert.IsNotNull(trail);
                 Assert.AreEqual(trail.Id, id);
-                Assert.IsNotNull(trail.Location); // TODO Why does this fail when using SQLite?
+                Assert.IsNotNull(trail.Location); 
                 Assert.IsNotNull(trail.Difficulty);
                 Assert.IsNotNull(trail.TrailType);
                 //Assert.IsNotNull(trail.Image);

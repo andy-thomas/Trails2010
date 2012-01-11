@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Web.Mvc;
@@ -22,6 +23,7 @@ namespace Trails2012.Controllers
 
         public ViewResult Index()
         {
+            throw new InvalidOperationException("Oops - that wasn't supposed to happen! :-)");
             ViewData["GenderList"] = PopulateGenderList(); 
             return View(new List<Person>(_repository.List<Person>()));
         }

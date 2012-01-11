@@ -71,6 +71,18 @@ namespace Trails2012.DataAccess.NHib.Test
                                  };
             trailTypes.ForEach(t => repository.Insert(t));
 
+            // Seed TransportType Levels
+            var transportTypes = new List<TransportType>
+                                     {
+                                         new TransportType {TransportTypeName = "Hike"},
+                                         new TransportType {TransportTypeName = "Cycle"},
+                                         new TransportType {TransportTypeName = "Canoe"},
+                                         new TransportType {TransportTypeName = "Ski"},
+                                         new TransportType {TransportTypeName = "Snowshoe"},
+                                         new TransportType {TransportTypeName = "Aeroplane"}
+                                     };
+            transportTypes.ForEach(t => repository.Insert(t));
+
             // Seed Trails
             var trails = new List<Trail>
                              {
@@ -81,9 +93,9 @@ namespace Trails2012.DataAccess.NHib.Test
                                          Distance = 4.8M,
                                          ElevationGain = 200,
                                          EstimatedTime = 2,
-                                         LocationId = 1,
+                                         Location = locations[0],
                                          TrailType = trailTypes[0],
-                                         DifficultyId = 1,
+                                         Difficulty = difficulties[0],
                                          ReturnOnEffort = 9.2M,
                                          OverallGrade = 7.2M,
                                          Notes =
@@ -98,9 +110,9 @@ namespace Trails2012.DataAccess.NHib.Test
                                          Distance = 8.53M,
                                          ElevationGain = 390,
                                          EstimatedTime = 4,
-                                         LocationId = 2,
+                                         Location = locations[1],
                                          TrailType = trailTypes[0],
-                                         DifficultyId = 1,
+                                         Difficulty = difficulties[0],
                                          ReturnOnEffort = 8.1M,
                                          OverallGrade = 8.1M,
                                          Notes = "Excellent view from the pass"
@@ -112,9 +124,9 @@ namespace Trails2012.DataAccess.NHib.Test
                                          Distance = 8M,
                                          ElevationGain = 480,
                                          EstimatedTime = 4.5M,
-                                         LocationId = 3,
+                                         Location = locations[2],
                                          TrailType = trailTypes[0],
-                                         DifficultyId = 4,
+                                         Difficulty = difficulties[3],
                                          ReturnOnEffort = 7.8M,
                                          OverallGrade = 7.8M,
                                          Notes = "Views across to the Dolomite range."
@@ -126,9 +138,9 @@ namespace Trails2012.DataAccess.NHib.Test
                                          Distance = 8.11M,
                                          ElevationGain = 520,
                                          EstimatedTime = 4.5M,
-                                         LocationId = 3,
+                                         Location = locations[2],
                                          TrailType = trailTypes[0],
-                                         DifficultyId = 2,
+                                         Difficulty = difficulties[1],
                                          ReturnOnEffort = 6.9M,
                                          OverallGrade = 6.9M,
                                          Notes = "Don't stop at Chester Lake - go on to Three Lake Valley"
@@ -137,6 +149,36 @@ namespace Trails2012.DataAccess.NHib.Test
 
             trails.ForEach(t => repository.Insert(t));
 
+            // Seed Trips
+            var trips = new List<Trip>
+                            {
+                                new Trip
+                                    {
+                                        Date = new DateTime(2001, 9, 1),
+                                        TransportType = transportTypes[0],
+                                        Trail = trails[0],
+                                        Weather = "Cloudy",
+                                        TimeTaken = 3.3M,
+                                        Notes = "Very slippery - cramps needed.",
+                                        Persons = new List<Person> 
+                                        {
+                                            persons[0], persons[1],persons[2]
+                                        }
+                                    },
+                                new Trip
+                                    {
+                                        Date = new DateTime(2004, 7, 31),
+                                        TransportType = transportTypes[1],
+                                        Trail = trails[0],
+                                        Weather = "Sunny",
+                                        TimeTaken = 2.3M,
+                                        Notes = "First time on this trail."
+
+                                    }
+                            };
+            trips.ForEach(t => repository.Insert(t));
+
+            repository.SaveChanges();
         }
 
 

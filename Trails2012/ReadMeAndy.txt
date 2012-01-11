@@ -10,6 +10,8 @@ JQuery
 JQuery UI
 Telerik MVC Extensions
 Modernizr
+Elmah
+Elmah.SqlServerCompact
 EntityFramework Code First
 NHibernate 3 (includes Linq to NHibernate)
 Fluent NHibernate (this project utilises both fluent mapping and automapping)
@@ -28,6 +30,13 @@ The main web app and the Trails2012.Tests use MEF plug ins for the implementatio
 folder underneath the respective "bin" folders. (Don't forget to create these if you're creating a new environment!) This folder contains the DLL which implements the required 
 exported plugin classes (in this EFRepository or NHibRepository) and all the required dependencies. The executing assembly finds the dependencies using the <probing> element 
 in the app.config and web.config files. I do it this way, rather than putting the plug in DLLs directly in bin folders, so that they do not get deleted during rebuilds.
+
+Error handling is logged using Elmah, with a SQL Server Compact store for the error messages. The database itself is kept in the App_Data folder, in the Elmah.sdf file. 
+It can viewed through the Visual Studio Server Explorer. I have added a custom ErrorHandlerAttribute class (written by Atif Aziz, creator of Elmah), in order to pass 
+handled exceptions through to elmah. This is set up in the RegisterGlobalFilters method in Global.asax. I have also added a customErrors entry in Web.config with a 
+default redirect url = "~/error". In order for this url to work, I created an ErrorController which simply displays the shared Error.cshtml view. 
+I have added a link on this shared Error view to navigate the users to elmah.axd, where they can view the detailed errors 
+(although, in practice, this page should only be available to admin/support users).
 
 
 Links for uploading files:

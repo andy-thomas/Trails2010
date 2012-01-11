@@ -71,6 +71,18 @@ namespace Trails2012.DataAccess.EF.Test
                 }
             }
         }
+
+        [TestMethod]
+        public void ShouldGetAllTransportTypes()
+        {
+            using (TrailsContext context = new TrailsContext())
+            {
+                DbSet<TransportType> transportTypes = context.TransportTypes;
+                transportTypes.Load();
+                Assert.IsTrue(transportTypes.Local.Count > 0);
+                Console.WriteLine("There are {0} Transport Types", transportTypes.Count());
+            }
+        }
     }
 }
 // ReSharper restore RedundantTypeArgumentsOfMethod

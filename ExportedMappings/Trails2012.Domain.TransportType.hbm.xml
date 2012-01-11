@@ -1,0 +1,14 @@
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class xmlns="urn:nhibernate-mapping-2.2" name="Trails2012.Domain.TransportType, Trails2012.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`TransportType`">
+    <id name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="TransportTypeId" />
+      <generator class="identity" />
+    </id>
+    <property name="TransportTypeName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="TransportType" />
+    </property>
+    <property name="Notes" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="Notes" />
+    </property>
+  </class>
+</hibernate-mapping>

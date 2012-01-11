@@ -56,12 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Conventions\CustomPrimaryKeyConvention.cs" />
     <Compile Include="Conventions\CustomForeignKeyConvention.cs" />
     <Compile Include="Mappings\PersonMap.cs" />
     <Compile Include="NHibernateSessionTracker.cs" />
     <Compile Include="NHibRepository.cs" />
+    <Compile Include="Overrides\TransportTypeMappingOverride.cs" />
+    <Compile Include="Overrides\TripMappingOverride.cs" />
     <Compile Include="Overrides\LocationMappingOverride.cs" />
     <Compile Include="Overrides\TrailMappingOverride.cs" />
     <Compile Include="Overrides\TrailTypeMappingOverride.cs" />
