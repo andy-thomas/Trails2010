@@ -23,7 +23,6 @@ namespace Trails2012.Controllers
 
         public ViewResult Index()
         {
-            throw new InvalidOperationException("Oops - that wasn't supposed to happen! :-)");
             ViewData["GenderList"] = PopulateGenderList(); 
             return View(new List<Person>(_repository.List<Person>()));
         }

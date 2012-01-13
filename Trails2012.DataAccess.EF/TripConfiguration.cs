@@ -11,6 +11,7 @@ namespace Trails2012.DataAccess.EF
             ToTable("Trip", "dbo");
             HasKey(t => t.Id);
             Property(t => t.Id).HasColumnName("TripId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Ignore(t => t.PersonsSummary);
 
             HasMany(t => t.Persons)
                 .WithMany()

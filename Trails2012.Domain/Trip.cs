@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 
 namespace Trails2012.Domain
 {
     public class Trip : EntityBase
     {
         [Required(ErrorMessage = "The trip date is required", AllowEmptyStrings = false)]
+        [DisplayFormat(DataFormatString = @"{0:d}", ApplyFormatInEditMode = true)]
         public virtual DateTime Date { get; set; }
 
         [StringLength(50)]
@@ -27,6 +29,21 @@ namespace Trails2012.Domain
 
         [Display(Name = "People")]        
         public virtual ICollection<Person> Persons { get; set; }
+
+        [Display(Name = "People Summary")]
+        public virtual string PersonsSummary
+        {
+            get { 
+                StringBuilder summary = new StringBuilder();
+                if(Persons != null)
+                    foreach (var person in Persons)
+                    {
+                        summary.Append(person.FirstName).Append(";");
+                    }
+                return summary.ToString();
+            }
+        }
+
     }
 
 }

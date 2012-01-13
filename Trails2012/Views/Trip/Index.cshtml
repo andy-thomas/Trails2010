@@ -1,0 +1,142 @@
+﻿@using Telerik.Web.Mvc.UI
+
+@model IEnumerable<Trails2012.Domain.Trip>
+
+@{
+    ViewBag.Title = "Trips";
+}
+
+<h2>Trips</h2>
+
+
+ <script type="text/javascript">
+
+
+     $(function () {
+
+         $('#searchTerm').autocomplete({
+             source: function (request, response) {
+                 $.ajax({
+                     url: '@Url.Action("GetTrailNames", "Trip")', type: "POST", datatype: "json",
+                     data: { searchTerm: request.term, maxResults: 10 },
+                     success: function (data) {
+                         response($.map(data, function (item) {
+                             return { label: item.Name, value: item.Name, id: item.Id };
+                         }));
+                     },
+                     parse: function (data) {
+                         var rows = new Array();
+                         for (var i = 0; i < data.length; i++) {
+                             rows[i] = { data: data[i], value: data[i].Name, result: data[i].Name };
+                         }
+                         return rows;
+                     },
+                     formatItem: function (row) {
+                         return row.Name;
+                     },
+                     delay: 40, autofill: true, selectFirst: false, highlight: false, multiple: true, multipleSeparator: ";"
+                 });
+             }
+         });
+
+     });
+
+
+  </script>
+
+  @using (Html.BeginForm("Search","Trip")) {
+    <fieldset>
+       <legend>Search Trips</legend>
+      <input type="text" name="searchTerm" id="searchTerm" size="10" maxlength ="30" value="@ViewData["SearchTerm"]" />
+      <input type ="submit" value="Search" />
+    </fieldset>
+      }
+
+@(Html.Telerik().Grid(Model)
+        .Name("TripGrid")
+        .ToolBar(commands => commands.Insert())
+        .Columns(columns =>
+        {
+            columns.Bound(region => region.Date).Title("Sort by date");
+            columns.Bound(region => region.Trail.Name).Title("Sort by trail name");           
+        })
+
+        .DataBinding(dataBinding => dataBinding.Server()
+                             .Insert("Create", "Trip")
+                             .Update("Edit", "Trip")
+                             .Delete("Delete", "Trip")
+                )
+        .Pageable()
+        .Sortable()
+        .DataKeys(keys => keys.Add(trip => trip.Id))
+                        .RowTemplate(grid => @<text>
+                            <div class="trip-details">
+                                 @if (item.Trail.Image != null)
+                                 {
+                                    <img class = 'TrailImageSmall' src='@Url.Action("ShowImage", "Trail", new { TrailId = item.Trail.Id })' alt="Image of @Html.DisplayFor(model => item.Trail.Name)" />
+                                 }
+                                <h3>@item.Trail.Name</h3>
+                                <dl>
+                                    <dt>Date:</dt><dd>@item.Date.ToString("d")</dd>
+                                    <dt>People</dt><dd>@item.PersonsSummary</dd>
+                                </dl>                 
+                                <div class="commands">
+                                    @grid.EditButton(item)
+                                    @grid.DeleteButton(item)                                    
+                                </div>               
+                            </div>
+                         </text>)
+       )
+
+
+
+
+
+
+
+
+
+@*@(Html.Telerik().Grid(Model)
+            .Name("TripGrid")
+    .ToolBar(commands => commands.Insert())
+    .DataKeys(keys => keys.Add(trip => trip.Id))
+            .Columns(columns =>
+                         {
+                             columns.Bound(region => region.Date);
+                             columns.Bound(region => region.Trail.Name);
+                             columns.Bound(region => region.Trail.Image);
+                             columns.Bound(region => region.PersonsSummary);
+                             columns.Command(commands =>
+                                                 {
+                                                     commands.Delete();
+                                                     commands.Edit();
+                                                     commands.Select();
+                                                 }
+                                 );
+                         })
+                         .RowTemplate(grid => @<text>
+                            <div class="trip-details">
+                                 @if (item.Trail.Image != null)
+                                {
+                                    <img class = 'TrailImageSmall' src='@Url.Action("ShowImage", "Trail", new {TrailId = item.Trail.Id})' alt="Image of @Html.DisplayFor(model => item.Trail.Name)" />
+                                }
+                                <h3>@item.Trail.Name</h3>
+                                <dl>
+                                    <dt>Date:</dt><dd>@item.Date</dd>
+                                    <dt>People</dt><dd>@item.PersonsSummary</dd>
+                                </dl>                 
+                                <div class="commands">
+                                    @grid.EditButton(item)
+                                    @grid.DeleteButton(item)                                    
+                                </div>               
+                            </div>
+                         </text>)
+                .DataBinding(dataBinding => dataBinding.Ajax()
+                        .Select("_Sorting", "Trip")
+                         .Insert("Create", "Trip")
+                         .Update("Edit", "Trip")
+                         .Delete("Delete", "Trip")
+                            )
+            .Sortable()
+      )
+*@

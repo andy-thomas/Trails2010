@@ -382,6 +382,10 @@ img.TrailImage {
      height: 200px;
  }   
  
+img.TrailImageSmall {
+     height: 60px;
+ }   
+ 
 #title {
     position: relative;
     margin-bottom: 0px;
@@ -389,4 +393,58 @@ img.TrailImage {
 	background-repeat:no-repeat;	
     height: 190px;
 	background-position:left bottom 
+}
+
+/* Trips details */
+.trip-details
+{
+    padding: .8em .6em;
+    display: inline-block;
+}
+
+.trip-details
+{
+    display: block;
+}               
+
+.trip-details:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}                
+
+.trip-details dl, .trip-details dt, .trip-details dd
+{
+    margin: 0;
+    padding: 0;
+}                
+
+.trip-details img, .trip-details h3, .trip-details dl, .commands
+{
+    float: left;
+    clear: none;
+    margin: 0 14px 0 0;
+}        
+
+.trip-details h3, .trip-details dl
+{
+    width: 200px;
+    min-height: 115px;
+    border-width: 0 1px 0 0;
+    background-color: transparent;
+    color: inherit;
+}                
+
+.trip-details h3
+{
+    width: 90px;
+    padding: 0;
+    font-size: 1.5em;
+    padding-right: 20px;
+}                
+
+.trip-details dt
+{
+    font-weight: bold;
 }

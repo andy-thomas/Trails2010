@@ -30,6 +30,9 @@
     <property name="Notes" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <column name="Notes" />
     </property>
+    <property access="property" name="PersonsSummary" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <column name="PersonsSummary" />
+    </property>
     <many-to-one class="Trails2012.Domain.Trail, Trails2012.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Trail">
       <column name="TrailId" />
     </many-to-one>

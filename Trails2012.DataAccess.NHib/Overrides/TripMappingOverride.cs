@@ -11,7 +11,8 @@ namespace Trails2012.DataAccess.NHib.Overrides
             // Andy - see comments in LocationMappingOverride
             mapping.Map(x => x.TransportTypeId).ReadOnly();
             mapping.Map(x => x.TrailId).ReadOnly();
-            
+            mapping.IgnoreProperty(x => x.PersonsSummary);
+
             mapping.HasManyToMany<Person>(x => x.Persons)
                 .Table("PersonTrip")
                 .ParentKeyColumn("TripId")
