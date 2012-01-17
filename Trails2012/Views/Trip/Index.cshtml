@@ -20,20 +20,23 @@
                      url: '@Url.Action("GetTrailNames", "Trip")', type: "POST", datatype: "json",
                      data: { searchTerm: request.term, maxResults: 10 },
                      success: function (data) {
+                         //debugger;
                          response($.map(data, function (item) {
                              return { label: item.Name, value: item.Name, id: item.Id };
                          }));
                      },
-                     parse: function (data) {
-                         var rows = new Array();
-                         for (var i = 0; i < data.length; i++) {
-                             rows[i] = { data: data[i], value: data[i].Name, result: data[i].Name };
-                         }
-                         return rows;
-                     },
-                     formatItem: function (row) {
-                         return row.Name;
-                     },
+//                     parse: function (data) {
+//                         debugger;
+//                         var rows = new Array();
+//                         for (var i = 0; i < data.length; i++) {
+//                             rows[i] = { data: data[i], value: data[i].Name, result: data[i].Name };
+//                         }
+//                         return rows;
+//                     },
+//                     formatItem: function (row) {
+//                         debugger;
+//                         return row.Name;
+//                     },
                      delay: 40, autofill: true, selectFirst: false, highlight: false, multiple: true, multipleSeparator: ";"
                  });
              }
@@ -44,9 +47,11 @@
 
   </script>
 
+
   @using (Html.BeginForm("Search","Trip")) {
     <fieldset>
        <legend>Search Trips</legend>
+       @*TODO: we could add ability to search by people and dates*@
       <input type="text" name="searchTerm" id="searchTerm" size="10" maxlength ="30" value="@ViewData["SearchTerm"]" />
       <input type ="submit" value="Search" />
     </fieldset>
@@ -54,7 +59,7 @@
 
 @(Html.Telerik().Grid(Model)
         .Name("TripGrid")
-        .ToolBar(commands => commands.Insert())
+        //.ToolBar(commands => commands.Insert())
         .Columns(columns =>
         {
             columns.Bound(region => region.Date).Title("Sort by date");
@@ -81,7 +86,8 @@
                                     <dt>People</dt><dd>@item.PersonsSummary</dd>
                                 </dl>                 
                                 <div class="commands">
-                                    @grid.EditButton(item)
+                                    @Html.ActionLink("Edit","Edit", new { id = item.Id })
+                                    @*@grid.EditButton(item)*@
                                     @grid.DeleteButton(item)                                    
                                 </div>               
                             </div>
@@ -89,6 +95,9 @@
        )
 
 
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
 
 
 

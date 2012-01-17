@@ -1,0 +1,84 @@
+﻿@model Trails2012.Domain.Trip
+
+@{
+    ViewBag.Title = "Create Trip";
+}
+
+    <style type="text/css">
+		#sortable1, #sortable2, #sortable3 { list-style-type: none; margin: 0; padding: 0; margin-right: 10px; background: #eee; padding: 5px; width: 143px;}
+	    #sortable1 li, #sortable2 li, #sortable3 li { margin: 5px; padding: 5px; font-size: 1.2em; width: 120px; }
+        #personsTable {margin: 10px; }
+    </style>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            $("#sortable1, #sortable2").sortable({
+                connectWith: ".connectedSortable",                
+                stop: function (event, ui) {
+                       var personsontrip = $("#sortable1").sortable('toArray');
+                        //debugger;                    
+                        $('#personidlist').val(personsontrip);                        
+                }
+
+            }).disableSelection();
+        });
+
+    </script>
+
+
+@using (Html.BeginForm("Create", "Trip", FormMethod.Post, new { enctype = "multipart/form-data"  }))
+ {
+     @Html.ValidationSummary(true)
+     <fieldset>
+         <legend>Trip</legend>
+
+         <div class="result"></div>
+         <input type="hidden" id="personidlist" name="personidlist" ></input>
+         <div>
+
+		@Html.Partial("_CreateOrEdit", Model)
+
+         <fieldset>
+           <legend>People on the Trip</legend>
+             <table id="personsTable">
+                <tr>
+                    <th>People on Trip</th>
+                    <th>Select people</th>
+                 </tr>
+                 <tr>
+                     <td>
+                         <ul id="sortable1" class="connectedSortable">
+
+                                @if (Model != null && Model.Persons != null) {
+                                    foreach (var person in Model.Persons)
+                                     {
+                                         <li class="ui-state-default" id="@person.Id">@Html.DisplayFor(model => person.FirstName)</li>
+                                     }
+                                }
+                         </ul>
+                     </td>
+                     <td>
+                         <ul id="sortable2" class="connectedSortable">
+                          @foreach (var person in (List<Trails2012.Domain.Person>)ViewData["persons"])
+                             {
+                                 <li class="ui-state-highlight" id="@person.Id">@Html.DisplayFor(model => person.FirstName)</li>
+                             }
+                          </ul>
+                     </td>
+                 </tr>
+             </table>
+             </fieldset>    
+         </div>
+
+     </fieldset>
+
+     <p>
+         <input type="submit" value="Save" />
+     </p>
+ }
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

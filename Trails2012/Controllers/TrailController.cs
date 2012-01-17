@@ -146,27 +146,28 @@ namespace Trails2012.Controllers
                     BinaryReader binaryReader = new BinaryReader(file.InputStream);
                     byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
                     savedTrail.Image = byteArray;
-
-                    // see Comment 1
-                    if (trail.DifficultyId.HasValue)
-                    {
-                        Difficulty difficulty = _repository.GetById<Difficulty>(trail.DifficultyId.Value);
-                        trail.Difficulty = difficulty;
-                    }
-                    else
-                        trail.Difficulty = null;
-                    if (trail.Location == null || trail.Location.Id != trail.LocationId)
-                    {
-                        Location location = _repository.GetById<Location>(trail.LocationId);
-                        trail.Location = location;
-                    }
-                    if (trail.TrailType == null || trail.TrailType.Id != trail.TrailTypeId)
-                    {
-                        TrailType trailType = _repository.GetById<TrailType>(trail.TrailTypeId);
-                        trail.TrailType = trailType;
-                    }
-
                 }
+
+                // see Comment 1
+                if (trail.DifficultyId.HasValue)
+                {
+                    Difficulty difficulty = _repository.GetById<Difficulty>(trail.DifficultyId.Value);
+                    trail.Difficulty = difficulty;
+                }
+                else
+                    trail.Difficulty = null;
+                if (trail.Location == null || trail.Location.Id != trail.LocationId)
+                {
+                    Location location = _repository.GetById<Location>(trail.LocationId);
+                    trail.Location = location;
+                }
+                if (trail.TrailType == null || trail.TrailType.Id != trail.TrailTypeId)
+                {
+                    TrailType trailType = _repository.GetById<TrailType>(trail.TrailTypeId);
+                    trail.TrailType = trailType;
+                }
+
+
                 _repository.Update(savedTrail);
                 _repository.SaveChanges();
                 return RedirectToAction("Index");

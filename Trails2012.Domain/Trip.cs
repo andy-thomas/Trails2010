@@ -8,7 +8,7 @@ namespace Trails2012.Domain
     public class Trip : EntityBase
     {
         [Required(ErrorMessage = "The trip date is required", AllowEmptyStrings = false)]
-        [DisplayFormat(DataFormatString = @"{0:d}", ApplyFormatInEditMode = true)]
+        //[DisplayFormat(DataFormatString = @"{0:d}", ApplyFormatInEditMode = true)]
         public virtual DateTime Date { get; set; }
 
         [StringLength(50)]

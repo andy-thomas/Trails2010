@@ -1,0 +1,93 @@
+﻿@using Telerik.Web.Mvc.UI
+@using Trails2012.Domain
+
+@model Trip
+
+<table class="noborder">
+           <tr>
+                <td>
+                    <div class="editor-label">
+                        Trail
+                    </div>
+                 </td>
+                 <td>
+                   <div class="editor-field">
+                        @Html.DropDownListFor(model => model.TrailId, ((IEnumerable<Trail>)ViewBag.PossibleTrails).Select(option => new SelectListItem {
+                            Text = Html.DisplayTextFor(_ => option.Name).ToString(), 
+                            Value = option.Id.ToString(),
+                            Selected = (Model != null) && (option.Id == Model.TrailId)
+                        }), "Choose...")
+                        @Html.ValidationMessageFor(model => model.TrailId)
+                    </div>
+               </td>
+            </tr>
+           <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Date)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                        @*@(Html.Telerik().DatePickerFor(model => model.Date).Value(Model.Date == null ? DateTime.MinValue: Model.Date))*@
+                        @Html.EditorFor(model => model.Date)
+                        @Html.ValidationMessageFor(model => model.Date)
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Weather)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.Weather)
+                        @Html.ValidationMessageFor(model => model.Weather)
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td>
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.TimeTaken)
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => model.TimeTaken)
+                        @Html.ValidationMessageFor(model => model.TimeTaken)
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td>
+                    <div class="editor-label">
+                        TransportType
+                    </div>
+                </td>
+                 <td>
+                    <div class="editor-field">
+                        @Html.DropDownListFor(model => model.TransportTypeId, ((IEnumerable<Trails2012.Domain.TransportType>)ViewBag.PossibleTransportTypes).Select(option => new SelectListItem {
+                            Text = Html.DisplayTextFor(_ => option).ToString(), 
+                            Value = option.Id.ToString(),
+                            Selected = (Model != null) && (option.Id == Model.TransportTypeId)
+                        }), "Choose...")
+                        @Html.ValidationMessageFor(model => model.TransportTypeId)
+                    </div>
+               </td>
+            </tr>
+
+</table>
+<div class="editor-label">
+    @Html.LabelFor(model => model.Notes)
+</div>
+<div class="editor-field">
+    @(Html.Telerik().EditorFor(model => model.Notes)
+                        .Encode(false)
+                        .HtmlAttributes(new { style = "height:200px" })
+                        )
+    @*@Html.EditorFor(model => model.Notes)*@
+    @Html.ValidationMessageFor(model => model.Notes)
+</div>

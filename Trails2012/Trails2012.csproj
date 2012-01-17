@@ -899,6 +899,15 @@
   <ItemGroup>
     <Content Include="Views\Trip\Details.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trip\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trip\_CreateOrEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trip\Create.cshtml" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- http://stackoverflow.com/questions/2905151/msbuild-script-and-vs2010-publish-apply-web-config-transform, http://forums.asp.net/t/1532038.aspx/2/10  -->
@@ -928,7 +937,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>54530</DevelopmentServerPort>
+          <DevelopmentServerPort>2347</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
