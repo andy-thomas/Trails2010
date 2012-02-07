@@ -28,12 +28,39 @@ namespace Trails2012.Controllers
 
         //
         // GET: /Trip/
-        public ActionResult Index()
+        public ActionResult Index(string searchTerm)
         {
             //ViewData["regions"] = _regions;
-            List<Trip> trips  = new List<Trip>(_repository.ListIncluding<Trip>(t => t.Persons, t => t.Trail));
+            List<Trip> trips;
+            if (string.IsNullOrEmpty(searchTerm))
+                trips = new List<Trip>(_repository.ListIncluding<Trip>(t => t.Persons, t => t.Trail));
+            else
+            {
+                trips =
+                    new List<Trip>(
+                        _repository.ListIncluding<Trip>(t => t.Persons, t => t.Trail).Where(
+                            t => t.Trail.Name.ToUpper().Contains(searchTerm.ToUpper())));
+                ViewData["SearchTerm"] = searchTerm;
+            }
             return View(trips);
         }
+
+        //[GridAction]
+        //public ActionResult Search(string searchTerm)
+        //{
+        //    List<Trip> trips;
+        //    if (string.IsNullOrEmpty(searchTerm))
+        //        trips = new List<Trip>(_repository.ListIncluding<Trip>(t => t.Persons, t => t.Trail));
+        //    else
+        //    {
+        //        trips =
+        //            new List<Trip>(
+        //                _repository.ListIncluding<Trip>(t => t.Persons, t => t.Trail).Where(
+        //                    t => t.Trail.Name.ToUpper().Contains(searchTerm.ToUpper())));
+        //        ViewData["SearchTerm"] = searchTerm;
+        //    }
+        //    return View("Index", trips);
+        //}
 
         //
         // GET: /Trip/Details/5
@@ -198,19 +225,7 @@ namespace Trails2012.Controllers
             _repository.SaveChanges();
            return RedirectToAction("Index");
         }
-
-        [HttpPost]
-        public ActionResult Search(string searchTerm)
-        {
-            List<Trip> trips =
-                new List<Trip>(
-                    _repository.ListIncluding<Trip>(t => t.Persons, t => t.Trail).Where(
-                        t => t.Trail.Name.ToUpper().Contains(searchTerm.ToUpper())));
-            ViewData["SearchTerm"] = searchTerm;
-            return View("Index", trips);
-        }
-
-    
+   
         public JsonResult GetTrailNames(string searchTerm, int maxResults)
         {
              IEnumerable<Trail> trails = _repository.List<Trail>().Where(t => t.Name.ToUpper().Contains(searchTerm.ToUpper())).Take(10).ToList();
