@@ -252,4 +252,10 @@
   <data name="UnGroup" xml:space="preserve">
     <value>розгрупувати</value>
   </data>
+  <data name="FilterForeignKeyEq" xml:space="preserve">
+    <value>рівними</value>
+  </data>
+  <data name="FilterForeignKeyNe" xml:space="preserve">
+    <value>не рівними</value>
+  </data>
 </root>

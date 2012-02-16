@@ -1,0 +1,47 @@
+﻿ @using System.Collections @using Telerik.Web.Mvc.UI
+
+ @model IEnumerable<Trails2012.Domain.Location>
+
+ <h2>Locations</h2>
+
+@(Html.Telerik().Grid(Model)
+        .Name("LocationGrid")
+    .ToolBar(commands => commands.Insert())
+    .DataKeys(keys => keys.Add(location => location.Id))
+    .DataBinding(dataBinding => dataBinding.Ajax()
+                                        .Select("SelectAjaxEditing", "Location")
+                                        .Insert("CreateAjaxEditing", "Location")
+                                        .Update("EditAjaxEditing", "Location")
+                                        .Delete("DeleteAjaxEditing", "Location"))
+    .Editable(editing => editing.Mode(GridEditMode.InLine))
+    .Sortable()
+    .Filterable()
+    .Columns(columns =>
+                    {
+                        columns.Bound(location => location.Name).Width(100);
+                        columns.Bound(location => location.Description).Width(200).Sortable(false);
+                        columns.ForeignKey(location => location.RegionId, (IEnumerable)ViewData["regions"], "Id", "Name").Width(230);
+                        columns.Command(commands =>
+                                            {
+                                                commands.Edit();
+                                            }).Width(100);
+                        columns.Command(commands =>
+                                            {
+                                                commands.Delete();
+                                            }).Width(200).HtmlAttributes(new {name = "delete"});
+                    })
+      .CellAction(cell =>
+                    {
+                        if(cell.DataItem.Id == 3) // TODO Andy - find if there are any Trails for this Location
+                        {
+                            if(cell.Column.HtmlAttributes["name"] == "delete")
+                            {
+                                cell.HtmlAttributes["style"] = "visibility:hidden";
+                            }
+                        }
+                    })
+                    )
+
+@*
+@Html.Telerik().ScriptRegistrar()
+*@

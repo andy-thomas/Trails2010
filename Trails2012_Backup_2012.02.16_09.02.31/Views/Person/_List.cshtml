@@ -1,0 +1,33 @@
+﻿@using Trails2012.Domain
+@model   IEnumerable<Trails2012.Domain.Person>
+
+
+<div class="person-list">
+    <div class="data-row">
+        <div class="column-header submit">
+        </div>
+        <div class="column-header first-name">
+            First Name
+        </div>
+        <div class="column-header last-name">
+            Last Name
+        </div>
+        <div class="column-header dob">
+            Date Of Birth
+        </div>
+        <div class="column-header gender">
+            Gender
+        </div>
+    </div>    
+
+    @foreach (var item in Model) {  
+        @Html.Partial("_PersonDetail", item, ViewData)
+                                 }
+    
+    @Html.Partial("_Create", new Person(), ViewData)
+    
+</div>    
+
+<input type="button" id = "shownewpersonform" value="Add New" onclick="InitNewPersonForm(this)" /> 
+
+

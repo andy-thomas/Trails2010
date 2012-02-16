@@ -1,0 +1,54 @@
+﻿ @using Telerik.Web.Mvc.UI
+ 
+ @model IEnumerable<Trails2012.Domain.Region>
+
+ 
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Regions</h2>
+
+    @(Html.Telerik().Grid(Model)
+        .Name("RegionGrid")
+        .ToolBar(commands => commands.Insert())
+        .DataKeys(keys => keys.Add(region => region.Id))
+        .DataBinding(dataBinding => dataBinding.Server()
+                                        .Select("Index", "Region")
+                                        .Insert("Create", "Region")
+                                        .Update("Edit", "Region")
+                                        .Delete("Delete", "Region"))
+        .Editable(editing => editing.Mode(GridEditMode.InLine))
+        .Sortable()
+        .Filterable()
+        .Columns(columns =>
+                        {
+                            columns.Bound(region => region.Name).Width(100);
+                            columns.Bound(region => region.Description).Width(200).Sortable(false);
+                            columns.Command(commands =>
+                                                {
+                                                    commands.Edit();
+                                                    commands.Delete();
+                                                }).Width(200).Title("Commands");
+                        }))
+
+
+
+
+ @*@(Html.Telerik().Menu()
+            .Name("myMenu")
+            .Items(items =>
+                       {
+                           items.Add().Text("Parent 1").Items(sub1 =>
+                                   {
+                                       sub1.Add().Text("Sub 1");
+                                   });
+                           items.Add().Text("Parent 2");
+                       }))
+    <p />
+    <p />*@
+
+@Html.Telerik().ScriptRegistrar()
+*@

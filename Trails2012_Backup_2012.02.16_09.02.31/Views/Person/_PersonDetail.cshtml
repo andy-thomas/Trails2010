@@ -1,0 +1,34 @@
+﻿@model Trails2012.Domain.Person
+
+<div class="data-row">
+    <div class="data-element submit">
+        <input type="button" id = "showeditpersonform" value="Edit" onclick="InitEditPersonForm(this, @ViewData.Model.Id  )" > 
+        @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ })*@
+        @*  // Show action links - or do as shown below - displays the links as buttons for consistency's sake
+        <a href="@(Url.Action("Delete", "Person", new { id = ViewData.Model.Id} ))"><button>Delete</button></a> |     
+        <a href="@(Url.Action("Details", "Person", new { id = ViewData.Model.Id} ))"><button>Details</button></a> |
+        *@
+        @Html.ActionLink("Delete", "Delete", new { id = ViewData.Model.Id}) 
+        @Html.ActionLink("Details", "Details", new { id = ViewData.Model.Id }) 
+
+    </div>
+    <div class="data-element first-name">
+        @Html.DisplayFor(modelItem => Model.FirstName)
+    </div>
+    <div class="data-element last-name">
+        @Html.DisplayFor(modelItem => Model.LastName)
+    </div>
+    <div class="data-element dob">
+        @Html.DisplayFor(modelItem => Model.DateOfBirth)
+        @*<input class="datepicker"  />*@
+    </div>
+    <div class="data-element gender">
+        @Html.DisplayFor(modelItem => Model.GenderDesc)
+    </div>
+    @*<div class="data-element fullname">
+        @ViewData.Model.FullName
+    </div>*@
+</div>    
+<div class="data-row-edit" id="datarowedit@(ViewData.Model.Id)" >
+    @Html.Partial("_Edit", ViewData.Model, ViewData)
+</div>

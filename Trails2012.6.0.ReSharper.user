@@ -4,46 +4,51 @@
       <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trip.cs" caret="294" fromTop="4" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TrailController.cs" caret="1938" fromTop="3" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Person/f:_PersonDetail.cshtml" caret="839" fromTop="0" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trail/f:_CreateOrEdit.cshtml" caret="3015" fromTop="45" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="2330" fromTop="30" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Edit.cshtml" caret="1875" fromTop="4" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="1705" fromTop="12" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="2100" fromTop="9" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trail/f:Index.cshtml" caret="90" fromTop="5" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="3880" fromTop="16" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trail/f:Create.cshtml" caret="455" fromTop="11" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:_CreateOrEdit.cshtml" caret="1563" fromTop="17" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Edit.cshtml" caret="1875" fromTop="4" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="1394" fromTop="22" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/f:Web.config" caret="220" fromTop="6" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:_CreateOrEdit.cshtml" caret="1339" fromTop="11" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Location/f:_SelectAjaxEditing.cshtml" caret="130" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trail/f:_CreateOrEdit.cshtml" caret="9046" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trail/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trail/f:_Map.cshtml" caret="0" fromTop="0" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="110" fromTop="6" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/f:Web.config" caret="981" fromTop="12" />
     </RecentFiles>
     <RecentEdits>
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="2119" fromTop="14" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="2120" fromTop="9" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="1832" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="10160" fromTop="4" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="10174" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="885" fromTop="17" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="1073" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="1261" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="1622" fromTop="6" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="768" fromTop="10" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="661" fromTop="8" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="861" fromTop="10" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Create.cshtml" caret="491" fromTop="2" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="10160" fromTop="2" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="2880" fromTop="8" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="2834" fromTop="15" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="2284" fromTop="13" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="6570" fromTop="9" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="10874" fromTop="2" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="4030" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="3984" fromTop="15" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="3434" fromTop="13" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Edit.cshtml" caret="2658" fromTop="9" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:_CreateOrEdit.cshtml" caret="2498" fromTop="22" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:_CreateOrEdit.cshtml" caret="1860" fromTop="4" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:_CreateOrEdit.cshtml" caret="2159" fromTop="9" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:_CreateOrEdit.cshtml" caret="2425" fromTop="15" />
       <File id="AF00D12C-9FA4-445E-BEF4-0B92D886913B/f:Trip.cs" caret="294" fromTop="4" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="3146" fromTop="12" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="3419" fromTop="19" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="5562" fromTop="16" />
-      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="5856" fromTop="18" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="4296" fromTop="12" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="4569" fromTop="19" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="6712" fromTop="16" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="7006" fromTop="18" />
       <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:_CreateOrEdit.cshtml" caret="1113" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="7766" fromTop="9" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="1347" fromTop="7" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="1348" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="1603" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="893" fromTop="14" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="1934" fromTop="16" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="1740" fromTop="12" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="5286" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="5286" fromTop="36" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="3133" fromTop="8" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="2603" fromTop="3" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="1572" fromTop="12" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Controllers/f:TripController.cs" caret="2102" fromTop="20" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/d:Trip/f:Index.cshtml" caret="3058" fromTop="13" />
+      <File id="9801FD19-CD96-40F9-A40D-21AF9D49BEEF/d:Views/f:Web.config" caret="1255" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -122,7 +127,7 @@
       <Item value="prop" priority="735" />
       <Item value="int" priority="720" />
       <Item value="EntityBase`0" priority="223" />
-      <Item value="string" priority="725" />
+      <Item value="string" priority="789" />
       <Item value="public" priority="447" />
       <Item value="double" priority="31" />
       <Item value="Difficulty`0" priority="223" />
@@ -161,7 +166,7 @@
       <Item value="_context" priority="543" />
       <Item value="Delete`1" priority="31" />
       <Item value="id" priority="95" />
-      <Item value="if" priority="889" />
+      <Item value="if" priority="921" />
       <Item value="entityToDelete" priority="63" />
       <Item value="Detached" priority="16" />
       <Item value="return" priority="1023" />
@@ -216,7 +221,7 @@
       <Item value="Display" priority="63" />
       <Item value="Range" priority="63" />
       <Item value="RegularExpression" priority="31" />
-      <Item value="else" priority="191" />
+      <Item value="else" priority="223" />
       <Item value="Url" priority="94" />
       <Item value="Details" priority="32" />
       <Item value="this" priority="191" />
@@ -225,7 +230,7 @@
       <Item value="Dictionary" priority="31" />
       <Item value="Dictionary&lt;int,string&gt;" priority="28" />
       <Item value="retValue" priority="95" />
-      <Item value="ViewData" priority="376" />
+      <Item value="ViewData" priority="408" />
       <Item value="PopulateGenderList`0" priority="31" />
       <Item value="viewData" priority="31" />
       <Item value="Html" priority="665" />
@@ -237,7 +242,7 @@
       <Item value="ValueProvider" priority="31" />
       <Item value="foreach" priority="255" />
       <Item value="keyValuePair" priority="31" />
-      <Item value="object" priority="120" />
+      <Item value="object" priority="149" />
       <Item value="." priority="26" />
       <Item value="using" priority="59" />
       <Item value="items" priority="63" />
@@ -255,7 +260,7 @@
       <Item value="ActionResult`0" priority="31" />
       <Item value="RedirectToAction`0" priority="95" />
       <Item value="PartialView`0" priority="63" />
-      <Item value="GridAction" priority="63" />
+      <Item value="GridAction" priority="95" />
       <Item value="class" priority="93" />
       <Item value="DateTimeExtensions`0" priority="31" />
       <Item value="datetime" priority="31" />
@@ -293,7 +298,7 @@
       <Item value="ErrorMessage" priority="63" />
       <Item value="IEnumerable" priority="95" />
       <Item value="trailTypes" priority="63" />
-      <Item value="Model" priority="454" />
+      <Item value="Model" priority="486" />
       <Item value="ModelState" priority="63" />
       <Item value="AllowEmptyStrings" priority="31" />
       <Item value="CssClassPropertyAttribute`0" priority="32" />
@@ -391,7 +396,7 @@
       <Item value="Weather" priority="32" />
       <Item value="TimeTaken" priority="32" />
       <Item value="Trip`0" priority="317" />
-      <Item value="trips" priority="63" />
+      <Item value="trips" priority="95" />
       <Item value="transportTypes" priority="98" />
       <Item value="TrailId" priority="65" />
       <Item value="List&lt;Person&gt;" priority="57" />
@@ -421,7 +426,7 @@
       <Item value="item" priority="91" />
       <Item value="modelItem" priority="31" />
       <Item value="grid" priority="89" />
-      <Item value="searchTerm" priority="63" />
+      <Item value="searchTerm" priority="95" />
       <Item value="searchResult" priority="63" />
       <Item value="getAutoComplete" priority="32" />
       <Item value="Content`0" priority="31" />
@@ -450,6 +455,7 @@
       <Item value="personidlist" priority="31" />
       <Item value="char" priority="28" />
       <Item value="personIdArray" priority="31" />
+      <Item value="helper" priority="29" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Trails2012.Domain.Person">
       <Item value="Id" priority="184" />
@@ -565,7 +571,7 @@
       <Item value="Count`0" priority="45" />
       <Item value="Where`1" priority="26" />
       <Item value="Take`1" priority="53" />
-      <Item value="ToList`1" priority="107" />
+      <Item value="ToList`1" priority="134" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
       <Item value="Contains`0" priority="107" />
@@ -729,6 +735,7 @@
       <Item value="Url" priority="17" />
       <Item value="grid" priority="23" />
       <Item value="ViewData" priority="7" />
+      <Item value="helper" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Nullable`1">
       <Item value="HasValue" priority="80" />
@@ -736,8 +743,8 @@
       <Item value="Value" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="Empty" priority="53" />
-      <Item value="IsNullOrEmpty`0" priority="26" />
+      <Item value="Empty" priority="81" />
+      <Item value="IsNullOrEmpty`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.ViewComponentFactory`1">
       <Item value="Menu`0" priority="26" />
@@ -801,7 +808,7 @@
       <Item value="Ajax`0" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.GridServerBindingSettingsBuilder">
-      <Item value="Select`0" priority="54" />
+      <Item value="Select`0" priority="81" />
       <Item value="Insert`0" priority="26" />
       <Item value="Update`0" priority="26" />
       <Item value="Delete`0" priority="26" />
@@ -854,7 +861,7 @@
       <Item value="HtmlAttributes" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
-      <Item value="ToString`0" priority="53" />
+      <Item value="ToString`0" priority="134" />
       <Item value="IsReadOnly" priority="26" />
       <Item value="GetType`0" priority="54" />
       <Item value="GetHashCode`0" priority="26" />
@@ -1135,7 +1142,7 @@
       <Item value="TrailId" priority="82" />
       <Item value="PersonsSummary" priority="131" />
       <Item value="Trail" priority="212" />
-      <Item value="Id" priority="86" />
+      <Item value="Id" priority="113" />
       <Item value="Weather" priority="83" />
       <Item value="TransportTypeId" priority="27" />
     </ItemStatistics>
@@ -1238,6 +1245,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
       <Item value="Equals`0" priority="26" />
+      <Item value="ToString`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.DatePickerBuilder">
       <Item value="Render`0" priority="26" />

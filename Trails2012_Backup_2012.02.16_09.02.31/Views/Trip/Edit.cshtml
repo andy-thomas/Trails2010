@@ -1,0 +1,170 @@
+﻿@model Trails2012.Domain.Trip
+
+@{
+    ViewBag.Title = "Edit Trip";
+}
+
+    <style type="text/css">
+		@*.draggable { width: 100px; height: 23px; border: solid 1px #ccc; margin: .5em}    
+		#imageboundary {width: 500px; border: solid 1px #ccc}    
+		#droppable {border: solid 1px #000; width: 150px; height: 50px}
+		#sortable1, #sortable2 { list-style-type: none; margin: 0; padding: 0; margin-right: 10px; }
+	    #sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 120px; }*@
+	
+		#sortable1, #sortable2, #sortable3 { list-style-type: none; margin: 0; padding: 0; margin-right: 10px; background: #eee; padding: 5px; width: 143px;}
+	    #sortable1 li, #sortable2 li, #sortable3 li { margin: 5px; padding: 5px; font-size: 1.2em; width: 120px; }
+        #personsTable {margin: 10px; }
+    </style>
+
+    <script type="text/javascript">
+//        $(function () {
+//            // http://derans.blogspot.com/2010/03/drag-drop-with-mvc-jquery-ajax.html
+//            //            $(".draggable").draggable({ containment: '#imageboundary', revert: 'valid' });
+//            $(".draggable").draggable({ revert: 'valid' });
+//            $("#droppable").droppable({
+//                drop: function (event, ui) {
+//                    $.ajax({
+//                        type: "POST",
+//                        url: '/Trip/AddPersonToTrip/' + $(ui.draggable).attr("id"),
+//                        success: function (data) {
+//                            $('.result').html(data);
+//                            //debugger;
+//                            $('ul#baseList li').find('#1234').remove();
+//                            $("<li>" + $(ui.draggable).attr("id") + "<\/li>").appendTo($('ul#cart'));
+//                        }
+//                    });
+//                }
+//            });
+//        });
+
+
+
+        $(function () {
+            var start, stop, over;
+
+            $("#sortable1, #sortable2").sortable({
+                connectWith: ".connectedSortable",
+                over: function (event, ui) {
+                    start = ui.position.left;
+                    //debugger;
+                    over = ui.sender;
+                },
+                stop: function (event, ui) {
+                    stop = ui.position.left;
+                    if (over != null) {
+                       over = null;
+                       var method = (start > stop) ? 'AddPersonToTrip' : 'RemovePersonFromTrip';
+                       // make an Ajax call to the controller: http://derans.blogspot.com/2010/03/drag-drop-with-mvc-jquery-ajax.html
+                        //debugger;
+                        $.ajax({
+                           url: '/Trip/' + method + '/', 
+                           //url: '/Trip/' + method + '/', + @Model.Id + '?personId=' + $(ui.item).attr("id") ,  // Andy - don't use this; pass the parameters in using the data: option instead
+                           data: { personIds: $("#sortable1").sortable('toArray'), personId:  $(ui.item).attr("id"), id: @(Model.Id)  },   //http://stackoverflow.com/questions/3311938/saving-jquery-sortable-new-order-to-asp-net-mvc-controller
+                           traditional: true,     
+                           type: "POST",
+                            success: function (data) {
+                                $('.result').html(data);
+                            }
+                        });
+                    }
+                }
+
+
+            }).disableSelection();
+        });
+
+    </script>
+
+
+@*   
+ <div>
+   <div class="result"></div>
+    <div id="imageboundary">
+      <div id="droppable">
+        <ul id="cart"></ul>
+      </div>
+      <ul id="baseList">
+      <li class="draggable" id="1234">Andy</li> 
+      <li class="draggable" id="1235">Bill</li> 
+      </ul>
+
+ <div class="result"></div>
+<div>
+<table>
+<th>People on Trip</th>
+<th>Select people</th>
+<tr>
+<td>
+<ul id="sortable1" class="connectedSortable">
+	<li class="ui-state-default">foo 1</li>
+	<li class="ui-state-default">foo 2</li>
+	
+</ul>
+</td>
+<td>
+<ul id="sortable2" class="connectedSortable">
+	<li class="ui-state-highlight" id="34">bar 1</li>
+	<li class="ui-state-highlight" id="432">bar 2</li>
+	<li class="ui-state-highlight" id="653">bar 3</li>
+	<li class="ui-state-highlight" id="435">bar 4</li>
+	<li class="ui-state-highlight" id="23">bar 5</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+*@
+
+
+@using (Html.BeginForm("Edit", "Trip", FormMethod.Post, new { enctype = "multipart/form-data" }))
+ {
+     @Html.ValidationSummary(true)
+     <fieldset>
+         <legend>Trip</legend>
+
+         <div class="result"></div>
+         <div>
+
+		@Html.Partial("_CreateOrEdit", Model)
+
+         <fieldset>
+           <legend>People on the Trip</legend>
+             <table id="personsTable">
+                <tr>
+                    <th>People on Trip</th>
+                    <th>Select people</th>
+                 </tr>
+                 <tr>
+                     <td>
+                         <ul id="sortable1" class="connectedSortable">
+
+                             @foreach (var person in Model.Persons)
+                             {
+                                 <li class="ui-state-default" id="@person.Id">@Html.DisplayFor(model => person.FirstName)</li>
+                             }
+                         </ul>
+                     </td>
+                     <td>
+                         <ul id="sortable2" class="connectedSortable">
+                          @foreach (var person in (List<Trails2012.Domain.Person>)ViewData["persons"])
+                             {
+                                 <li class="ui-state-highlight" id="@person.Id">@Html.DisplayFor(model => person.FirstName)</li>
+                             }
+                          </ul>
+                     </td>
+                 </tr>
+             </table>
+             </fieldset>    
+         </div>
+
+     </fieldset>
+
+     <p>
+         <input type="submit" value="Save" />
+     </p>
+ }
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

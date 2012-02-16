@@ -252,4 +252,10 @@
   <data name="UnGroup" xml:space="preserve">
     <value>Gruppierung aufheben</value>
   </data>
+  <data name="FilterForeignKeyEq" xml:space="preserve">
+    <value>Ist gleich</value>
+  </data>
+  <data name="FilterForeignKeyNe" xml:space="preserve">
+    <value>Ist nicht gleich</value>
+  </data>
 </root>

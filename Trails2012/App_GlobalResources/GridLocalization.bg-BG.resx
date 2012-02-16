@@ -252,4 +252,10 @@
   <data name="UnGroup" xml:space="preserve">
     <value>премахни групирането</value>
   </data>
+  <data name="FilterForeignKeyEq" xml:space="preserve">
+    <value>Е равно на</value>
+  </data>
+  <data name="FilterForeignKeyNe" xml:space="preserve">
+    <value>Не е равно на</value>
+  </data>
 </root>

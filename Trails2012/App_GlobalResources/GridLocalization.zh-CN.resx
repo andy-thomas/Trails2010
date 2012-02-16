@@ -252,4 +252,10 @@
   <data name="UnGroup" xml:space="preserve">
     <value>取消组合</value>
   </data>
+  <data name="FilterForeignKeyEq" xml:space="preserve">
+    <value>等于</value>
+  </data>
+  <data name="FilterForeignKeyNe" xml:space="preserve">
+    <value>不等于</value>
+  </data>
 </root>

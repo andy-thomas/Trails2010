@@ -1,0 +1,65 @@
+﻿ @using Telerik.Web.Mvc.UI
+
+ @model IEnumerable<Trails2012.Domain.Region>
+
+<script type="text/javascript">
+
+    function onRowDataBound(e) {
+        if (e.dataItem.LocationCount > 0)
+            $(e.row).find('a.t-grid-delete').remove();      // Hide the delete button if there are any Locations for this Region
+    } 
+    
+</script>
+ 
+<h2>Regions</h2>
+
+@(Html.Telerik().Grid(Model)
+    .Name("RegionGrid")
+    .ToolBar(commands => commands.Insert())
+    .DataKeys(keys => keys.Add(region => region.Id))
+    .DataBinding(dataBinding => dataBinding.Ajax()
+                                    .Select("SelectAjaxEditing", "Region")
+                                    .Insert("CreateAjaxEditing", "Region")
+                                    .Update("EditAjaxEditing", "Region")
+                                    .Delete("DeleteAjaxEditing", "Region"))
+    .Editable(editing => editing.Mode(GridEditMode.InLine))
+    .Sortable()
+    .Filterable()
+    .ClientEvents(events => events.OnRowDataBound("onRowDataBound"))   
+    .Columns(columns =>
+                    {
+                        columns.Bound(region => region.Name).Width(150);
+                        columns.Bound(region => region.Description).Width(300).Sortable(false);
+                        columns.Bound(region => region.LocationCount).Visible(false);
+                        columns.Command(commands =>
+                        {
+                            commands.Edit();
+                        }).Width(100);
+                        columns.Command(commands =>
+                        {
+                            commands.Delete();
+                        }).Width(200).HtmlAttributes(new { name = "delete" });
+                    })
+        .CellAction(cell =>
+                  {
+                      if (cell.DataItem.Locations != null && cell.DataItem.Locations.Count > 0) // Hide the delete button if there are any Locations for this Region
+                      {
+                          if (cell.Column.HtmlAttributes.ContainsKey("name") && cell.Column.HtmlAttributes["name"].ToString() == "delete")
+                          {
+                              cell.HtmlAttributes["style"] = "visibility:hidden";
+                          }
+                      }
+                  })  // CellAction only works for Server side binding, so will only work on first time through, not when editing, etc     
+                    
+                    )
+@*
+@Html.Telerik().ScriptRegistrar()
+*@
+
+    
+@* 
+See the following to show/hide the delete command button when using server side binding:
+http://www.telerik.com/community/forums/aspnet-mvc/grid/correct-way-to-disable-command-button.aspx
+and the following when using ajax binding
+http://stackoverflow.com/questions/5071390/how-do-i-hide-edit-button-on-a-ajax-bound-telerik-grid-for-mvc
+*@

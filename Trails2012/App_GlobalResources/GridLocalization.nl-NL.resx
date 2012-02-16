@@ -252,4 +252,10 @@
   <data name="UnGroup" xml:space="preserve">
     <value>Verwijder groepering</value>
   </data>
+  <data name="FilterForeignKeyEq" xml:space="preserve">
+    <value>Is gelijk aan</value>
+  </data>
+  <data name="FilterForeignKeyNe" xml:space="preserve">
+    <value>Is ongelijk aan</value>
+  </data>
 </root>

@@ -229,13 +229,13 @@
     <value>É verdade</value>
   </data>
   <data name="NoRecords" xml:space="preserve">
-    <value>No records to display.</value>
+    <value>Nenhum registro encontrado.</value>
   </data>
   <data name="CancelChanges" xml:space="preserve">
-    <value>Cancel Changes</value>
+    <value>Cancelar alterações</value>
   </data>
   <data name="SaveChanges" xml:space="preserve">
-    <value>Save Changes</value>
+    <value>Salvar alterações</value>
   </data>
   <data name="Refresh" xml:space="preserve">
     <value>Atualizar</value>
@@ -248,5 +248,11 @@
   </data>
   <data name="UnGroup" xml:space="preserve">
     <value>desagrupar</value>
+  </data>
+  <data name="FilterForeignKeyEq" xml:space="preserve">
+    <value>É igual a</value>
+  </data>
+  <data name="FilterForeignKeyNe" xml:space="preserve">
+    <value>Não é igual a</value>
   </data>
 </root>

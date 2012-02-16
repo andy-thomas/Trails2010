@@ -1,0 +1,43 @@
+﻿ @using Telerik.Web.Mvc.UI
+ 
+ @{
+    ViewBag.Title = "Lists";
+}
+
+<h2>Lists</h2>
+
+@{
+    Html.Telerik().TabStrip()
+        .Name("TabStrip")
+        .Items(tabstrip =>
+                   {
+                       //tabstrip.Add()
+                       //    .Text("Item 1")
+                       //    //.ImageUrl("~/Content/Common/Icons/Suites/mvc.png")
+                       //    .Content(@<text><p>Content 1</p></text>) ;
+                       // tabstrip.Add()
+                       //     .Text("Item 2")
+                       //     .Content(@<text><p>Content 2</p></text>);
+                       tabstrip.Add()
+                           .Text("Regions")
+                           .LoadContentFrom("RegionGrid", "Region");
+                       tabstrip.Add()
+                           .Text("Locations")
+                           .LoadContentFrom("LocationGrid", "Location");
+                       tabstrip.Add()
+                           .Text("Difficulty Levels")
+                           .LoadContentFrom("DifficultyGrid", "Difficulty");
+
+                   })
+                   .SelectedIndex(0)
+                   .Render();
+                   }
+
+@*
+@Html.Telerik().ScriptRegistrar().DefaultGroup(group => group
+       .Add("telerik.common.min.js")
+       .Add("telerik.grid.min.js")
+       .Add("telerik.calendar.min.js")
+       .Add("telerik.datepicker.min.js")
+       .Add("telerik.grid.filtering.js"))
+*@

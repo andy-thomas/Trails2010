@@ -124,13 +124,13 @@
     <value>Adicionar Link</value>
   </data>
   <data name="DeleteFile" xml:space="preserve">
-    <value>Are you sure you want to delete "{0}"?</value>
+    <value>Tem certeza de que deseja remover "{0}"?</value>
   </data>
   <data name="DirectoryNotFound" xml:space="preserve">
-    <value>A directory with this name was not found.</value>
+    <value>Um diretório com este nome não foi encontrado.</value>
   </data>
   <data name="EmptyFolder" xml:space="preserve">
-    <value>Empty Folder</value>
+    <value>Pasta vazia</value>
   </data>
   <data name="FontName" xml:space="preserve">
     <value>Fonte</value>
@@ -157,7 +157,7 @@
     <value>Inserir Lista Aleatória</value>
   </data>
   <data name="InvalidFileType" xml:space="preserve">
-    <value>The selected file "{0}" is not valid. Supported file types are {1}.</value>
+    <value>O arquivo selecionado "{0}" não é válido. Os tipos de arquivo suportados são {1}.</value>
   </data>
   <data name="Italic" xml:space="preserve">
     <value>Itálico</value>
@@ -175,19 +175,19 @@
     <value>Alinhar à Direita</value>
   </data>
   <data name="OrderBy" xml:space="preserve">
-    <value>Arrange by:</value>
+    <value>Ordenar por:</value>
   </data>
   <data name="OrderByName" xml:space="preserve">
-    <value>Name</value>
+    <value>Nome</value>
   </data>
   <data name="OrderBySize" xml:space="preserve">
-    <value>Size</value>
+    <value>Tamanho</value>
   </data>
   <data name="Outdent" xml:space="preserve">
     <value>Diminuir Recuo</value>
   </data>
   <data name="OverwriteFile" xml:space="preserve">
-    <value>A file with name "{0}" already exists in the current directory. Do you want to overwrite it?</value>
+    <value>Um arquivo de nome "{0}" já existe no diretório atual. Deseja substituí-lo?</value>
   </data>
   <data name="Strikethrough" xml:space="preserve">
     <value>Tachado</value>
@@ -202,6 +202,6 @@
     <value>Remover Link</value>
   </data>
   <data name="UploadFile" xml:space="preserve">
-    <value>Upload</value>
+    <value>Enviar arquivo</value>
   </data>
 </root>

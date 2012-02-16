@@ -1,13 +1,4 @@
-﻿@using Telerik.Web.Mvc.UI
-@(Html.Telerik().DropDownList()
+﻿@(Html.Telerik().DropDownList()
     .Name(ViewData.TemplateInfo.GetFullHtmlFieldName(""))
     .BindTo((SelectList)ViewData[ViewData.TemplateInfo.GetFullHtmlFieldName("") + "_Data"])
 )
-
-@*
- Note Andy:
- In order to use dropdowns for editing in the Telerik grid, it is necessary to add this EditorTemplate
- (it gets picked up automatically by the view if it resides in the Shared|EditorTemplates folder)
- It is part of the Telerik MVC extensions installation, so on my machine it can be found in %/Program Files (x86)/%Telerik\Extensions for ASP.NET MVC Q3 2011\EditorTemplates-Razor.
- I simply copied it across into the project and added the "using" statement
- *@

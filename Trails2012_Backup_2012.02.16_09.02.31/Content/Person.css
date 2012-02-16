@@ -1,0 +1,125 @@
+﻿body
+{
+}
+
+div.person-list
+{
+	clear: right;
+}
+
+div.andy
+{
+    width: 50%;
+}
+.data-row
+{
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.data-row-edit
+{
+	display:none;
+}
+
+.column-header
+{
+	float: left;
+	padding-bottom: 0.5em;
+	width: 120px;
+	height: 20px;
+	font-size: 12px !important;
+	background-color: #e8eef4;
+	font-weight: bold;
+	vertical-align: baseline;
+}
+
+.data-element 
+{
+    float: left;
+    /*padding-top: 0.5em;*/
+    vertical-align: text-bottom;
+    width: 120px;
+}
+
+.data-element label 
+{
+    display: inline-block;
+    padding: 0;
+    /*margin-right: 6px;
+    text-align: right;
+    width: 30px;*/
+}
+
+.data-element input[type='submit'] 
+{
+    margin-left: 0px;
+}
+
+.data-element input[type='text']
+{
+	width: 90%;
+}
+
+.data-element-datetimepicker 
+{
+    float: left;
+    /*padding-top: 0.5em;*/
+    vertical-align: text-bottom;
+    width: 200px;
+}
+
+.data-element-datetimepicker input[type='text']
+{
+	width: 120px;
+}
+
+.submit
+{
+	width:220px;
+}
+
+.first-name 
+{
+	width: 100px;
+}
+
+.last-name 
+{
+	width: 100px;
+}
+
+.fullname
+{
+	width: 200px;
+}
+
+.dob
+{
+	width: 200px;
+}
+
+.gender
+{
+	width: 60px;
+}
+
+#shownewpersonform
+{
+	clear: left;
+}
+
+
+.redback
+{
+	background-color:Red;
+}
+
+.marginright
+{
+    /*padding-right: 18px;*/
+    width: 100px;
+}
+
