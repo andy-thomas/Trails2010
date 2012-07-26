@@ -17,3 +17,16 @@ C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\obj\Debug\Trails2012.Da
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.dll
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.pdb
 C:\Projects\Personal\Trails2012\Trails2012.DataAccess.EF\bin\Debug\System.Data.Entity.dll
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\obj\Debug\Trails2012.DataAccess.EF.pdb
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.EF.dll.config
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.EF.dll
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.EF.pdb
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\EntityFramework.dll
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\System.Data.Entity.dll
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.dll
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\Trails2012.Domain.dll
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\Trails2012.DataAccess.pdb
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\Trails2012.Domain.pdb
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\bin\Debug\EntityFramework.xml
+C:\Projects\Trails2010\Trails2012.DataAccess.EF\obj\Debug\Trails2012.DataAccess.EF.dll

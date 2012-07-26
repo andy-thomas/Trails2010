@@ -6,13 +6,9 @@
   <Module PersistentId="3B4F2847-C93C-4707-8A31-1FADA659AEDA" ModuleId="Trails2012.DataAccess.EF.Test" />
   <Module PersistentId="8B1E2305-D9BC-4239-9C68-D3C76F3ABB57" ModuleId="Trails2012.DataAccess_1" />
   <Module PersistentId="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.Web.Mvc" />
-  <Module PersistentId="System.Data.Entity, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data.Entity" />
   <Module PersistentId="64952E38-DB4A-461E-86C4-49B06FA379E0" ModuleId="Trails2012.DataAccess.NHib" />
   <Module PersistentId="3FEC4379-017B-4295-834D-8B6517B2DB47" ModuleId="Trails2012.DataAcees.NHib.Test" />
   <Module PersistentId="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Transactions" />
-  <Module PersistentId="FluentNHibernate, Version=1.2.0.712, Culture=neutral, PublicKeyToken=8aa435e3cb308880" ModuleId="FluentNHibernate" />
   <Module PersistentId="System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.ComponentModel.Composition" />
-  <Module PersistentId="MefContrib.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=61319b4ffd6fe6d3" ModuleId="MefContrib.Web.Mvc" />
-  <Module PersistentId="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4" ModuleId="NHibernate" />
   <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
 </Modules>

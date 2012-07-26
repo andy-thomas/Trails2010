@@ -59,10 +59,12 @@ namespace Trails2012.Controllers
         {
             if (ModelState.IsValid) 
             {
-
-                BinaryReader binaryReader = new BinaryReader(file.InputStream); 
-                byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
-                trail.Image = byteArray;
+                if (file!= null)
+                {
+                    BinaryReader binaryReader = new BinaryReader(file.InputStream);
+                    byte[] byteArray = binaryReader.ReadBytes(file.ContentLength);
+                    trail.Image = byteArray;
+                }
 
                 // see Comment 1
                 if (trail.DifficultyId.HasValue)
